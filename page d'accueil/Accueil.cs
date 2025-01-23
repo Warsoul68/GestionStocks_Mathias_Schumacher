@@ -16,5 +16,10 @@ namespace page_d_accueil
         {
             InitializeComponent();
         }
+
+        private void Accueil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

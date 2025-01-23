@@ -292,6 +292,7 @@
             this.Controls.Add(this.tsMenuApplication);
             this.Name = "Accueil";
             this.Text = "Accueil";
+            this.Load += new System.EventHandler(this.Accueil_Load);
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
             this.ResumeLayout(false);
