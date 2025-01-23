@@ -64,6 +64,12 @@
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Depot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depot.Designer.cs">
+      <DependentUpon>Depot.cs</DependentUpon>
+    </Compile>
     <Compile Include="NiveauStock.cs">
       <SubType>Form</SubType>
     </Compile>
