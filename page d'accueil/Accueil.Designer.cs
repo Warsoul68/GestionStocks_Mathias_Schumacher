@@ -48,23 +48,33 @@
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblCategorie = new System.Windows.Forms.Label();
+            this.cboCategorie = new System.Windows.Forms.ComboBox();
+            this.lblFabricant = new System.Windows.Forms.Label();
+            this.cboFabricant = new System.Windows.Forms.ComboBox();
+            this.lblDepot = new System.Windows.Forms.Label();
+            this.cboDepot = new System.Windows.Forms.ComboBox();
+            this.lblLibelle = new System.Windows.Forms.Label();
+            this.cboLibelle = new System.Windows.Forms.ComboBox();
             this.tsMenuApplication.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsMenuApplication
             // 
+            this.tsMenuApplication.BackColor = System.Drawing.Color.Silver;
             this.tsMenuApplication.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsParametres,
             this.tsDonnee,
             this.tsStock});
             this.tsMenuApplication.Location = new System.Drawing.Point(0, 0);
             this.tsMenuApplication.Name = "tsMenuApplication";
-            this.tsMenuApplication.Size = new System.Drawing.Size(800, 25);
+            this.tsMenuApplication.Size = new System.Drawing.Size(728, 25);
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
             // tsParametres
             // 
+            this.tsParametres.BackColor = System.Drawing.Color.Transparent;
             this.tsParametres.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listeDesCatégoriesToolStripMenuItem,
             this.listeDesUnitéToolStripMenuItem});
@@ -80,7 +90,7 @@
             this.miseÀJourToolStripMenuItem,
             this.suppressionDeCatégorieToolStripMenuItem});
             this.listeDesCatégoriesToolStripMenuItem.Name = "listeDesCatégoriesToolStripMenuItem";
-            this.listeDesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeDesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.listeDesCatégoriesToolStripMenuItem.Text = "Liste des catégories";
             // 
             // visualisationToolStripMenuItem
@@ -115,7 +125,7 @@
             this.miseÀJourToolStripMenuItem1,
             this.suppressionDunitéToolStripMenuItem});
             this.listeDesUnitéToolStripMenuItem.Name = "listeDesUnitéToolStripMenuItem";
-            this.listeDesUnitéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeDesUnitéToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.listeDesUnitéToolStripMenuItem.Text = "Liste des unité";
             // 
             // visualisationToolStripMenuItem1
@@ -183,7 +193,7 @@
             // listeMulticritèresDesNiveauxDeStockToolStripMenuItem
             // 
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Name = "listeMulticritèresDesNiveauxDeStockToolStripMenuItem";
-            this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Size = new System.Drawing.Size(279, 22);
+            this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Text = "Liste multicritères des niveaux de stock";
             // 
             // listeMultiToolStripMenuItem
@@ -198,11 +208,87 @@
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem.Text = "Liste multicritères des mouvements de stock";
             // 
+            // lblCategorie
+            // 
+            this.lblCategorie.AutoSize = true;
+            this.lblCategorie.Location = new System.Drawing.Point(12, 66);
+            this.lblCategorie.Name = "lblCategorie";
+            this.lblCategorie.Size = new System.Drawing.Size(131, 13);
+            this.lblCategorie.TabIndex = 1;
+            this.lblCategorie.Text = "Recherche par catégorie :";
+            // 
+            // cboCategorie
+            // 
+            this.cboCategorie.FormattingEnabled = true;
+            this.cboCategorie.Location = new System.Drawing.Point(149, 63);
+            this.cboCategorie.Name = "cboCategorie";
+            this.cboCategorie.Size = new System.Drawing.Size(121, 21);
+            this.cboCategorie.TabIndex = 2;
+            // 
+            // lblFabricant
+            // 
+            this.lblFabricant.AutoSize = true;
+            this.lblFabricant.Location = new System.Drawing.Point(12, 98);
+            this.lblFabricant.Name = "lblFabricant";
+            this.lblFabricant.Size = new System.Drawing.Size(128, 13);
+            this.lblFabricant.TabIndex = 3;
+            this.lblFabricant.Text = "Recherche par fabricant :";
+            // 
+            // cboFabricant
+            // 
+            this.cboFabricant.FormattingEnabled = true;
+            this.cboFabricant.Location = new System.Drawing.Point(149, 98);
+            this.cboFabricant.Name = "cboFabricant";
+            this.cboFabricant.Size = new System.Drawing.Size(121, 21);
+            this.cboFabricant.TabIndex = 4;
+            // 
+            // lblDepot
+            // 
+            this.lblDepot.AutoSize = true;
+            this.lblDepot.Location = new System.Drawing.Point(12, 130);
+            this.lblDepot.Name = "lblDepot";
+            this.lblDepot.Size = new System.Drawing.Size(114, 13);
+            this.lblDepot.TabIndex = 5;
+            this.lblDepot.Text = "Recherche par dépôt :";
+            // 
+            // cboDepot
+            // 
+            this.cboDepot.FormattingEnabled = true;
+            this.cboDepot.Location = new System.Drawing.Point(149, 130);
+            this.cboDepot.Name = "cboDepot";
+            this.cboDepot.Size = new System.Drawing.Size(121, 21);
+            this.cboDepot.TabIndex = 6;
+            // 
+            // lblLibelle
+            // 
+            this.lblLibelle.AutoSize = true;
+            this.lblLibelle.Location = new System.Drawing.Point(12, 159);
+            this.lblLibelle.Name = "lblLibelle";
+            this.lblLibelle.Size = new System.Drawing.Size(113, 13);
+            this.lblLibelle.TabIndex = 7;
+            this.lblLibelle.Text = "Recherche par libellé :";
+            // 
+            // cboLibelle
+            // 
+            this.cboLibelle.FormattingEnabled = true;
+            this.cboLibelle.Location = new System.Drawing.Point(149, 159);
+            this.cboLibelle.Name = "cboLibelle";
+            this.cboLibelle.Size = new System.Drawing.Size(121, 21);
+            this.cboLibelle.TabIndex = 8;
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.Controls.Add(this.cboLibelle);
+            this.Controls.Add(this.lblLibelle);
+            this.Controls.Add(this.cboDepot);
+            this.Controls.Add(this.lblDepot);
+            this.Controls.Add(this.cboFabricant);
+            this.Controls.Add(this.lblFabricant);
+            this.Controls.Add(this.cboCategorie);
+            this.Controls.Add(this.lblCategorie);
             this.Controls.Add(this.tsMenuApplication);
             this.Name = "Accueil";
             this.Text = "Accueil";
@@ -235,6 +321,14 @@
         private System.Windows.Forms.ToolStripMenuItem listeMulticritèresDesNiveauxDeStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeMultiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeMulticritèresDesMouvementsDeStockToolStripMenuItem;
+        private System.Windows.Forms.Label lblCategorie;
+        private System.Windows.Forms.ComboBox cboCategorie;
+        private System.Windows.Forms.Label lblFabricant;
+        private System.Windows.Forms.ComboBox cboFabricant;
+        private System.Windows.Forms.Label lblDepot;
+        private System.Windows.Forms.ComboBox cboDepot;
+        private System.Windows.Forms.Label lblLibelle;
+        private System.Windows.Forms.ComboBox cboLibelle;
     }
 }
 

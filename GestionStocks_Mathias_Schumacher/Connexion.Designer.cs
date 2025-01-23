@@ -1,6 +1,6 @@
 ﻿namespace GestionStocks_Mathias_Schumacher
 {
-    partial class Form1
+    partial class Connexion
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Connexion));
             this.ImgIcone = new System.Windows.Forms.PictureBox();
             this.lblNomUtilisateur = new System.Windows.Forms.Label();
             this.lblMdp = new System.Windows.Forms.Label();
@@ -92,6 +92,7 @@
             this.Controls.Add(this.ImgIcone);
             this.Name = "Form1";
             this.Text = "Connexion";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImgIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

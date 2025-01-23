@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GestionStocks_Mathias_Schumacher
 {
-    public partial class Form1 : Form
+    public partial class Connexion : Form
     {
-        public Form1()
+        public Connexion()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
