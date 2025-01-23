@@ -1,6 +1,6 @@
 ﻿namespace page_d_accueil
 {
-    partial class Depot
+    partial class NiveauStock
     {
         /// <summary>
         /// Required designer variable.

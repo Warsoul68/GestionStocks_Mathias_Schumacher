@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace page_d_accueil
 {
-    public partial class Depot : Form
+    public partial class NiveauStock : Form
     {
-        public Depot()
+        public NiveauStock()
         {
             InitializeComponent();
         }
