@@ -29,5 +29,12 @@ namespace page_d_accueil
             Article A = new Article();
             A.Show();
         }
+
+        private void listeMulticritèresDesNiveauxDeStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Depot D = new Depot();
+            D.Show();
+
+        }
     }
 }

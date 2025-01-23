@@ -200,6 +200,7 @@
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Name = "listeMulticritèresDesNiveauxDeStockToolStripMenuItem";
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Text = "Liste multicritères des niveaux de stock";
+            this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem.Click += new System.EventHandler(this.listeMulticritèresDesNiveauxDeStockToolStripMenuItem_Click);
             // 
             // listeMultiToolStripMenuItem
             // 
