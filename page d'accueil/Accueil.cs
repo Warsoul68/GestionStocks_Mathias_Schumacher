@@ -19,12 +19,15 @@ namespace page_d_accueil
 
         private void Accueil_Load(object sender, EventArgs e)
         {
+            Connexion C = new Connexion();
+            C.ShowDialog();
 
         }
 
         private void listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Article A = new Article();
+            A.Show();
         }
     }
 }
