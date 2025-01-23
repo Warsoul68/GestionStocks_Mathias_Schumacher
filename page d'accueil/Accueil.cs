@@ -21,5 +21,10 @@ namespace page_d_accueil
         {
 
         }
+
+        private void listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

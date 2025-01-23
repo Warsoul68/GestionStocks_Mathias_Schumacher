@@ -56,7 +56,11 @@
             this.cboDepot = new System.Windows.Forms.ComboBox();
             this.lblLibelle = new System.Windows.Forms.Label();
             this.cboLibelle = new System.Windows.Forms.ComboBox();
+            this.chkClassementDecroissant = new System.Windows.Forms.CheckBox();
+            this.btnNewArticle = new System.Windows.Forms.Button();
+            this.dgvArticle = new System.Windows.Forms.DataGridView();
             this.tsMenuApplication.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
             this.SuspendLayout();
             // 
             // tsMenuApplication
@@ -68,7 +72,7 @@
             this.tsStock});
             this.tsMenuApplication.Location = new System.Drawing.Point(0, 0);
             this.tsMenuApplication.Name = "tsMenuApplication";
-            this.tsMenuApplication.Size = new System.Drawing.Size(728, 25);
+            this.tsMenuApplication.Size = new System.Drawing.Size(719, 25);
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
@@ -173,6 +177,7 @@
             this.listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem.Name = "listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem";
             this.listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem.Size = new System.Drawing.Size(369, 22);
             this.listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem.Text = "Liste multicritère de recherche d\'un ensemble d\'articles";
+            this.listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem.Click += new System.EventHandler(this.listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem_Click);
             // 
             // listeMulticritèresToolStripMenuItem
             // 
@@ -239,7 +244,7 @@
             this.cboFabricant.FormattingEnabled = true;
             this.cboFabricant.Location = new System.Drawing.Point(149, 98);
             this.cboFabricant.Name = "cboFabricant";
-            this.cboFabricant.Size = new System.Drawing.Size(121, 21);
+            this.cboFabricant.Size = new System.Drawing.Size(240, 21);
             this.cboFabricant.TabIndex = 4;
             // 
             // lblDepot
@@ -256,7 +261,7 @@
             this.cboDepot.FormattingEnabled = true;
             this.cboDepot.Location = new System.Drawing.Point(149, 130);
             this.cboDepot.Name = "cboDepot";
-            this.cboDepot.Size = new System.Drawing.Size(121, 21);
+            this.cboDepot.Size = new System.Drawing.Size(240, 21);
             this.cboDepot.TabIndex = 6;
             // 
             // lblLibelle
@@ -273,14 +278,44 @@
             this.cboLibelle.FormattingEnabled = true;
             this.cboLibelle.Location = new System.Drawing.Point(149, 159);
             this.cboLibelle.Name = "cboLibelle";
-            this.cboLibelle.Size = new System.Drawing.Size(121, 21);
+            this.cboLibelle.Size = new System.Drawing.Size(299, 21);
             this.cboLibelle.TabIndex = 8;
+            // 
+            // chkClassementDecroissant
+            // 
+            this.chkClassementDecroissant.AutoSize = true;
+            this.chkClassementDecroissant.Location = new System.Drawing.Point(477, 62);
+            this.chkClassementDecroissant.Name = "chkClassementDecroissant";
+            this.chkClassementDecroissant.Size = new System.Drawing.Size(137, 17);
+            this.chkClassementDecroissant.TabIndex = 9;
+            this.chkClassementDecroissant.Text = "Classement décroissant";
+            this.chkClassementDecroissant.UseVisualStyleBackColor = true;
+            // 
+            // btnNewArticle
+            // 
+            this.btnNewArticle.Location = new System.Drawing.Point(530, 157);
+            this.btnNewArticle.Name = "btnNewArticle";
+            this.btnNewArticle.Size = new System.Drawing.Size(84, 23);
+            this.btnNewArticle.TabIndex = 10;
+            this.btnNewArticle.Text = "Nouvel article";
+            this.btnNewArticle.UseVisualStyleBackColor = true;
+            // 
+            // dgvArticle
+            // 
+            this.dgvArticle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticle.Location = new System.Drawing.Point(12, 217);
+            this.dgvArticle.Name = "dgvArticle";
+            this.dgvArticle.Size = new System.Drawing.Size(695, 210);
+            this.dgvArticle.TabIndex = 11;
             // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.ClientSize = new System.Drawing.Size(719, 435);
+            this.Controls.Add(this.dgvArticle);
+            this.Controls.Add(this.btnNewArticle);
+            this.Controls.Add(this.chkClassementDecroissant);
             this.Controls.Add(this.cboLibelle);
             this.Controls.Add(this.lblLibelle);
             this.Controls.Add(this.cboDepot);
@@ -295,6 +330,7 @@
             this.Load += new System.EventHandler(this.Accueil_Load);
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +366,9 @@
         private System.Windows.Forms.ComboBox cboDepot;
         private System.Windows.Forms.Label lblLibelle;
         private System.Windows.Forms.ComboBox cboLibelle;
+        private System.Windows.Forms.CheckBox chkClassementDecroissant;
+        private System.Windows.Forms.Button btnNewArticle;
+        private System.Windows.Forms.DataGridView dgvArticle;
     }
 }
 

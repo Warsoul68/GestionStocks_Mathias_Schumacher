@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionStocks_Mathias_Schumacher", "GestionStocks_Mathias_Schumacher\GestionStocks_Mathias_Schumacher.csproj", "{3B69E749-1D8E-46FD-8562-E64FCE29D2E2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIB_BLL", "LIB_BLL\LIB_BLL.csproj", "{02DEF58B-B534-4134-8722-0C4787AB01F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIB_DAL", "LIB_DAL\LIB_DAL.csproj", "{438A20C8-B5A1-4721-9489-D84800DD3848}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3B69E749-1D8E-46FD-8562-E64FCE29D2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B69E749-1D8E-46FD-8562-E64FCE29D2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B69E749-1D8E-46FD-8562-E64FCE29D2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B69E749-1D8E-46FD-8562-E64FCE29D2E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02DEF58B-B534-4134-8722-0C4787AB01F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02DEF58B-B534-4134-8722-0C4787AB01F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02DEF58B-B534-4134-8722-0C4787AB01F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
