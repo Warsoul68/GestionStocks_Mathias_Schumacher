@@ -94,7 +94,7 @@
             this.miseÀJourToolStripMenuItem,
             this.suppressionDeCatégorieToolStripMenuItem});
             this.listeDesCatégoriesToolStripMenuItem.Name = "listeDesCatégoriesToolStripMenuItem";
-            this.listeDesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.listeDesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeDesCatégoriesToolStripMenuItem.Text = "Liste des catégories";
             // 
             // visualisationToolStripMenuItem
@@ -129,31 +129,31 @@
             this.miseÀJourToolStripMenuItem1,
             this.suppressionDunitéToolStripMenuItem});
             this.listeDesUnitéToolStripMenuItem.Name = "listeDesUnitéToolStripMenuItem";
-            this.listeDesUnitéToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.listeDesUnitéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeDesUnitéToolStripMenuItem.Text = "Liste des unité";
             // 
             // visualisationToolStripMenuItem1
             // 
             this.visualisationToolStripMenuItem1.Name = "visualisationToolStripMenuItem1";
-            this.visualisationToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.visualisationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.visualisationToolStripMenuItem1.Text = "visualisation";
             // 
             // créationToolStripMenuItem1
             // 
             this.créationToolStripMenuItem1.Name = "créationToolStripMenuItem1";
-            this.créationToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.créationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.créationToolStripMenuItem1.Text = "création";
             // 
             // miseÀJourToolStripMenuItem1
             // 
             this.miseÀJourToolStripMenuItem1.Name = "miseÀJourToolStripMenuItem1";
-            this.miseÀJourToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.miseÀJourToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.miseÀJourToolStripMenuItem1.Text = "mise à jour";
             // 
             // suppressionDunitéToolStripMenuItem
             // 
             this.suppressionDunitéToolStripMenuItem.Name = "suppressionDunitéToolStripMenuItem";
-            this.suppressionDunitéToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.suppressionDunitéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suppressionDunitéToolStripMenuItem.Text = "suppression d\'unité";
             // 
             // tsDonnee
@@ -184,6 +184,7 @@
             this.listeMulticritèresToolStripMenuItem.Name = "listeMulticritèresToolStripMenuItem";
             this.listeMulticritèresToolStripMenuItem.Size = new System.Drawing.Size(369, 22);
             this.listeMulticritèresToolStripMenuItem.Text = "Liste multicritère de recherche d\'un ensemble de dépots";
+            this.listeMulticritèresToolStripMenuItem.Click += new System.EventHandler(this.listeMulticritèresToolStripMenuItem_Click);
             // 
             // tsStock
             // 

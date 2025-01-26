@@ -36,5 +36,12 @@ namespace page_d_accueil
             NS.Show();
 
         }
+
+        private void listeMulticritèresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListeDepot LD = new ListeDepot();
+            LD.Show();
+
+        }
     }
 }
