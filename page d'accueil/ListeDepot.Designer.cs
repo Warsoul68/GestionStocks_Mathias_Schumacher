@@ -46,6 +46,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouterDepot = new System.Windows.Forms.Button();
+            this.btnEnregistrer = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +55,7 @@
             // 
             this.lblRePays.AutoSize = true;
             this.lblRePays.BackColor = System.Drawing.Color.Blue;
+            this.lblRePays.ForeColor = System.Drawing.Color.White;
             this.lblRePays.Location = new System.Drawing.Point(12, 36);
             this.lblRePays.Name = "lblRePays";
             this.lblRePays.Size = new System.Drawing.Size(109, 13);
@@ -63,6 +66,7 @@
             // 
             this.lblReVille.AutoSize = true;
             this.lblReVille.BackColor = System.Drawing.Color.Blue;
+            this.lblReVille.ForeColor = System.Drawing.Color.White;
             this.lblReVille.Location = new System.Drawing.Point(12, 9);
             this.lblReVille.Name = "lblReVille";
             this.lblReVille.Size = new System.Drawing.Size(105, 13);
@@ -179,9 +183,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(377, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(428, 85);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(253, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(202, 223);
             this.dataGridView1.TabIndex = 16;
             // 
             // btnAnnuler
@@ -195,18 +199,38 @@
             // 
             // btnAjouterDepot
             // 
-            this.btnAjouterDepot.Location = new System.Drawing.Point(139, 271);
+            this.btnAjouterDepot.Location = new System.Drawing.Point(127, 271);
             this.btnAjouterDepot.Name = "btnAjouterDepot";
             this.btnAjouterDepot.Size = new System.Drawing.Size(101, 23);
             this.btnAjouterDepot.TabIndex = 18;
             this.btnAjouterDepot.Text = "Ajouter un dépot";
             this.btnAjouterDepot.UseVisualStyleBackColor = true;
             // 
+            // btnEnregistrer
+            // 
+            this.btnEnregistrer.Location = new System.Drawing.Point(243, 271);
+            this.btnEnregistrer.Name = "btnEnregistrer";
+            this.btnEnregistrer.Size = new System.Drawing.Size(75, 23);
+            this.btnEnregistrer.TabIndex = 19;
+            this.btnEnregistrer.Text = "Enregistrer";
+            this.btnEnregistrer.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(334, 271);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 20;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            // 
             // ListeDepot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 320);
+            this.Controls.Add(this.btnSupprimer);
+            this.Controls.Add(this.btnEnregistrer);
             this.Controls.Add(this.btnAjouterDepot);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.dataGridView1);
@@ -253,5 +277,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouterDepot;
+        private System.Windows.Forms.Button btnEnregistrer;
+        private System.Windows.Forms.Button btnSupprimer;
     }
 }

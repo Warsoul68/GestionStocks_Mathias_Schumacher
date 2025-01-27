@@ -43,5 +43,18 @@ namespace page_d_accueil
             LD.Show();
 
         }
+
+        private void lToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListeFabricant LF = new ListeFabricant();
+            LF.Show();
+
+        }
+
+        private void btnNewArticle_Click(object sender, EventArgs e)
+        {
+            FrNouvelArticle FNA = new FrNouvelArticle();
+            FNA.Show();
+        }
     }
 }

@@ -64,11 +64,23 @@
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrNouvelArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrNouvelArticle.Designer.cs">
+      <DependentUpon>FrNouvelArticle.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListeDepot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListeDepot.Designer.cs">
       <DependentUpon>ListeDepot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeFabricant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeFabricant.Designer.cs">
+      <DependentUpon>ListeFabricant.cs</DependentUpon>
     </Compile>
     <Compile Include="NiveauStock.cs">
       <SubType>Form</SubType>
@@ -87,8 +99,14 @@
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrNouvelArticle.resx">
+      <DependentUpon>FrNouvelArticle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListeDepot.resx">
       <DependentUpon>ListeDepot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeFabricant.resx">
+      <DependentUpon>ListeFabricant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NiveauStock.resx">
       <DependentUpon>NiveauStock.cs</DependentUpon>
