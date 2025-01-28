@@ -56,5 +56,11 @@ namespace page_d_accueil
             FrNouvelArticle FNA = new FrNouvelArticle();
             FNA.Show();
         }
+
+        private void visualisationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrCategorieVisualise FCV = new FrCategorieVisualise();
+            FCV.Show();
+        }
     }
 }
