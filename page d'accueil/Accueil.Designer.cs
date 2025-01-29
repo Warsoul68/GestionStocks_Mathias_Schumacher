@@ -124,6 +124,7 @@
             this.suppressionDeCatégorieToolStripMenuItem.Name = "suppressionDeCatégorieToolStripMenuItem";
             this.suppressionDeCatégorieToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.suppressionDeCatégorieToolStripMenuItem.Text = "suppression de catégorie";
+            this.suppressionDeCatégorieToolStripMenuItem.Click += new System.EventHandler(this.suppressionDeCatégorieToolStripMenuItem_Click);
             // 
             // listeDesUnitéToolStripMenuItem
             // 

@@ -70,6 +70,12 @@
     <Compile Include="FrCategorieCreer.Designer.cs">
       <DependentUpon>FrCategorieCreer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrCategorieSupprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrCategorieSupprimer.Designer.cs">
+      <DependentUpon>FrCategorieSupprimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrCategorieUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="FrNouvelArticle.Designer.cs">
       <DependentUpon>FrNouvelArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrUniteVisualisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrUniteVisualisation.Designer.cs">
+      <DependentUpon>FrUniteVisualisation.cs</DependentUpon>
     </Compile>
     <Compile Include="ListeDepot.cs">
       <SubType>Form</SubType>
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="FrCategorieCreer.resx">
       <DependentUpon>FrCategorieCreer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrCategorieSupprimer.resx">
+      <DependentUpon>FrCategorieSupprimer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrCategorieUpdate.resx">
       <DependentUpon>FrCategorieUpdate.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrNouvelArticle.resx">
       <DependentUpon>FrNouvelArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrUniteVisualisation.resx">
+      <DependentUpon>FrUniteVisualisation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeDepot.resx">
       <DependentUpon>ListeDepot.cs</DependentUpon>

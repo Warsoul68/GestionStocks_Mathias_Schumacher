@@ -76,5 +76,12 @@ namespace page_d_accueil
             FCU.Show();
 
         }
+
+        private void suppressionDeCatégorieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrCategorieSupprimer FCS = new FrCategorieSupprimer();
+            FCS.Show();
+
+        }
     }
 }
