@@ -140,26 +140,30 @@
             // visualisationToolStripMenuItem1
             // 
             this.visualisationToolStripMenuItem1.Name = "visualisationToolStripMenuItem1";
-            this.visualisationToolStripMenuItem1.Size = new System.Drawing.Size(219, 26);
+            this.visualisationToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.visualisationToolStripMenuItem1.Text = "visualisation";
+            this.visualisationToolStripMenuItem1.Click += new System.EventHandler(this.visualisationToolStripMenuItem1_Click);
             // 
             // créationToolStripMenuItem1
             // 
             this.créationToolStripMenuItem1.Name = "créationToolStripMenuItem1";
-            this.créationToolStripMenuItem1.Size = new System.Drawing.Size(219, 26);
+            this.créationToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.créationToolStripMenuItem1.Text = "création";
+            this.créationToolStripMenuItem1.Click += new System.EventHandler(this.créationToolStripMenuItem1_Click);
             // 
             // miseÀJourToolStripMenuItem1
             // 
             this.miseÀJourToolStripMenuItem1.Name = "miseÀJourToolStripMenuItem1";
-            this.miseÀJourToolStripMenuItem1.Size = new System.Drawing.Size(219, 26);
+            this.miseÀJourToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.miseÀJourToolStripMenuItem1.Text = "mise à jour";
+            this.miseÀJourToolStripMenuItem1.Click += new System.EventHandler(this.miseÀJourToolStripMenuItem1_Click);
             // 
             // suppressionDunitéToolStripMenuItem
             // 
             this.suppressionDunitéToolStripMenuItem.Name = "suppressionDunitéToolStripMenuItem";
-            this.suppressionDunitéToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
+            this.suppressionDunitéToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.suppressionDunitéToolStripMenuItem.Text = "suppression d\'unité";
+            this.suppressionDunitéToolStripMenuItem.Click += new System.EventHandler(this.suppressionDunitéToolStripMenuItem_Click);
             // 
             // tsDonnee
             // 

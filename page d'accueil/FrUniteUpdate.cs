@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace page_d_accueil
 {
-    public partial class FrUniteVisualisation : Form
+    public partial class FrUniteUpdate : Form
     {
-        public FrUniteVisualisation()
+        public FrUniteUpdate()
         {
             InitializeComponent();
         }

@@ -83,5 +83,33 @@ namespace page_d_accueil
             FCS.Show();
 
         }
+
+        private void visualisationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrUniteVisualise FUV = new FrUniteVisualise();
+            FUV.Show();
+
+        }
+
+        private void créationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrUniteCreer FUC = new FrUniteCreer();
+            FUC.Show();
+
+        }
+
+        private void miseÀJourToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrUniteUpdate FUU = new FrUniteUpdate();
+            FUU.Show();
+
+        }
+
+        private void suppressionDunitéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrUniteSupprimer FUS = new FrUniteSupprimer();
+            FUS.Show();
+
+        }
     }
 }

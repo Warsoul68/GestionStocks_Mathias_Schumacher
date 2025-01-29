@@ -94,11 +94,29 @@
     <Compile Include="FrNouvelArticle.Designer.cs">
       <DependentUpon>FrNouvelArticle.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrUniteVisualisation.cs">
+    <Compile Include="FrUniteCreer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrUniteVisualisation.Designer.cs">
-      <DependentUpon>FrUniteVisualisation.cs</DependentUpon>
+    <Compile Include="FrUniteCreer.Designer.cs">
+      <DependentUpon>FrUniteCreer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrUniteSupprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrUniteSupprimer.Designer.cs">
+      <DependentUpon>FrUniteSupprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrUniteUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrUniteUpdate.Designer.cs">
+      <DependentUpon>FrUniteUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrUniteVisualise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrUniteVisualise.Designer.cs">
+      <DependentUpon>FrUniteVisualise.cs</DependentUpon>
     </Compile>
     <Compile Include="ListeDepot.cs">
       <SubType>Form</SubType>
@@ -144,8 +162,17 @@
     <EmbeddedResource Include="FrNouvelArticle.resx">
       <DependentUpon>FrNouvelArticle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrUniteVisualisation.resx">
-      <DependentUpon>FrUniteVisualisation.cs</DependentUpon>
+    <EmbeddedResource Include="FrUniteCreer.resx">
+      <DependentUpon>FrUniteCreer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrUniteSupprimer.resx">
+      <DependentUpon>FrUniteSupprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrUniteUpdate.resx">
+      <DependentUpon>FrUniteUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrUniteVisualise.resx">
+      <DependentUpon>FrUniteVisualise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeDepot.resx">
       <DependentUpon>ListeDepot.cs</DependentUpon>

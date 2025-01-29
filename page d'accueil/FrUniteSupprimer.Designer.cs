@@ -1,0 +1,132 @@
+﻿namespace page_d_accueil
+{
+    partial class FrUniteSupprimer
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblUnite = new System.Windows.Forms.Label();
+            this.cbUnite = new System.Windows.Forms.ComboBox();
+            this.lblLibelle = new System.Windows.Forms.Label();
+            this.txtLibelle = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblUnite
+            // 
+            this.lblUnite.AutoSize = true;
+            this.lblUnite.Location = new System.Drawing.Point(12, 25);
+            this.lblUnite.Name = "lblUnite";
+            this.lblUnite.Size = new System.Drawing.Size(77, 16);
+            this.lblUnite.TabIndex = 0;
+            this.lblUnite.Text = "Code unité :";
+            // 
+            // cbUnite
+            // 
+            this.cbUnite.FormattingEnabled = true;
+            this.cbUnite.Location = new System.Drawing.Point(95, 22);
+            this.cbUnite.Name = "cbUnite";
+            this.cbUnite.Size = new System.Drawing.Size(85, 24);
+            this.cbUnite.TabIndex = 1;
+            // 
+            // lblLibelle
+            // 
+            this.lblLibelle.AutoSize = true;
+            this.lblLibelle.Location = new System.Drawing.Point(12, 60);
+            this.lblLibelle.Name = "lblLibelle";
+            this.lblLibelle.Size = new System.Drawing.Size(53, 16);
+            this.lblLibelle.TabIndex = 2;
+            this.lblLibelle.Text = "Libellé :";
+            // 
+            // txtLibelle
+            // 
+            this.txtLibelle.Location = new System.Drawing.Point(95, 60);
+            this.txtLibelle.Name = "txtLibelle";
+            this.txtLibelle.Size = new System.Drawing.Size(112, 22);
+            this.txtLibelle.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(26, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(294, 233);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(82, 354);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 29);
+            this.btnAnnuler.TabIndex = 5;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(179, 354);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(85, 29);
+            this.btnSupprimer.TabIndex = 6;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // FrUniteSupprimer
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(347, 395);
+            this.Controls.Add(this.btnSupprimer);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtLibelle);
+            this.Controls.Add(this.lblLibelle);
+            this.Controls.Add(this.cbUnite);
+            this.Controls.Add(this.lblUnite);
+            this.Name = "FrUniteSupprimer";
+            this.Text = "Supprimer une unité";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblUnite;
+        private System.Windows.Forms.ComboBox cbUnite;
+        private System.Windows.Forms.Label lblLibelle;
+        private System.Windows.Forms.TextBox txtLibelle;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnSupprimer;
+    }
+}
