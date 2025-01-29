@@ -1,6 +1,6 @@
 ﻿namespace page_d_accueil
 {
-    partial class FrCategorieVisualise
+    partial class FrCategorieCreer
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.lblCodeCategorie = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnRecherche = new System.Windows.Forms.Button();
+            this.cbCodeCategorie = new System.Windows.Forms.ComboBox();
             this.lblLibelle = new System.Windows.Forms.Label();
             this.txtLibelle = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCreer = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -41,79 +41,78 @@
             // lblCodeCategorie
             // 
             this.lblCodeCategorie.AutoSize = true;
-            this.lblCodeCategorie.Location = new System.Drawing.Point(12, 36);
+            this.lblCodeCategorie.Location = new System.Drawing.Point(23, 25);
             this.lblCodeCategorie.Name = "lblCodeCategorie";
-            this.lblCodeCategorie.Size = new System.Drawing.Size(125, 16);
+            this.lblCodeCategorie.Size = new System.Drawing.Size(106, 16);
             this.lblCodeCategorie.TabIndex = 0;
-            this.lblCodeCategorie.Text = "Code de catégorie :";
+            this.lblCodeCategorie.Text = "Code catégorie :";
             // 
-            // comboBox1
+            // cbCodeCategorie
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 24);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // btnRecherche
-            // 
-            this.btnRecherche.Location = new System.Drawing.Point(187, 260);
-            this.btnRecherche.Name = "btnRecherche";
-            this.btnRecherche.Size = new System.Drawing.Size(90, 23);
-            this.btnRecherche.TabIndex = 2;
-            this.btnRecherche.Text = "Rechercher";
-            this.btnRecherche.UseVisualStyleBackColor = true;
-            this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click);
+            this.cbCodeCategorie.FormattingEnabled = true;
+            this.cbCodeCategorie.Location = new System.Drawing.Point(135, 22);
+            this.cbCodeCategorie.Name = "cbCodeCategorie";
+            this.cbCodeCategorie.Size = new System.Drawing.Size(155, 24);
+            this.cbCodeCategorie.TabIndex = 1;
             // 
             // lblLibelle
             // 
             this.lblLibelle.AutoSize = true;
-            this.lblLibelle.Location = new System.Drawing.Point(12, 64);
+            this.lblLibelle.Location = new System.Drawing.Point(23, 62);
             this.lblLibelle.Name = "lblLibelle";
             this.lblLibelle.Size = new System.Drawing.Size(53, 16);
-            this.lblLibelle.TabIndex = 3;
+            this.lblLibelle.TabIndex = 2;
             this.lblLibelle.Text = "Libellé :";
             // 
             // txtLibelle
             // 
-            this.txtLibelle.Location = new System.Drawing.Point(151, 64);
+            this.txtLibelle.Location = new System.Drawing.Point(135, 59);
             this.txtLibelle.Name = "txtLibelle";
-            this.txtLibelle.Size = new System.Drawing.Size(126, 22);
-            this.txtLibelle.TabIndex = 4;
+            this.txtLibelle.Size = new System.Drawing.Size(155, 22);
+            this.txtLibelle.TabIndex = 3;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 104);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(288, 150);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.Size = new System.Drawing.Size(320, 163);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // btnCreer
+            // 
+            this.btnCreer.Location = new System.Drawing.Point(240, 286);
+            this.btnCreer.Name = "btnCreer";
+            this.btnCreer.Size = new System.Drawing.Size(75, 23);
+            this.btnCreer.TabIndex = 5;
+            this.btnCreer.Text = "Créer";
+            this.btnCreer.UseVisualStyleBackColor = true;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(44, 260);
+            this.btnAnnuler.Location = new System.Drawing.Point(54, 286);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 6;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
-            // FrCategorieVisualise
+            // FrCategorieCreer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 311);
+            this.ClientSize = new System.Drawing.Size(369, 321);
             this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnCreer);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtLibelle);
             this.Controls.Add(this.lblLibelle);
-            this.Controls.Add(this.btnRecherche);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCodeCategorie);
             this.Controls.Add(this.lblCodeCategorie);
-            this.Name = "FrCategorieVisualise";
-            this.Text = "Visualisation des catégorie";
+            this.Name = "FrCategorieCreer";
+            this.Text = "Créer une nouvelle catégorie";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,11 +122,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblCodeCategorie;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnRecherche;
+        private System.Windows.Forms.ComboBox cbCodeCategorie;
         private System.Windows.Forms.Label lblLibelle;
         private System.Windows.Forms.TextBox txtLibelle;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCreer;
         private System.Windows.Forms.Button btnAnnuler;
     }
 }

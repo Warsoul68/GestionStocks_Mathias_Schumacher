@@ -64,6 +64,18 @@
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrCategorieCreer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrCategorieCreer.Designer.cs">
+      <DependentUpon>FrCategorieCreer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrCategorieUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrCategorieUpdate.Designer.cs">
+      <DependentUpon>FrCategorieUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrCategorieVisualise.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrCategorieCreer.resx">
+      <DependentUpon>FrCategorieCreer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrCategorieUpdate.resx">
+      <DependentUpon>FrCategorieUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrCategorieVisualise.resx">
       <DependentUpon>FrCategorieVisualise.cs</DependentUpon>

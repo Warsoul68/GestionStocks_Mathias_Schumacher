@@ -110,12 +110,14 @@
             this.créationToolStripMenuItem.Name = "créationToolStripMenuItem";
             this.créationToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.créationToolStripMenuItem.Text = "création";
+            this.créationToolStripMenuItem.Click += new System.EventHandler(this.créationToolStripMenuItem_Click);
             // 
             // miseÀJourToolStripMenuItem
             // 
             this.miseÀJourToolStripMenuItem.Name = "miseÀJourToolStripMenuItem";
             this.miseÀJourToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.miseÀJourToolStripMenuItem.Text = "mise à jour";
+            this.miseÀJourToolStripMenuItem.Click += new System.EventHandler(this.miseÀJourToolStripMenuItem_Click);
             // 
             // suppressionDeCatégorieToolStripMenuItem
             // 
@@ -232,7 +234,7 @@
             // 
             this.cboCategorie.FormattingEnabled = true;
             this.cboCategorie.Location = new System.Drawing.Point(199, 78);
-            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategorie.Name = "cboCategorie";
             this.cboCategorie.Size = new System.Drawing.Size(160, 24);
             this.cboCategorie.TabIndex = 2;
@@ -251,7 +253,7 @@
             // 
             this.cboFabricant.FormattingEnabled = true;
             this.cboFabricant.Location = new System.Drawing.Point(199, 121);
-            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4);
             this.cboFabricant.Name = "cboFabricant";
             this.cboFabricant.Size = new System.Drawing.Size(319, 24);
             this.cboFabricant.TabIndex = 4;
@@ -270,7 +272,7 @@
             // 
             this.cboDepot.FormattingEnabled = true;
             this.cboDepot.Location = new System.Drawing.Point(199, 160);
-            this.cboDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboDepot.Margin = new System.Windows.Forms.Padding(4);
             this.cboDepot.Name = "cboDepot";
             this.cboDepot.Size = new System.Drawing.Size(319, 24);
             this.cboDepot.TabIndex = 6;
@@ -289,7 +291,7 @@
             // 
             this.cboLibelle.FormattingEnabled = true;
             this.cboLibelle.Location = new System.Drawing.Point(199, 196);
-            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4);
             this.cboLibelle.Name = "cboLibelle";
             this.cboLibelle.Size = new System.Drawing.Size(397, 24);
             this.cboLibelle.TabIndex = 8;
@@ -298,7 +300,7 @@
             // 
             this.chkClassementDecroissant.AutoSize = true;
             this.chkClassementDecroissant.Location = new System.Drawing.Point(636, 76);
-            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4);
             this.chkClassementDecroissant.Name = "chkClassementDecroissant";
             this.chkClassementDecroissant.Size = new System.Drawing.Size(173, 20);
             this.chkClassementDecroissant.TabIndex = 9;
@@ -308,7 +310,7 @@
             // btnNewArticle
             // 
             this.btnNewArticle.Location = new System.Drawing.Point(707, 193);
-            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewArticle.Name = "btnNewArticle";
             this.btnNewArticle.Size = new System.Drawing.Size(112, 28);
             this.btnNewArticle.TabIndex = 10;
@@ -320,7 +322,7 @@
             // 
             this.dgvArticle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticle.Location = new System.Drawing.Point(16, 267);
-            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticle.Name = "dgvArticle";
             this.dgvArticle.RowHeadersWidth = 51;
             this.dgvArticle.Size = new System.Drawing.Size(927, 258);
@@ -343,7 +345,7 @@
             this.Controls.Add(this.cboCategorie);
             this.Controls.Add(this.lblCategorie);
             this.Controls.Add(this.tsMenuApplication);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);

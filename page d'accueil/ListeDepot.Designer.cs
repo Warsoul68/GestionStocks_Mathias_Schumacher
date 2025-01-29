@@ -44,6 +44,10 @@
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.lblVille = new System.Windows.Forms.Label();
             this.txtVille = new System.Windows.Forms.TextBox();
+            this.lblLatitude = new System.Windows.Forms.Label();
+            this.txtLatitude = new System.Windows.Forms.TextBox();
+            this.lblLongitude = new System.Windows.Forms.Label();
+            this.txtLongitude = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +79,7 @@
             // 
             this.cbRePays.FormattingEnabled = true;
             this.cbRePays.Location = new System.Drawing.Point(169, 7);
-            this.cbRePays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRePays.Margin = new System.Windows.Forms.Padding(4);
             this.cbRePays.Name = "cbRePays";
             this.cbRePays.Size = new System.Drawing.Size(199, 24);
             this.cbRePays.TabIndex = 2;
@@ -84,7 +88,7 @@
             // 
             this.cbReVille.FormattingEnabled = true;
             this.cbReVille.Location = new System.Drawing.Point(169, 44);
-            this.cbReVille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbReVille.Margin = new System.Windows.Forms.Padding(4);
             this.cbReVille.Name = "cbReVille";
             this.cbReVille.Size = new System.Drawing.Size(293, 24);
             this.cbReVille.TabIndex = 3;
@@ -102,7 +106,7 @@
             // txtNom
             // 
             this.txtNom.Location = new System.Drawing.Point(88, 96);
-            this.txtNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(4);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(211, 22);
             this.txtNom.TabIndex = 6;
@@ -111,7 +115,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Blue;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(856, 81);
             this.flowLayoutPanel1.TabIndex = 7;
@@ -129,7 +133,7 @@
             // txtPays
             // 
             this.txtPays.Location = new System.Drawing.Point(84, 163);
-            this.txtPays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPays.Margin = new System.Windows.Forms.Padding(4);
             this.txtPays.Name = "txtPays";
             this.txtPays.Size = new System.Drawing.Size(177, 22);
             this.txtPays.TabIndex = 9;
@@ -138,7 +142,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(571, 105);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(269, 274);
@@ -147,7 +151,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.Location = new System.Drawing.Point(36, 334);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
             this.btnAnnuler.TabIndex = 17;
@@ -157,7 +161,7 @@
             // btnAjouterDepot
             // 
             this.btnAjouterDepot.Location = new System.Drawing.Point(169, 334);
-            this.btnAjouterDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouterDepot.Margin = new System.Windows.Forms.Padding(4);
             this.btnAjouterDepot.Name = "btnAjouterDepot";
             this.btnAjouterDepot.Size = new System.Drawing.Size(135, 28);
             this.btnAjouterDepot.TabIndex = 18;
@@ -167,7 +171,7 @@
             // btnEnregistrer
             // 
             this.btnEnregistrer.Location = new System.Drawing.Point(324, 334);
-            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(100, 28);
             this.btnEnregistrer.TabIndex = 19;
@@ -177,7 +181,7 @@
             // btnSupprimer
             // 
             this.btnSupprimer.Location = new System.Drawing.Point(445, 334);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(100, 28);
             this.btnSupprimer.TabIndex = 20;
@@ -200,11 +204,47 @@
             this.txtVille.Size = new System.Drawing.Size(183, 22);
             this.txtVille.TabIndex = 22;
             // 
+            // lblLatitude
+            // 
+            this.lblLatitude.AutoSize = true;
+            this.lblLatitude.Location = new System.Drawing.Point(32, 213);
+            this.lblLatitude.Name = "lblLatitude";
+            this.lblLatitude.Size = new System.Drawing.Size(60, 16);
+            this.lblLatitude.TabIndex = 23;
+            this.lblLatitude.Text = "Latitude :";
+            // 
+            // txtLatitude
+            // 
+            this.txtLatitude.Location = new System.Drawing.Point(98, 210);
+            this.txtLatitude.Name = "txtLatitude";
+            this.txtLatitude.Size = new System.Drawing.Size(212, 22);
+            this.txtLatitude.TabIndex = 24;
+            // 
+            // lblLongitude
+            // 
+            this.lblLongitude.AutoSize = true;
+            this.lblLongitude.Location = new System.Drawing.Point(33, 255);
+            this.lblLongitude.Name = "lblLongitude";
+            this.lblLongitude.Size = new System.Drawing.Size(72, 16);
+            this.lblLongitude.TabIndex = 25;
+            this.lblLongitude.Text = "Longitude :";
+            // 
+            // txtLongitude
+            // 
+            this.txtLongitude.Location = new System.Drawing.Point(111, 252);
+            this.txtLongitude.Name = "txtLongitude";
+            this.txtLongitude.Size = new System.Drawing.Size(199, 22);
+            this.txtLongitude.TabIndex = 26;
+            // 
             // ListeDepot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 394);
+            this.Controls.Add(this.txtLongitude);
+            this.Controls.Add(this.lblLongitude);
+            this.Controls.Add(this.txtLatitude);
+            this.Controls.Add(this.lblLatitude);
             this.Controls.Add(this.txtVille);
             this.Controls.Add(this.lblVille);
             this.Controls.Add(this.btnSupprimer);
@@ -221,7 +261,7 @@
             this.Controls.Add(this.lblReNum);
             this.Controls.Add(this.lblReVille);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListeDepot";
             this.Text = "Liste des dépots";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -248,5 +288,9 @@
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Label lblVille;
         private System.Windows.Forms.TextBox txtVille;
+        private System.Windows.Forms.Label lblLatitude;
+        private System.Windows.Forms.TextBox txtLatitude;
+        private System.Windows.Forms.Label lblLongitude;
+        private System.Windows.Forms.TextBox txtLongitude;
     }
 }

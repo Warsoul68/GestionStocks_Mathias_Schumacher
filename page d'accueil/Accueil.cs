@@ -62,5 +62,19 @@ namespace page_d_accueil
             FrCategorieVisualise FCV = new FrCategorieVisualise();
             FCV.Show();
         }
+
+        private void créationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrCategorieCreer FCC = new FrCategorieCreer();
+            FCC.Show();
+
+        }
+
+        private void miseÀJourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrCategorieUpdate FCU = new FrCategorieUpdate();
+            FCU.Show();
+
+        }
     }
 }

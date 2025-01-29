@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace page_d_accueil
 {
-    public partial class FrCategorieVisualise : Form
+    public partial class FrCategorieUpdate : Form
     {
-        public FrCategorieVisualise()
+        public FrCategorieUpdate()
         {
             InitializeComponent();
-        }
-
-        private void btnRecherche_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
