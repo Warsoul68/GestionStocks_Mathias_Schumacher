@@ -224,5 +224,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIB_BLL\LIB_BLL.csproj">
+      <Project>{43589d1e-7b16-4068-9289-6ddc29e04df0}</Project>
+      <Name>LIB_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIB_DAL\LIB_DAL.csproj">
+      <Project>{a654fe9d-a13a-4e8b-a3b2-4144553b6575}</Project>
+      <Name>LIB_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

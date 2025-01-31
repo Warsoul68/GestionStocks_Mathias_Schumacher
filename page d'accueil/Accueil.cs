@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIB_DAL;
+using LIB_BLL;
 
 namespace page_d_accueil
 {
@@ -21,6 +23,22 @@ namespace page_d_accueil
         {
             Connexion C = new Connexion();
             C.ShowDialog();
+
+            bool ouvert = Bdd.ouvrirConnexion();
+
+            if (ouvert)
+            {
+                MessageBox.Show("la connexion avec la base de donnée est réussie");
+                MessageBox.Show(Bdd.afficherConnexion());
+
+            }
+
+            else
+            {
+                MessageBox.Show("la connexion avec la base de donnée n'a pas été effectuer");
+
+
+            }
 
         }
 
