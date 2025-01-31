@@ -111,5 +111,19 @@ namespace page_d_accueil
             FUS.Show();
 
         }
+
+        private void listeMultiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inventaire I = new Inventaire();
+            I.Show();
+
+        }
+
+        private void listeMulticritèresDesMouvementsDeStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MouvStock MS = new MouvStock();
+            MS.Show();
+
+        }
     }
 }
