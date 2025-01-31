@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LIB_BLL
+namespace LIB_DAL
 {
     public class Bdd
     {
