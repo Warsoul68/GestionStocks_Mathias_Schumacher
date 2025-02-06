@@ -86,6 +86,3 @@ namespace LIB_BLL
         }
     }
 }
-
-    }
-}
