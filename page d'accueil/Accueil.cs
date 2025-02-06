@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LIB_DAL;
 using LIB_BLL;
+using LIB_DAL;
 
 namespace page_d_accueil
 {

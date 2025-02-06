@@ -11,12 +11,18 @@ namespace LIB_BLL
         private int idA;
         private string referenceA;
         private string libelleA;
+        private string codeUnite;
+        private string codeCategorie;
+        public int idFabricant;
 
-        public Article(int idA, string referenceA, string libelleA)
+        public Article(int idA, string referenceA, string libelleA, string codeUnite, string codeCategorie, int idFabricant)
         {
             this.idA = idA;
             this.referenceA = referenceA;
             this.libelleA = libelleA;
+            this.codeUnite = codeUnite;
+            this.codeCategorie = codeCategorie;
+            this.idFabricant = idFabricant;
         }
 
         public int getIdA()
@@ -48,5 +54,38 @@ namespace LIB_BLL
         {
             this.libelleA = libelleA;
         }
+
+        public string getCodeUnite()
+        {
+            return codeUnite;
+        }
+
+        public void setCodeUnite(string codeUnite)
+        {
+            this.codeUnite = codeUnite;
+        }
+
+        public string getCodeCategorie()
+        {
+            return codeCategorie;
+        }
+
+        public void setCodeCategorie(string codeCategorie)
+        {
+            this.codeCategorie = codeCategorie;
+        }
+
+        public int getIdFabricant()
+        {
+            return idFabricant;
+        }
+
+        public void setIdFabricant(int idFabricant)
+        {
+            this.idFabricant = idFabricant;
+        }
+    }
+}
+
     }
 }

@@ -1,13 +1,42 @@
-﻿using System;
+﻿using LIB_BLL;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LIB_BLL;
 
 namespace LIB_DAL
 {
     public class ArticleDAO
     {
+        public static List<Article> getTousLesArticles()
+        {
+            List<Article> res = new List<Article>();
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "select * from Article";
+            try
+            {
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+
+                {
+                    Article a = new Article(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetInt32(5));
+                    res.Add(a);
+                }
+
+                dr.Close();
+                return res;
+            }
+            catch
+            {
+                return null;
+
+
+            }
+
+        }
     }
 }
