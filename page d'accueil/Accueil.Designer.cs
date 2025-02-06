@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
             this.tsParametres = new System.Windows.Forms.ToolStripDropDownButton();
             this.listeDesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,8 +60,19 @@
             this.chkClassementDecroissant = new System.Windows.Forms.CheckBox();
             this.btnNewArticle = new System.Windows.Forms.Button();
             this.dgvArticle = new System.Windows.Forms.DataGridView();
+            this.bD_STOCK_SCHUMACHERDataSet = new page_d_accueil.BD_STOCK_SCHUMACHERDataSet();
+            this.articleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.articleTableAdapter = new page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters.ArticleTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.referenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeUniteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeCategorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idFabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tsMenuApplication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.articleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tsMenuApplication
@@ -317,12 +329,71 @@
             // 
             // dgvArticle
             // 
+            this.dgvArticle.AutoGenerateColumns = false;
             this.dgvArticle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.referenceDataGridViewTextBoxColumn,
+            this.libelleDataGridViewTextBoxColumn,
+            this.codeUniteDataGridViewTextBoxColumn,
+            this.codeCategorieDataGridViewTextBoxColumn,
+            this.idFabricantDataGridViewTextBoxColumn});
+            this.dgvArticle.DataSource = this.articleBindingSource;
             this.dgvArticle.Location = new System.Drawing.Point(12, 217);
             this.dgvArticle.Name = "dgvArticle";
             this.dgvArticle.RowHeadersWidth = 51;
-            this.dgvArticle.Size = new System.Drawing.Size(695, 210);
+            this.dgvArticle.Size = new System.Drawing.Size(655, 210);
             this.dgvArticle.TabIndex = 11;
+            // 
+            // bD_STOCK_SCHUMACHERDataSet
+            // 
+            this.bD_STOCK_SCHUMACHERDataSet.DataSetName = "BD_STOCK_SCHUMACHERDataSet";
+            this.bD_STOCK_SCHUMACHERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // articleBindingSource
+            // 
+            this.articleBindingSource.DataMember = "Article";
+            this.articleBindingSource.DataSource = this.bD_STOCK_SCHUMACHERDataSet;
+            // 
+            // articleTableAdapter
+            // 
+            this.articleTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // referenceDataGridViewTextBoxColumn
+            // 
+            this.referenceDataGridViewTextBoxColumn.DataPropertyName = "reference_";
+            this.referenceDataGridViewTextBoxColumn.HeaderText = "reference_";
+            this.referenceDataGridViewTextBoxColumn.Name = "referenceDataGridViewTextBoxColumn";
+            // 
+            // libelleDataGridViewTextBoxColumn
+            // 
+            this.libelleDataGridViewTextBoxColumn.DataPropertyName = "libelle";
+            this.libelleDataGridViewTextBoxColumn.HeaderText = "libelle";
+            this.libelleDataGridViewTextBoxColumn.Name = "libelleDataGridViewTextBoxColumn";
+            // 
+            // codeUniteDataGridViewTextBoxColumn
+            // 
+            this.codeUniteDataGridViewTextBoxColumn.DataPropertyName = "codeUnite";
+            this.codeUniteDataGridViewTextBoxColumn.HeaderText = "codeUnite";
+            this.codeUniteDataGridViewTextBoxColumn.Name = "codeUniteDataGridViewTextBoxColumn";
+            // 
+            // codeCategorieDataGridViewTextBoxColumn
+            // 
+            this.codeCategorieDataGridViewTextBoxColumn.DataPropertyName = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.HeaderText = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.Name = "codeCategorieDataGridViewTextBoxColumn";
+            // 
+            // idFabricantDataGridViewTextBoxColumn
+            // 
+            this.idFabricantDataGridViewTextBoxColumn.DataPropertyName = "idFabricant";
+            this.idFabricantDataGridViewTextBoxColumn.HeaderText = "idFabricant";
+            this.idFabricantDataGridViewTextBoxColumn.Name = "idFabricantDataGridViewTextBoxColumn";
             // 
             // Accueil
             // 
@@ -347,6 +418,8 @@
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.articleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,6 +458,15 @@
         private System.Windows.Forms.CheckBox chkClassementDecroissant;
         private System.Windows.Forms.Button btnNewArticle;
         private System.Windows.Forms.DataGridView dgvArticle;
+        private BD_STOCK_SCHUMACHERDataSet bD_STOCK_SCHUMACHERDataSet;
+        private System.Windows.Forms.BindingSource articleBindingSource;
+        private BD_STOCK_SCHUMACHERDataSetTableAdapters.ArticleTableAdapter articleTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn referenceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libelleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeUniteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeCategorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idFabricantDataGridViewTextBoxColumn;
     }
 }
 
