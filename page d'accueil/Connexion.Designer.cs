@@ -81,6 +81,7 @@
             this.txtMdp.Name = "txtMdp";
             this.txtMdp.Size = new System.Drawing.Size(100, 20);
             this.txtMdp.TabIndex = 5;
+            this.txtMdp.UseSystemPasswordChar = true;
             // 
             // btnConnexion
             // 
@@ -114,6 +115,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Connexion";
             this.Text = "Connexion";
+            this.Load += new System.EventHandler(this.Connexion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
