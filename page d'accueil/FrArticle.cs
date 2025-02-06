@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace page_d_accueil
 {
-    public partial class Article : Form
+    public partial class FrArticle : Form
     {
-        public Article()
+        public FrArticle()
         {
             InitializeComponent();
         }

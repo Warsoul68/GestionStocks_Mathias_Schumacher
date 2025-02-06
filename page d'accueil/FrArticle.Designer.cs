@@ -1,6 +1,6 @@
 ﻿namespace page_d_accueil
 {
-    partial class Article
+    partial class FrArticle
     {
         /// <summary>
         /// Required designer variable.

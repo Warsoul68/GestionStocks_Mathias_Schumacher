@@ -30,7 +30,11 @@ namespace page_d_accueil
             {
                 MessageBox.Show("la connexion avec la base de donnée est réussie");
                 MessageBox.Show(Bdd.afficherConnexion());
+                foreach (Article a in ArticleDAO.getTousLesArticles())
+                {
+                    dgvArticle.DataSource = a;
 
+                }
             }
 
             else
@@ -44,7 +48,7 @@ namespace page_d_accueil
 
         private void listeMulticritèreDeRechercheDunEnsembleDarticlesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Article A = new Article();
+            FrArticle A = new FrArticle();
             A.Show();
         }
 
