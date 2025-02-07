@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_DAL
 {
-    public class Class1
+    public class CategorieDAO
     {
     }
 }
