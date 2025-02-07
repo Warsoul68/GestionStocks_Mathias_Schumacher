@@ -143,5 +143,18 @@ namespace page_d_accueil
             MS.Show();
 
         }
+
+        private void selection_ArticleToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.articleTableAdapter.selection_Article(this.dS_Selction_Article.Article);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

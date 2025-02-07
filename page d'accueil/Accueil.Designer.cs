@@ -328,7 +328,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 435);
+            this.ClientSize = new System.Drawing.Size(719, 447);
             this.Controls.Add(this.dgvArticle);
             this.Controls.Add(this.btnNewArticle);
             this.Controls.Add(this.chkClassementDecroissant);

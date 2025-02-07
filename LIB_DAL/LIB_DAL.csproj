@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="ArticleDAO.cs" />
     <Compile Include="Bdd.cs" />
-    <Compile Include="CategorieDAO.cs" />
     <Compile Include="DepotDAO.cs" />
     <Compile Include="FabricantDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

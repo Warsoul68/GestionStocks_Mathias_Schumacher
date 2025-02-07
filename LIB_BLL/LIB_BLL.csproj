@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Article.cs" />
-    <Compile Include="Categorie.cs" />
     <Compile Include="Depot.cs" />
     <Compile Include="Fabricant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
