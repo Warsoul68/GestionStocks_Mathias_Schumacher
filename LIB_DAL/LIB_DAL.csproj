@@ -46,6 +46,7 @@
     <Compile Include="CategorieDAO.cs" />
     <Compile Include="DepotDAO.cs" />
     <Compile Include="FabricantDAO.cs" />
+    <Compile Include="MouvementStockDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeDAO.cs" />
     <Compile Include="UniteDAO.cs" />
