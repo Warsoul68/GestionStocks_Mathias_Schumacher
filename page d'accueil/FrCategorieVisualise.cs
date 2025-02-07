@@ -21,5 +21,12 @@ namespace page_d_accueil
         {
 
         }
+
+        private void FrCategorieVisualise_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'bD_STOCK_SCHUMACHERDataSet.Categorie'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.categorieTableAdapter.Fill(this.bD_STOCK_SCHUMACHERDataSet.Categorie);
+
+        }
     }
 }

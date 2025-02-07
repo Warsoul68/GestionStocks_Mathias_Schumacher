@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCodeCategorie = new System.Windows.Forms.Label();
             this.lblLibelle = new System.Windows.Forms.Label();
             this.txtLibelle = new System.Windows.Forms.TextBox();
@@ -35,58 +36,76 @@
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.cbCodeCategorie = new System.Windows.Forms.ComboBox();
+            this.bD_STOCK_SCHUMACHERDataSet = new page_d_accueil.BD_STOCK_SCHUMACHERDataSet();
+            this.categorieBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categorieTableAdapter = new page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters.CategorieTableAdapter();
+            this.codeCategorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodeCategorie
             // 
             this.lblCodeCategorie.AutoSize = true;
-            this.lblCodeCategorie.Location = new System.Drawing.Point(12, 18);
+            this.lblCodeCategorie.Location = new System.Drawing.Point(9, 15);
+            this.lblCodeCategorie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodeCategorie.Name = "lblCodeCategorie";
-            this.lblCodeCategorie.Size = new System.Drawing.Size(125, 16);
+            this.lblCodeCategorie.Size = new System.Drawing.Size(100, 13);
             this.lblCodeCategorie.TabIndex = 0;
             this.lblCodeCategorie.Text = "Code de catégorie :";
             // 
             // lblLibelle
             // 
             this.lblLibelle.AutoSize = true;
-            this.lblLibelle.Location = new System.Drawing.Point(12, 49);
+            this.lblLibelle.Location = new System.Drawing.Point(9, 40);
+            this.lblLibelle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLibelle.Name = "lblLibelle";
-            this.lblLibelle.Size = new System.Drawing.Size(53, 16);
+            this.lblLibelle.Size = new System.Drawing.Size(43, 13);
             this.lblLibelle.TabIndex = 2;
             this.lblLibelle.Text = "Libellé :";
             // 
             // txtLibelle
             // 
-            this.txtLibelle.Location = new System.Drawing.Point(143, 49);
+            this.txtLibelle.Location = new System.Drawing.Point(107, 40);
+            this.txtLibelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLibelle.Name = "txtLibelle";
-            this.txtLibelle.Size = new System.Drawing.Size(161, 22);
+            this.txtLibelle.Size = new System.Drawing.Size(122, 20);
             this.txtLibelle.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 102);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codeCategorieDataGridViewTextBoxColumn,
+            this.libelleDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.categorieBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 83);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(331, 159);
+            this.dataGridView1.Size = new System.Drawing.Size(258, 129);
             this.dataGridView1.TabIndex = 4;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(37, 267);
+            this.btnAnnuler.Location = new System.Drawing.Point(28, 217);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(75, 32);
+            this.btnAnnuler.Size = new System.Drawing.Size(56, 26);
             this.btnAnnuler.TabIndex = 5;
             this.btnAnnuler.Text = "Annuler ";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(225, 268);
+            this.btnSupprimer.Location = new System.Drawing.Point(169, 218);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(97, 31);
+            this.btnSupprimer.Size = new System.Drawing.Size(73, 25);
             this.btnSupprimer.TabIndex = 6;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
@@ -94,16 +113,43 @@
             // cbCodeCategorie
             // 
             this.cbCodeCategorie.FormattingEnabled = true;
-            this.cbCodeCategorie.Location = new System.Drawing.Point(143, 15);
+            this.cbCodeCategorie.Location = new System.Drawing.Point(107, 12);
+            this.cbCodeCategorie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbCodeCategorie.Name = "cbCodeCategorie";
-            this.cbCodeCategorie.Size = new System.Drawing.Size(161, 24);
+            this.cbCodeCategorie.Size = new System.Drawing.Size(122, 21);
             this.cbCodeCategorie.TabIndex = 7;
+            // 
+            // bD_STOCK_SCHUMACHERDataSet
+            // 
+            this.bD_STOCK_SCHUMACHERDataSet.DataSetName = "BD_STOCK_SCHUMACHERDataSet";
+            this.bD_STOCK_SCHUMACHERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categorieBindingSource
+            // 
+            this.categorieBindingSource.DataMember = "Categorie";
+            this.categorieBindingSource.DataSource = this.bD_STOCK_SCHUMACHERDataSet;
+            // 
+            // categorieTableAdapter
+            // 
+            this.categorieTableAdapter.ClearBeforeFill = true;
+            // 
+            // codeCategorieDataGridViewTextBoxColumn
+            // 
+            this.codeCategorieDataGridViewTextBoxColumn.DataPropertyName = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.HeaderText = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.Name = "codeCategorieDataGridViewTextBoxColumn";
+            // 
+            // libelleDataGridViewTextBoxColumn
+            // 
+            this.libelleDataGridViewTextBoxColumn.DataPropertyName = "libelle";
+            this.libelleDataGridViewTextBoxColumn.HeaderText = "libelle";
+            this.libelleDataGridViewTextBoxColumn.Name = "libelleDataGridViewTextBoxColumn";
             // 
             // FrCategorieSupprimer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 314);
+            this.ClientSize = new System.Drawing.Size(280, 255);
             this.Controls.Add(this.cbCodeCategorie);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAnnuler);
@@ -111,9 +157,13 @@
             this.Controls.Add(this.txtLibelle);
             this.Controls.Add(this.lblLibelle);
             this.Controls.Add(this.lblCodeCategorie);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrCategorieSupprimer";
             this.Text = "Supprimer une catégorie";
+            this.Load += new System.EventHandler(this.FrCategorieSupprimer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +178,10 @@
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.ComboBox cbCodeCategorie;
+        private BD_STOCK_SCHUMACHERDataSet bD_STOCK_SCHUMACHERDataSet;
+        private System.Windows.Forms.BindingSource categorieBindingSource;
+        private BD_STOCK_SCHUMACHERDataSetTableAdapters.CategorieTableAdapter categorieTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeCategorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libelleDataGridViewTextBoxColumn;
     }
 }

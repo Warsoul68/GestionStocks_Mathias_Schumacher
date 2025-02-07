@@ -53,6 +53,16 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="BD_STOCK_SCHUMACHERDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_STOCK_SCHUMACHERDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +221,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xsc">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_STOCK_SCHUMACHERDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xss">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_STOCK_SCHUMACHERDataSet1.xsc">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_STOCK_SCHUMACHERDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_STOCK_SCHUMACHERDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_STOCK_SCHUMACHERDataSet1.xss">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

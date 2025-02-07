@@ -16,5 +16,12 @@ namespace page_d_accueil
         {
             InitializeComponent();
         }
+
+        private void FrUniteCreer_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'bD_STOCK_SCHUMACHERDataSet1.Unite'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.uniteTableAdapter.Fill(this.bD_STOCK_SCHUMACHERDataSet1.Unite);
+
+        }
     }
 }
