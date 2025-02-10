@@ -15,7 +15,7 @@ namespace LIB_DAL
 
         public static bool ouvrirConnexion()
         {
-            string chaineDeConnexion = "Data Source=SRV-SQL\\SQL_SLAM;" + "Initial Catalog=BD_STOCK_SCHUMACHER;" + "Integrated Security = SSPI;";
+            string chaineDeConnexion = "Data Source=PC-MATHIAS\\SQLEXPRESS;" + "Initial Catalog=BD_STOCK_SCHUMACHER;" + "Integrated Security = SSPI;";
             c = new SqlConnection();
             c.ConnectionString = chaineDeConnexion;
             try
