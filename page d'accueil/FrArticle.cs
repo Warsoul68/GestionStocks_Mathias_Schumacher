@@ -16,5 +16,12 @@ namespace page_d_accueil
         {
             InitializeComponent();
         }
+
+        private void FrArticle_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_frArticle.Vue_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.vue_frArticleTableAdapter.Fill(this.dS_Selection_frArticle.Vue_frArticle);
+
+        }
     }
 }

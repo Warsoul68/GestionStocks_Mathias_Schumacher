@@ -53,6 +53,16 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="DS_Selection_Article.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Selection_frArticle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_frArticle.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +221,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DS_Selection_Article.xsc">
+      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Article.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_Article.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_Article.xss">
+      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_frArticle.xsc">
+      <DependentUpon>DS_Selection_frArticle.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_frArticle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_frArticle.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_frArticle.xss">
+      <DependentUpon>DS_Selection_frArticle.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
