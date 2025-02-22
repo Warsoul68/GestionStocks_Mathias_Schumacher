@@ -53,6 +53,16 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="DS_Liste_depot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Liste_fabricant.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Selection_Article.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,6 +72,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_frArticle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Selection_mouvStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_mouvStock.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
@@ -221,6 +236,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DS_Liste_depot.xsc">
+      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Liste_depot.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Liste_depot.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Liste_depot.xss">
+      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Liste_fabricant.xsc">
+      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Liste_fabricant.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Liste_fabricant.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Liste_fabricant.xss">
+      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
+    </None>
     <None Include="DS_Selection_Article.xsc">
       <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
     </None>
@@ -242,6 +279,17 @@
     </None>
     <None Include="DS_Selection_frArticle.xss">
       <DependentUpon>DS_Selection_frArticle.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_mouvStock.xsc">
+      <DependentUpon>DS_Selection_mouvStock.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_mouvStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_mouvStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_mouvStock.xss">
+      <DependentUpon>DS_Selection_mouvStock.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

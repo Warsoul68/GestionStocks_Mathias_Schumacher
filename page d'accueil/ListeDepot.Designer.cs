@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblReVille = new System.Windows.Forms.Label();
             this.lblReNum = new System.Windows.Forms.Label();
             this.cbRePays = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,17 @@
             this.txtLatitude = new System.Windows.Forms.TextBox();
             this.lblLongitude = new System.Windows.Forms.Label();
             this.txtLongitude = new System.Windows.Forms.TextBox();
+            this.dS_Liste_depot = new page_d_accueil.DS_Liste_depot();
+            this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.depotTableAdapter = new page_d_accueil.DS_Liste_depotTableAdapters.DepotTableAdapter();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.longitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.latitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Liste_depot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReVille
@@ -117,7 +128,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(856, 81);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 81);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // lblPays
@@ -140,12 +151,20 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(571, 105);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomDataGridViewTextBoxColumn,
+            this.villeDataGridViewTextBoxColumn,
+            this.paysDataGridViewTextBoxColumn,
+            this.longitudeDataGridViewTextBoxColumn,
+            this.latitudeDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.depotBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 388);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(269, 274);
+            this.dataGridView1.Size = new System.Drawing.Size(716, 225);
             this.dataGridView1.TabIndex = 16;
             // 
             // btnAnnuler
@@ -236,11 +255,65 @@
             this.txtLongitude.Size = new System.Drawing.Size(199, 22);
             this.txtLongitude.TabIndex = 26;
             // 
+            // dS_Liste_depot
+            // 
+            this.dS_Liste_depot.DataSetName = "DS_Liste_depot";
+            this.dS_Liste_depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // depotBindingSource
+            // 
+            this.depotBindingSource.DataMember = "Depot";
+            this.depotBindingSource.DataSource = this.dS_Liste_depot;
+            // 
+            // depotTableAdapter
+            // 
+            this.depotTableAdapter.ClearBeforeFill = true;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "nom";
+            this.nomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // villeDataGridViewTextBoxColumn
+            // 
+            this.villeDataGridViewTextBoxColumn.DataPropertyName = "ville";
+            this.villeDataGridViewTextBoxColumn.HeaderText = "ville";
+            this.villeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.villeDataGridViewTextBoxColumn.Name = "villeDataGridViewTextBoxColumn";
+            this.villeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // paysDataGridViewTextBoxColumn
+            // 
+            this.paysDataGridViewTextBoxColumn.DataPropertyName = "pays";
+            this.paysDataGridViewTextBoxColumn.HeaderText = "pays";
+            this.paysDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.paysDataGridViewTextBoxColumn.Name = "paysDataGridViewTextBoxColumn";
+            this.paysDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // longitudeDataGridViewTextBoxColumn
+            // 
+            this.longitudeDataGridViewTextBoxColumn.DataPropertyName = "longitude";
+            this.longitudeDataGridViewTextBoxColumn.HeaderText = "longitude";
+            this.longitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.longitudeDataGridViewTextBoxColumn.Name = "longitudeDataGridViewTextBoxColumn";
+            this.longitudeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // latitudeDataGridViewTextBoxColumn
+            // 
+            this.latitudeDataGridViewTextBoxColumn.DataPropertyName = "latitude";
+            this.latitudeDataGridViewTextBoxColumn.HeaderText = "latitude";
+            this.latitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.latitudeDataGridViewTextBoxColumn.Name = "latitudeDataGridViewTextBoxColumn";
+            this.latitudeDataGridViewTextBoxColumn.Width = 125;
+            // 
             // ListeDepot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 394);
+            this.ClientSize = new System.Drawing.Size(773, 626);
             this.Controls.Add(this.txtLongitude);
             this.Controls.Add(this.lblLongitude);
             this.Controls.Add(this.txtLatitude);
@@ -264,7 +337,10 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListeDepot";
             this.Text = "Liste des dépots";
+            this.Load += new System.EventHandler(this.ListeDepot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Liste_depot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,5 +368,13 @@
         private System.Windows.Forms.TextBox txtLatitude;
         private System.Windows.Forms.Label lblLongitude;
         private System.Windows.Forms.TextBox txtLongitude;
+        private DS_Liste_depot dS_Liste_depot;
+        private System.Windows.Forms.BindingSource depotBindingSource;
+        private DS_Liste_depotTableAdapters.DepotTableAdapter depotTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn villeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paysDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn longitudeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn latitudeDataGridViewTextBoxColumn;
     }
 }
