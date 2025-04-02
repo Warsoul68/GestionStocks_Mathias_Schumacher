@@ -19,6 +19,8 @@ namespace page_d_accueil
 
         private void FrCategorieSupprimer_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_parametre_categorie.Categorie'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.categorieTableAdapter.Fill(this.dS_Selection_parametre_categorie.Categorie);
         }
     }
 }

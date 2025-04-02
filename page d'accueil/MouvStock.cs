@@ -19,8 +19,8 @@ namespace page_d_accueil
 
         private void MouvStock_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_mouvStock.Selection_mouvStock'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.selection_mouvStockTableAdapter.Fill(this.dS_Selection_mouvStock.Selection_mouvStock);
+            // TODO: cette ligne de code charge les données dans la table 'dS_selection_MouvStock.Selection_MouvStock'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.selection_MouvStockTableAdapter.Fill(this.dS_selection_MouvStock.Selection_MouvStock);
 
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCodeUnite = new System.Windows.Forms.Label();
             this.cbCodeUnite = new System.Windows.Forms.ComboBox();
             this.lblLibelle = new System.Windows.Forms.Label();
@@ -35,7 +36,16 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.dS_Selection_parametre_Unite = new page_d_accueil.DS_Selection_parametre_Unite();
+            this.dSSelectionparametreUniteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uniteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uniteTableAdapter = new page_d_accueil.DS_Selection_parametre_UniteTableAdapters.UniteTableAdapter();
+            this.codeUniteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_parametre_Unite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionparametreUniteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uniteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodeUnite
@@ -75,7 +85,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codeUniteDataGridViewTextBoxColumn,
+            this.libelleDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.uniteBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(15, 107);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -104,6 +119,41 @@
             this.btnUpdate.Text = "Mettre a jour";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
+            // dS_Selection_parametre_Unite
+            // 
+            this.dS_Selection_parametre_Unite.DataSetName = "DS_Selection_parametre_Unite";
+            this.dS_Selection_parametre_Unite.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dSSelectionparametreUniteBindingSource
+            // 
+            this.dSSelectionparametreUniteBindingSource.DataSource = this.dS_Selection_parametre_Unite;
+            this.dSSelectionparametreUniteBindingSource.Position = 0;
+            // 
+            // uniteBindingSource
+            // 
+            this.uniteBindingSource.DataMember = "Unite";
+            this.uniteBindingSource.DataSource = this.dSSelectionparametreUniteBindingSource;
+            // 
+            // uniteTableAdapter
+            // 
+            this.uniteTableAdapter.ClearBeforeFill = true;
+            // 
+            // codeUniteDataGridViewTextBoxColumn
+            // 
+            this.codeUniteDataGridViewTextBoxColumn.DataPropertyName = "codeUnite";
+            this.codeUniteDataGridViewTextBoxColumn.HeaderText = "codeUnite";
+            this.codeUniteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeUniteDataGridViewTextBoxColumn.Name = "codeUniteDataGridViewTextBoxColumn";
+            this.codeUniteDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // libelleDataGridViewTextBoxColumn
+            // 
+            this.libelleDataGridViewTextBoxColumn.DataPropertyName = "libelle";
+            this.libelleDataGridViewTextBoxColumn.HeaderText = "libelle";
+            this.libelleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.libelleDataGridViewTextBoxColumn.Name = "libelleDataGridViewTextBoxColumn";
+            this.libelleDataGridViewTextBoxColumn.Width = 125;
+            // 
             // FrUniteUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,6 +171,9 @@
             this.Text = "Mettre a jour une unité";
             this.Load += new System.EventHandler(this.FrUniteUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_parametre_Unite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionparametreUniteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uniteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +188,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.BindingSource dSSelectionparametreUniteBindingSource;
+        private DS_Selection_parametre_Unite dS_Selection_parametre_Unite;
+        private System.Windows.Forms.BindingSource uniteBindingSource;
+        private DS_Selection_parametre_UniteTableAdapters.UniteTableAdapter uniteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeUniteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libelleDataGridViewTextBoxColumn;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblDate = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.lblHeure = new System.Windows.Forms.Label();
@@ -46,166 +47,257 @@
             this.btnFiltrer = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
+            this.dS_Selection_inventaire = new page_d_accueil.DS_Selection_inventaire();
+            this.vueInventaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vue_InventaireTableAdapter = new page_d_accueil.DS_Selection_inventaireTableAdapters.Vue_InventaireTableAdapter();
+            this.refArticleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateEtHeureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_inventaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueInventaireBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(21, 31);
+            this.lblDate.Location = new System.Drawing.Point(28, 38);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(36, 13);
+            this.lblDate.Size = new System.Drawing.Size(42, 16);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Date :";
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(76, 28);
+            this.txtDate.Location = new System.Drawing.Point(101, 34);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(100, 20);
+            this.txtDate.Size = new System.Drawing.Size(132, 22);
             this.txtDate.TabIndex = 1;
             // 
             // lblHeure
             // 
             this.lblHeure.AutoSize = true;
-            this.lblHeure.Location = new System.Drawing.Point(22, 58);
+            this.lblHeure.Location = new System.Drawing.Point(29, 71);
+            this.lblHeure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(42, 13);
+            this.lblHeure.Size = new System.Drawing.Size(50, 16);
             this.lblHeure.TabIndex = 2;
             this.lblHeure.Text = "Heure :";
             // 
             // txtHeure
             // 
-            this.txtHeure.Location = new System.Drawing.Point(76, 55);
+            this.txtHeure.Location = new System.Drawing.Point(101, 68);
+            this.txtHeure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHeure.Name = "txtHeure";
-            this.txtHeure.Size = new System.Drawing.Size(100, 20);
+            this.txtHeure.Size = new System.Drawing.Size(132, 22);
             this.txtHeure.TabIndex = 3;
             // 
             // lbllFiDepot
             // 
             this.lbllFiDepot.AutoSize = true;
-            this.lbllFiDepot.Location = new System.Drawing.Point(330, 28);
+            this.lbllFiDepot.Location = new System.Drawing.Point(440, 34);
+            this.lbllFiDepot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbllFiDepot.Name = "lbllFiDepot";
-            this.lbllFiDepot.Size = new System.Drawing.Size(86, 13);
+            this.lbllFiDepot.Size = new System.Drawing.Size(107, 16);
             this.lbllFiDepot.TabIndex = 4;
             this.lbllFiDepot.Text = "Filtrer par dépôt :";
             // 
             // cbFiDepot
             // 
             this.cbFiDepot.FormattingEnabled = true;
-            this.cbFiDepot.Location = new System.Drawing.Point(422, 25);
+            this.cbFiDepot.Location = new System.Drawing.Point(563, 31);
+            this.cbFiDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFiDepot.Name = "cbFiDepot";
-            this.cbFiDepot.Size = new System.Drawing.Size(121, 21);
+            this.cbFiDepot.Size = new System.Drawing.Size(160, 24);
             this.cbFiDepot.TabIndex = 5;
             // 
             // lblFiVille
             // 
             this.lblFiVille.AutoSize = true;
-            this.lblFiVille.Location = new System.Drawing.Point(330, 55);
+            this.lblFiVille.Location = new System.Drawing.Point(440, 68);
+            this.lblFiVille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFiVille.Name = "lblFiVille";
-            this.lblFiVille.Size = new System.Drawing.Size(77, 13);
+            this.lblFiVille.Size = new System.Drawing.Size(96, 16);
             this.lblFiVille.TabIndex = 6;
             this.lblFiVille.Text = "Filtrer par ville :";
             // 
             // cbFiVille
             // 
             this.cbFiVille.FormattingEnabled = true;
-            this.cbFiVille.Location = new System.Drawing.Point(422, 52);
+            this.cbFiVille.Location = new System.Drawing.Point(563, 64);
+            this.cbFiVille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFiVille.Name = "cbFiVille";
-            this.cbFiVille.Size = new System.Drawing.Size(121, 21);
+            this.cbFiVille.Size = new System.Drawing.Size(160, 24);
             this.cbFiVille.TabIndex = 7;
             // 
             // lblFiPays
             // 
             this.lblFiPays.AutoSize = true;
-            this.lblFiPays.Location = new System.Drawing.Point(330, 84);
+            this.lblFiPays.Location = new System.Drawing.Point(440, 103);
+            this.lblFiPays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFiPays.Name = "lblFiPays";
-            this.lblFiPays.Size = new System.Drawing.Size(81, 13);
+            this.lblFiPays.Size = new System.Drawing.Size(102, 16);
             this.lblFiPays.TabIndex = 8;
             this.lblFiPays.Text = "Filtrer par pays :";
             // 
             // cbFiPays
             // 
             this.cbFiPays.FormattingEnabled = true;
-            this.cbFiPays.Location = new System.Drawing.Point(422, 79);
+            this.cbFiPays.Location = new System.Drawing.Point(563, 97);
+            this.cbFiPays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFiPays.Name = "cbFiPays";
-            this.cbFiPays.Size = new System.Drawing.Size(121, 21);
+            this.cbFiPays.Size = new System.Drawing.Size(160, 24);
             this.cbFiPays.TabIndex = 9;
             // 
             // lblFiCategorieArticle
             // 
             this.lblFiCategorieArticle.AutoSize = true;
-            this.lblFiCategorieArticle.Location = new System.Drawing.Point(22, 87);
+            this.lblFiCategorieArticle.Location = new System.Drawing.Point(29, 107);
+            this.lblFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFiCategorieArticle.Name = "lblFiCategorieArticle";
-            this.lblFiCategorieArticle.Size = new System.Drawing.Size(142, 13);
+            this.lblFiCategorieArticle.Size = new System.Drawing.Size(179, 16);
             this.lblFiCategorieArticle.TabIndex = 10;
             this.lblFiCategorieArticle.Text = "Filtrer par catégorie d\'article :";
             // 
             // cbFiCategorieArticle
             // 
             this.cbFiCategorieArticle.FormattingEnabled = true;
-            this.cbFiCategorieArticle.Location = new System.Drawing.Point(170, 84);
+            this.cbFiCategorieArticle.Location = new System.Drawing.Point(227, 103);
+            this.cbFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFiCategorieArticle.Name = "cbFiCategorieArticle";
-            this.cbFiCategorieArticle.Size = new System.Drawing.Size(87, 21);
+            this.cbFiCategorieArticle.Size = new System.Drawing.Size(115, 24);
             this.cbFiCategorieArticle.TabIndex = 11;
             // 
             // lblFiFabricant
             // 
             this.lblFiFabricant.AutoSize = true;
-            this.lblFiFabricant.Location = new System.Drawing.Point(196, 128);
+            this.lblFiFabricant.Location = new System.Drawing.Point(261, 158);
+            this.lblFiFabricant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFiFabricant.Name = "lblFiFabricant";
-            this.lblFiFabricant.Size = new System.Drawing.Size(100, 13);
+            this.lblFiFabricant.Size = new System.Drawing.Size(123, 16);
             this.lblFiFabricant.TabIndex = 12;
             this.lblFiFabricant.Text = "Filtrer par fabricant :";
             // 
             // cbFiFabricant
             // 
             this.cbFiFabricant.FormattingEnabled = true;
-            this.cbFiFabricant.Location = new System.Drawing.Point(302, 125);
+            this.cbFiFabricant.Location = new System.Drawing.Point(403, 154);
+            this.cbFiFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFiFabricant.Name = "cbFiFabricant";
-            this.cbFiFabricant.Size = new System.Drawing.Size(121, 21);
+            this.cbFiFabricant.Size = new System.Drawing.Size(160, 24);
             this.cbFiFabricant.TabIndex = 13;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 185);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.refArticleDataGridViewTextBoxColumn,
+            this.depotDataGridViewTextBoxColumn,
+            this.typeDataGridViewTextBoxColumn,
+            this.dateEtHeureDataGridViewTextBoxColumn,
+            this.qteDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.vueInventaireBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 228);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(541, 196);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(721, 241);
             this.dataGridView1.TabIndex = 14;
             // 
             // btnFiltrer
             // 
-            this.btnFiltrer.Location = new System.Drawing.Point(491, 398);
+            this.btnFiltrer.Location = new System.Drawing.Point(655, 490);
+            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrer.Name = "btnFiltrer";
-            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrer.Size = new System.Drawing.Size(100, 28);
             this.btnFiltrer.TabIndex = 15;
             this.btnFiltrer.Text = "Filtrer";
             this.btnFiltrer.UseVisualStyleBackColor = true;
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(199, 398);
+            this.btnValider.Location = new System.Drawing.Point(265, 490);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(143, 23);
+            this.btnValider.Size = new System.Drawing.Size(191, 28);
             this.btnValider.TabIndex = 16;
             this.btnValider.Text = "Valider les niveaux saisis ";
             this.btnValider.UseVisualStyleBackColor = true;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(25, 398);
+            this.btnAnnuler.Location = new System.Drawing.Point(33, 490);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
             this.btnAnnuler.TabIndex = 17;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
+            // dS_Selection_inventaire
+            // 
+            this.dS_Selection_inventaire.DataSetName = "DS_Selection_inventaire";
+            this.dS_Selection_inventaire.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vueInventaireBindingSource
+            // 
+            this.vueInventaireBindingSource.DataMember = "Vue Inventaire";
+            this.vueInventaireBindingSource.DataSource = this.dS_Selection_inventaire;
+            // 
+            // vue_InventaireTableAdapter
+            // 
+            this.vue_InventaireTableAdapter.ClearBeforeFill = true;
+            // 
+            // refArticleDataGridViewTextBoxColumn
+            // 
+            this.refArticleDataGridViewTextBoxColumn.DataPropertyName = "Ref article";
+            this.refArticleDataGridViewTextBoxColumn.HeaderText = "Ref article";
+            this.refArticleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.refArticleDataGridViewTextBoxColumn.Name = "refArticleDataGridViewTextBoxColumn";
+            this.refArticleDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // depotDataGridViewTextBoxColumn
+            // 
+            this.depotDataGridViewTextBoxColumn.DataPropertyName = "Depot";
+            this.depotDataGridViewTextBoxColumn.HeaderText = "Depot";
+            this.depotDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.depotDataGridViewTextBoxColumn.Name = "depotDataGridViewTextBoxColumn";
+            this.depotDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            this.typeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dateEtHeureDataGridViewTextBoxColumn
+            // 
+            this.dateEtHeureDataGridViewTextBoxColumn.DataPropertyName = "Date et Heure";
+            this.dateEtHeureDataGridViewTextBoxColumn.HeaderText = "Date et Heure";
+            this.dateEtHeureDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateEtHeureDataGridViewTextBoxColumn.Name = "dateEtHeureDataGridViewTextBoxColumn";
+            this.dateEtHeureDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // qteDataGridViewTextBoxColumn
+            // 
+            this.qteDataGridViewTextBoxColumn.DataPropertyName = "Qte";
+            this.qteDataGridViewTextBoxColumn.HeaderText = "Qte";
+            this.qteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.qteDataGridViewTextBoxColumn.Name = "qteDataGridViewTextBoxColumn";
+            this.qteDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Inventaire
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 450);
+            this.ClientSize = new System.Drawing.Size(799, 554);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnFiltrer);
@@ -224,9 +316,13 @@
             this.Controls.Add(this.lblHeure);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.lblDate);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inventaire";
             this.Text = "Inventaire";
+            this.Load += new System.EventHandler(this.Inventaire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_inventaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueInventaireBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +348,13 @@
         private System.Windows.Forms.Button btnFiltrer;
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnAnnuler;
+        private DS_Selection_inventaire dS_Selection_inventaire;
+        private System.Windows.Forms.BindingSource vueInventaireBindingSource;
+        private DS_Selection_inventaireTableAdapters.Vue_InventaireTableAdapter vue_InventaireTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn refArticleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn depotDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateEtHeureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qteDataGridViewTextBoxColumn;
     }
 }

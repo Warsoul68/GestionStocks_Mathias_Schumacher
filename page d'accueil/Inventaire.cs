@@ -16,5 +16,12 @@ namespace page_d_accueil
         {
             InitializeComponent();
         }
+
+        private void Inventaire_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_inventaire.Vue_Inventaire'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.vue_InventaireTableAdapter.Fill(this.dS_Selection_inventaire.Vue_Inventaire);
+
+        }
     }
 }

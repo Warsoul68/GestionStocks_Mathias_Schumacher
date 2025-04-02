@@ -20,17 +20,17 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_selection_MouvStock")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_parametre_categorie")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_selection_MouvStock : global::System.Data.DataSet {
+    public partial class DS_Selection_parametre_categorie : global::System.Data.DataSet {
         
-        private Selection_MouvStockDataTable tableSelection_MouvStock;
+        private CategorieDataTable tableCategorie;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_selection_MouvStock() {
+        public DS_Selection_parametre_categorie() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_selection_MouvStock(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_parametre_categorie(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Selection_MouvStock"] != null)) {
-                    base.Tables.Add(new Selection_MouvStockDataTable(ds.Tables["Selection_MouvStock"]));
+                if ((ds.Tables["Categorie"] != null)) {
+                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace page_d_accueil {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Selection_MouvStockDataTable Selection_MouvStock {
+        public CategorieDataTable Categorie {
             get {
-                return this.tableSelection_MouvStock;
+                return this.tableCategorie;
             }
         }
         
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_selection_MouvStock cln = ((DS_selection_MouvStock)(base.Clone()));
+            DS_Selection_parametre_categorie cln = ((DS_Selection_parametre_categorie)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Selection_MouvStock"] != null)) {
-                    base.Tables.Add(new Selection_MouvStockDataTable(ds.Tables["Selection_MouvStock"]));
+                if ((ds.Tables["Categorie"] != null)) {
+                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSelection_MouvStock = ((Selection_MouvStockDataTable)(base.Tables["Selection_MouvStock"]));
+            this.tableCategorie = ((CategorieDataTable)(base.Tables["Categorie"]));
             if ((initTable == true)) {
-                if ((this.tableSelection_MouvStock != null)) {
-                    this.tableSelection_MouvStock.InitVars();
+                if ((this.tableCategorie != null)) {
+                    this.tableCategorie.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_selection_MouvStock";
+            this.DataSetName = "DS_Selection_parametre_categorie";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_selection_MouvStock.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_parametre_categorie.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSelection_MouvStock = new Selection_MouvStockDataTable();
-            base.Tables.Add(this.tableSelection_MouvStock);
+            this.tableCategorie = new CategorieDataTable();
+            base.Tables.Add(this.tableCategorie);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeSelection_MouvStock() {
+        private bool ShouldSerializeCategorie() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_selection_MouvStock ds = new DS_selection_MouvStock();
+            DS_Selection_parametre_categorie ds = new DS_Selection_parametre_categorie();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,27 +270,23 @@ namespace page_d_accueil {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Selection_MouvStockRowChangeEventHandler(object sender, Selection_MouvStockRowChangeEvent e);
+        public delegate void CategorieRowChangeEventHandler(object sender, CategorieRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Selection_MouvStockDataTable : global::System.Data.TypedTableBase<Selection_MouvStockRow> {
+        public partial class CategorieDataTable : global::System.Data.TypedTableBase<CategorieRow> {
             
-            private global::System.Data.DataColumn columnid;
+            private global::System.Data.DataColumn columncodeCategorie;
             
-            private global::System.Data.DataColumn columnarticle;
-            
-            private global::System.Data.DataColumn columndepot;
-            
-            private global::System.Data.DataColumn columnType;
+            private global::System.Data.DataColumn columnlibelle;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockDataTable() {
-                this.TableName = "Selection_MouvStock";
+            public CategorieDataTable() {
+                this.TableName = "Categorie";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +294,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Selection_MouvStockDataTable(global::System.Data.DataTable table) {
+            internal CategorieDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,40 +311,24 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Selection_MouvStockDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected CategorieDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn idColumn {
+            public global::System.Data.DataColumn codeCategorieColumn {
                 get {
-                    return this.columnid;
+                    return this.columncodeCategorie;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn articleColumn {
+            public global::System.Data.DataColumn libelleColumn {
                 get {
-                    return this.columnarticle;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn depotColumn {
-                get {
-                    return this.columndepot;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TypeColumn {
-                get {
-                    return this.columnType;
+                    return this.columnlibelle;
                 }
             }
             
@@ -363,48 +343,53 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRow this[int index] {
+            public CategorieRow this[int index] {
                 get {
-                    return ((Selection_MouvStockRow)(this.Rows[index]));
+                    return ((CategorieRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Selection_MouvStockRowChangeEventHandler Selection_MouvStockRowChanging;
+            public event CategorieRowChangeEventHandler CategorieRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Selection_MouvStockRowChangeEventHandler Selection_MouvStockRowChanged;
+            public event CategorieRowChangeEventHandler CategorieRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Selection_MouvStockRowChangeEventHandler Selection_MouvStockRowDeleting;
+            public event CategorieRowChangeEventHandler CategorieRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Selection_MouvStockRowChangeEventHandler Selection_MouvStockRowDeleted;
+            public event CategorieRowChangeEventHandler CategorieRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddSelection_MouvStockRow(Selection_MouvStockRow row) {
+            public void AddCategorieRow(CategorieRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRow AddSelection_MouvStockRow(int id, string article, string depot, string Type) {
-                Selection_MouvStockRow rowSelection_MouvStockRow = ((Selection_MouvStockRow)(this.NewRow()));
+            public CategorieRow AddCategorieRow(string codeCategorie, string libelle) {
+                CategorieRow rowCategorieRow = ((CategorieRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
-                        article,
-                        depot,
-                        Type};
-                rowSelection_MouvStockRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSelection_MouvStockRow);
-                return rowSelection_MouvStockRow;
+                        codeCategorie,
+                        libelle};
+                rowCategorieRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowCategorieRow);
+                return rowCategorieRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public CategorieRow FindBycodeCategorie(string codeCategorie) {
+                return ((CategorieRow)(this.Rows.Find(new object[] {
+                            codeCategorie})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Selection_MouvStockDataTable cln = ((Selection_MouvStockDataTable)(base.Clone()));
+                CategorieDataTable cln = ((CategorieDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -412,59 +397,55 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Selection_MouvStockDataTable();
+                return new CategorieDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnid = base.Columns["id"];
-                this.columnarticle = base.Columns["article"];
-                this.columndepot = base.Columns["depot"];
-                this.columnType = base.Columns["Type"];
+                this.columncodeCategorie = base.Columns["codeCategorie"];
+                this.columnlibelle = base.Columns["libelle"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid);
-                this.columnarticle = new global::System.Data.DataColumn("article", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnarticle);
-                this.columndepot = new global::System.Data.DataColumn("depot", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndepot);
-                this.columnType = new global::System.Data.DataColumn("Type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnType);
-                this.columnid.AllowDBNull = false;
-                this.columnarticle.MaxLength = 120;
-                this.columndepot.MaxLength = 50;
-                this.columnType.MaxLength = 3;
+                this.columncodeCategorie = new global::System.Data.DataColumn("codeCategorie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodeCategorie);
+                this.columnlibelle = new global::System.Data.DataColumn("libelle", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlibelle);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columncodeCategorie}, true));
+                this.columncodeCategorie.AllowDBNull = false;
+                this.columncodeCategorie.Unique = true;
+                this.columncodeCategorie.MaxLength = 5;
+                this.columnlibelle.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRow NewSelection_MouvStockRow() {
-                return ((Selection_MouvStockRow)(this.NewRow()));
+            public CategorieRow NewCategorieRow() {
+                return ((CategorieRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Selection_MouvStockRow(builder);
+                return new CategorieRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Selection_MouvStockRow);
+                return typeof(CategorieRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Selection_MouvStockRowChanged != null)) {
-                    this.Selection_MouvStockRowChanged(this, new Selection_MouvStockRowChangeEvent(((Selection_MouvStockRow)(e.Row)), e.Action));
+                if ((this.CategorieRowChanged != null)) {
+                    this.CategorieRowChanged(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -472,8 +453,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Selection_MouvStockRowChanging != null)) {
-                    this.Selection_MouvStockRowChanging(this, new Selection_MouvStockRowChangeEvent(((Selection_MouvStockRow)(e.Row)), e.Action));
+                if ((this.CategorieRowChanging != null)) {
+                    this.CategorieRowChanging(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -481,8 +462,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Selection_MouvStockRowDeleted != null)) {
-                    this.Selection_MouvStockRowDeleted(this, new Selection_MouvStockRowChangeEvent(((Selection_MouvStockRow)(e.Row)), e.Action));
+                if ((this.CategorieRowDeleted != null)) {
+                    this.CategorieRowDeleted(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -490,14 +471,14 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Selection_MouvStockRowDeleting != null)) {
-                    this.Selection_MouvStockRowDeleting(this, new Selection_MouvStockRowChangeEvent(((Selection_MouvStockRow)(e.Row)), e.Action));
+                if ((this.CategorieRowDeleting != null)) {
+                    this.CategorieRowDeleting(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveSelection_MouvStockRow(Selection_MouvStockRow row) {
+            public void RemoveCategorieRow(CategorieRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -506,7 +487,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_selection_MouvStock ds = new DS_selection_MouvStock();
+                DS_Selection_parametre_categorie ds = new DS_Selection_parametre_categorie();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -524,7 +505,7 @@ namespace page_d_accueil {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Selection_MouvStockDataTable";
+                attribute2.FixedValue = "CategorieDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -568,112 +549,54 @@ namespace page_d_accueil {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Selection_MouvStockRow : global::System.Data.DataRow {
+        public partial class CategorieRow : global::System.Data.DataRow {
             
-            private Selection_MouvStockDataTable tableSelection_MouvStock;
+            private CategorieDataTable tableCategorie;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Selection_MouvStockRow(global::System.Data.DataRowBuilder rb) : 
+            internal CategorieRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSelection_MouvStock = ((Selection_MouvStockDataTable)(this.Table));
+                this.tableCategorie = ((CategorieDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int id {
+            public string codeCategorie {
                 get {
-                    return ((int)(this[this.tableSelection_MouvStock.idColumn]));
+                    return ((string)(this[this.tableCategorie.codeCategorieColumn]));
                 }
                 set {
-                    this[this.tableSelection_MouvStock.idColumn] = value;
+                    this[this.tableCategorie.codeCategorieColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string article {
-                get {
-                    try {
-                        return ((string)(this[this.tableSelection_MouvStock.articleColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'article\' dans la table \'Selection_MouvStock\' est DBNul" +
-                                "l.", e);
-                    }
-                }
-                set {
-                    this[this.tableSelection_MouvStock.articleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string depot {
+            public string libelle {
                 get {
                     try {
-                        return ((string)(this[this.tableSelection_MouvStock.depotColumn]));
+                        return ((string)(this[this.tableCategorie.libelleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'depot\' dans la table \'Selection_MouvStock\' est DBNull." +
-                                "", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'libelle\' dans la table \'Categorie\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSelection_MouvStock.depotColumn] = value;
+                    this[this.tableCategorie.libelleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Type {
-                get {
-                    try {
-                        return ((string)(this[this.tableSelection_MouvStock.TypeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Type\' dans la table \'Selection_MouvStock\' est DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSelection_MouvStock.TypeColumn] = value;
-                }
+            public bool IslibelleNull() {
+                return this.IsNull(this.tableCategorie.libelleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsarticleNull() {
-                return this.IsNull(this.tableSelection_MouvStock.articleColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetarticleNull() {
-                this[this.tableSelection_MouvStock.articleColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsdepotNull() {
-                return this.IsNull(this.tableSelection_MouvStock.depotColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetdepotNull() {
-                this[this.tableSelection_MouvStock.depotColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTypeNull() {
-                return this.IsNull(this.tableSelection_MouvStock.TypeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTypeNull() {
-                this[this.tableSelection_MouvStock.TypeColumn] = global::System.Convert.DBNull;
+            public void SetlibelleNull() {
+                this[this.tableCategorie.libelleColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -681,22 +604,22 @@ namespace page_d_accueil {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Selection_MouvStockRowChangeEvent : global::System.EventArgs {
+        public class CategorieRowChangeEvent : global::System.EventArgs {
             
-            private Selection_MouvStockRow eventRow;
+            private CategorieRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRowChangeEvent(Selection_MouvStockRow row, global::System.Data.DataRowAction action) {
+            public CategorieRowChangeEvent(CategorieRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRow Row {
+            public CategorieRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -712,7 +635,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
+namespace page_d_accueil.DS_Selection_parametre_categorieTableAdapters {
     
     
     /// <summary>
@@ -724,7 +647,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Selection_MouvStockTableAdapter : global::System.ComponentModel.Component {
+    public partial class CategorieTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -738,7 +661,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Selection_MouvStockTableAdapter() {
+        public CategorieTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -835,12 +758,37 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Selection_MouvStock";
-            tableMapping.ColumnMappings.Add("id", "id");
-            tableMapping.ColumnMappings.Add("article", "article");
-            tableMapping.ColumnMappings.Add("depot", "depot");
-            tableMapping.ColumnMappings.Add("Type", "Type");
+            tableMapping.DataSetTable = "Categorie";
+            tableMapping.ColumnMappings.Add("codeCategorie", "codeCategorie");
+            tableMapping.ColumnMappings.Add("libelle", "libelle");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Categorie] WHERE (([codeCategorie] = @Original_codeCategorie) " +
+                "AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libel" +
+                "le)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Categorie] ([codeCategorie], [libelle]) VALUES (@codeCategorie" +
+                ", @libelle);\r\nSELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie " +
+                "= @codeCategorie)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Categorie] SET [codeCategorie] = @codeCategorie, [libelle] = @libelle WHERE (([codeCategorie] = @Original_codeCategorie) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)));
+SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategorie)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -856,7 +804,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, article, depot, Type FROM dbo.Selection_MouvStock";
+            this._commandCollection[0].CommandText = "SELECT codeCategorie, libelle FROM dbo.Categorie";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -864,7 +812,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_selection_MouvStock.Selection_MouvStockDataTable dataTable) {
+        public virtual int Fill(DS_Selection_parametre_categorie.CategorieDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -877,11 +825,163 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_selection_MouvStock.Selection_MouvStockDataTable GetData() {
+        public virtual DS_Selection_parametre_categorie.CategorieDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_selection_MouvStock.Selection_MouvStockDataTable dataTable = new DS_selection_MouvStock.Selection_MouvStockDataTable();
+            DS_Selection_parametre_categorie.CategorieDataTable dataTable = new DS_Selection_parametre_categorie.CategorieDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Selection_parametre_categorie.CategorieDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Selection_parametre_categorie dataSet) {
+            return this.Adapter.Update(dataSet, "Categorie");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_codeCategorie, string Original_libelle) {
+            if ((Original_codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("Original_codeCategorie");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codeCategorie));
+            }
+            if ((Original_libelle == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string codeCategorie, string libelle) {
+            if ((codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("codeCategorie");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codeCategorie));
+            }
+            if ((libelle == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string codeCategorie, string libelle, string Original_codeCategorie, string Original_libelle) {
+            if ((codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("codeCategorie");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codeCategorie));
+            }
+            if ((libelle == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(libelle));
+            }
+            if ((Original_codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("Original_codeCategorie");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_codeCategorie));
+            }
+            if ((Original_libelle == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string libelle, string Original_codeCategorie, string Original_libelle) {
+            return this.Update(Original_codeCategorie, libelle, Original_codeCategorie, Original_libelle);
         }
     }
     
@@ -897,6 +997,8 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private CategorieTableAdapter _categorieTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -909,6 +1011,20 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public CategorieTableAdapter CategorieTableAdapter {
+            get {
+                return this._categorieTableAdapter;
+            }
+            set {
+                this._categorieTableAdapter = value;
             }
         }
         
@@ -931,6 +1047,10 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._categorieTableAdapter != null) 
+                            && (this._categorieTableAdapter.Connection != null))) {
+                    return this._categorieTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -944,6 +1064,9 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._categorieTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -953,8 +1076,17 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_selection_MouvStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._categorieTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -963,8 +1095,16 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_selection_MouvStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._categorieTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -973,8 +1113,16 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_selection_MouvStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._categorieTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1007,12 +1155,17 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_selection_MouvStock dataSet) {
+        public virtual int UpdateAll(DS_Selection_parametre_categorie dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._categorieTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._categorieTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
+                        "e chaîne de connexion.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1048,6 +1201,15 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._categorieTableAdapter != null)) {
+                    revertConnections.Add(this._categorieTableAdapter, this._categorieTableAdapter.Connection);
+                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._categorieTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._categorieTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1105,6 +1267,10 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._categorieTableAdapter != null)) {
+                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._categorieTableAdapter]));
+                    this._categorieTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

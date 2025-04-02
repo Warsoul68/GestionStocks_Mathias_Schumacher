@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCodeCategorie = new System.Windows.Forms.Label();
             this.lblLibelle = new System.Windows.Forms.Label();
             this.txtLibelle = new System.Windows.Forms.TextBox();
@@ -35,7 +36,14 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.cbCodeCategorie = new System.Windows.Forms.ComboBox();
+            this.dS_Selection_parametre_categorie = new page_d_accueil.DS_Selection_parametre_categorie();
+            this.categorieBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categorieTableAdapter = new page_d_accueil.DS_Selection_parametre_categorieTableAdapters.CategorieTableAdapter();
+            this.codeCategorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_parametre_categorie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodeCategorie
@@ -66,7 +74,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codeCategorieDataGridViewTextBoxColumn,
+            this.libelleDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.categorieBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 142);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -104,6 +117,36 @@
             this.cbCodeCategorie.Size = new System.Drawing.Size(133, 24);
             this.cbCodeCategorie.TabIndex = 7;
             // 
+            // dS_Selection_parametre_categorie
+            // 
+            this.dS_Selection_parametre_categorie.DataSetName = "DS_Selection_parametre_categorie";
+            this.dS_Selection_parametre_categorie.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categorieBindingSource
+            // 
+            this.categorieBindingSource.DataMember = "Categorie";
+            this.categorieBindingSource.DataSource = this.dS_Selection_parametre_categorie;
+            // 
+            // categorieTableAdapter
+            // 
+            this.categorieTableAdapter.ClearBeforeFill = true;
+            // 
+            // codeCategorieDataGridViewTextBoxColumn
+            // 
+            this.codeCategorieDataGridViewTextBoxColumn.DataPropertyName = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.HeaderText = "codeCategorie";
+            this.codeCategorieDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeCategorieDataGridViewTextBoxColumn.Name = "codeCategorieDataGridViewTextBoxColumn";
+            this.codeCategorieDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // libelleDataGridViewTextBoxColumn
+            // 
+            this.libelleDataGridViewTextBoxColumn.DataPropertyName = "libelle";
+            this.libelleDataGridViewTextBoxColumn.HeaderText = "libelle";
+            this.libelleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.libelleDataGridViewTextBoxColumn.Name = "libelleDataGridViewTextBoxColumn";
+            this.libelleDataGridViewTextBoxColumn.Width = 125;
+            // 
             // FrCategorieUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,6 +164,8 @@
             this.Text = "Mettre a jour d\'une catégorie ";
             this.Load += new System.EventHandler(this.FrCategorieUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_parametre_categorie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +180,10 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.ComboBox cbCodeCategorie;
+        private DS_Selection_parametre_categorie dS_Selection_parametre_categorie;
+        private System.Windows.Forms.BindingSource categorieBindingSource;
+        private DS_Selection_parametre_categorieTableAdapters.CategorieTableAdapter categorieTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeCategorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libelleDataGridViewTextBoxColumn;
     }
 }
