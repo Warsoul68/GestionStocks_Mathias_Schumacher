@@ -32,6 +32,23 @@ namespace page_d_accueil
             {
                 MessageBox.Show("la connexion avec la base de donnée est réussie");
                 MessageBox.Show(Bdd.afficherConnexion());
+                foreach (Categorie c in CategorieDAO.getTouteLesCategorie())
+                {
+                    cboCategorie.Items.Add(c.getLibelleCC());
+                }
+                foreach (Fabricant f in FabricantDAO.getTousLesFabricant())
+                {
+                    cboFabricant.Items.Add(f.getNomEntreprise());
+                }
+                foreach (Depot d in DepotDAO.getTousLesDepot())
+                {
+                    cboDepot.Items.Add(d.getNomD());
+                }
+                foreach (Article a in ArticleDAO.getTouteLesArticle())
+                {
+                    cboLibelle.Items.Add(a.getLibelleA());
+                }
+
             }
 
             else
