@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BD_STOCK_SCHUMACHERDataSet3" targetNamespace="http://tempuri.org/BD_STOCK_SCHUMACHERDataSet3.xsd" xmlns:mstns="http://tempuri.org/BD_STOCK_SCHUMACHERDataSet3.xsd" xmlns="http://tempuri.org/BD_STOCK_SCHUMACHERDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Selection_FrArticleTableAdapter" GeneratorDataComponentClassName="Selection_FrArticleTableAdapter" Name="Selection_FrArticle" UserDataComponentName="Selection_FrArticleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Selection_FrArticle" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Dépôt, Stock FROM dbo.Selection_FrArticle</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Dépôt" DataSetColumn="Dépôt" />
+              <Mapping SourceColumn="Stock" DataSetColumn="Stock" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BD_STOCK_SCHUMACHERDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BD_STOCK_SCHUMACHERDataSet3" msprop:Generator_DataSetName="BD_STOCK_SCHUMACHERDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Selection_FrArticle" msprop:Generator_RowEvHandlerName="Selection_FrArticleRowChangeEventHandler" msprop:Generator_RowDeletedName="Selection_FrArticleRowDeleted" msprop:Generator_RowDeletingName="Selection_FrArticleRowDeleting" msprop:Generator_RowEvArgName="Selection_FrArticleRowChangeEvent" msprop:Generator_TablePropName="Selection_FrArticle" msprop:Generator_RowChangedName="Selection_FrArticleRowChanged" msprop:Generator_RowChangingName="Selection_FrArticleRowChanging" msprop:Generator_TableClassName="Selection_FrArticleDataTable" msprop:Generator_RowClassName="Selection_FrArticleRow" msprop:Generator_TableVarName="tableSelection_FrArticle" msprop:Generator_UserTableName="Selection_FrArticle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Dépôt" msprop:Generator_ColumnPropNameInRow="Dépôt" msprop:Generator_ColumnPropNameInTable="DépôtColumn" msprop:Generator_ColumnVarNameInTable="columnDépôt" msprop:Generator_UserColumnName="Dépôt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_UserColumnName="Stock" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

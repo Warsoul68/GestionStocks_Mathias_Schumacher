@@ -60,18 +60,19 @@
             this.chkClassementDecroissant = new System.Windows.Forms.CheckBox();
             this.btnNewArticle = new System.Windows.Forms.Button();
             this.dgvArticle = new System.Windows.Forms.DataGridView();
-            this.dS_Selection_Article = new page_d_accueil.DS_Selection_Article();
-            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
             this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Article = new page_d_accueil.DS_Selection_Article();
+            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
+            this.btnFiltrer = new System.Windows.Forms.Button();
             this.tsMenuApplication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).BeginInit();
             this.SuspendLayout();
             // 
             // tsMenuApplication
@@ -252,7 +253,7 @@
             // 
             this.cboCategorie.FormattingEnabled = true;
             this.cboCategorie.Location = new System.Drawing.Point(199, 78);
-            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategorie.Name = "cboCategorie";
             this.cboCategorie.Size = new System.Drawing.Size(160, 24);
             this.cboCategorie.TabIndex = 2;
@@ -271,7 +272,7 @@
             // 
             this.cboFabricant.FormattingEnabled = true;
             this.cboFabricant.Location = new System.Drawing.Point(199, 121);
-            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4);
             this.cboFabricant.Name = "cboFabricant";
             this.cboFabricant.Size = new System.Drawing.Size(319, 24);
             this.cboFabricant.TabIndex = 4;
@@ -290,7 +291,7 @@
             // 
             this.cboDepot.FormattingEnabled = true;
             this.cboDepot.Location = new System.Drawing.Point(199, 160);
-            this.cboDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboDepot.Margin = new System.Windows.Forms.Padding(4);
             this.cboDepot.Name = "cboDepot";
             this.cboDepot.Size = new System.Drawing.Size(319, 24);
             this.cboDepot.TabIndex = 6;
@@ -309,7 +310,7 @@
             // 
             this.cboLibelle.FormattingEnabled = true;
             this.cboLibelle.Location = new System.Drawing.Point(199, 196);
-            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4);
             this.cboLibelle.Name = "cboLibelle";
             this.cboLibelle.Size = new System.Drawing.Size(397, 24);
             this.cboLibelle.TabIndex = 8;
@@ -318,7 +319,7 @@
             // 
             this.chkClassementDecroissant.AutoSize = true;
             this.chkClassementDecroissant.Location = new System.Drawing.Point(707, 77);
-            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4);
             this.chkClassementDecroissant.Name = "chkClassementDecroissant";
             this.chkClassementDecroissant.Size = new System.Drawing.Size(173, 20);
             this.chkClassementDecroissant.TabIndex = 9;
@@ -327,8 +328,8 @@
             // 
             // btnNewArticle
             // 
-            this.btnNewArticle.Location = new System.Drawing.Point(707, 193);
-            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewArticle.Location = new System.Drawing.Point(768, 196);
+            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewArticle.Name = "btnNewArticle";
             this.btnNewArticle.Size = new System.Drawing.Size(112, 28);
             this.btnNewArticle.TabIndex = 10;
@@ -348,25 +349,11 @@
             this.unitéDataGridViewTextBoxColumn});
             this.dgvArticle.DataSource = this.vueSelectionArticleBindingSource;
             this.dgvArticle.Location = new System.Drawing.Point(19, 259);
-            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticle.Name = "dgvArticle";
             this.dgvArticle.RowHeadersWidth = 51;
             this.dgvArticle.Size = new System.Drawing.Size(873, 258);
             this.dgvArticle.TabIndex = 11;
-            // 
-            // dS_Selection_Article
-            // 
-            this.dS_Selection_Article.DataSetName = "DS_Selection_Article";
-            this.dS_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueSelectionArticleBindingSource
-            // 
-            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
-            this.vueSelectionArticleBindingSource.DataSource = this.dS_Selection_Article;
-            // 
-            // vue_Selection_ArticleTableAdapter
-            // 
-            this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
             // 
             // référenceDataGridViewTextBoxColumn
             // 
@@ -408,11 +395,36 @@
             this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
             this.unitéDataGridViewTextBoxColumn.Width = 125;
             // 
+            // vueSelectionArticleBindingSource
+            // 
+            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
+            this.vueSelectionArticleBindingSource.DataSource = this.dS_Selection_Article;
+            // 
+            // dS_Selection_Article
+            // 
+            this.dS_Selection_Article.DataSetName = "DS_Selection_Article";
+            this.dS_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vue_Selection_ArticleTableAdapter
+            // 
+            this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnFiltrer
+            // 
+            this.btnFiltrer.Location = new System.Drawing.Point(616, 196);
+            this.btnFiltrer.Name = "btnFiltrer";
+            this.btnFiltrer.Size = new System.Drawing.Size(98, 23);
+            this.btnFiltrer.TabIndex = 12;
+            this.btnFiltrer.Text = "Filtrer";
+            this.btnFiltrer.UseVisualStyleBackColor = true;
+            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 527);
+            this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dgvArticle);
             this.Controls.Add(this.btnNewArticle);
             this.Controls.Add(this.chkClassementDecroissant);
@@ -425,15 +437,15 @@
             this.Controls.Add(this.cboCategorie);
             this.Controls.Add(this.lblCategorie);
             this.Controls.Add(this.tsMenuApplication);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,6 +492,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn catégorieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fabricantDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitéDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnFiltrer;
     }
 }
 
