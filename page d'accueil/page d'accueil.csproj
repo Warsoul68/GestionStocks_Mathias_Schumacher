@@ -58,16 +58,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Liste_depot.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS_Liste_fabricant.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DS_Selection_Article.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,6 +72,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_selection_Inventaire.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Selection_liste_Depot1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Selection_Liste_Fabricant1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_selection_MouvStock.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -272,28 +272,6 @@
     <None Include="BD_STOCK_SCHUMACHERDataSet.xss">
       <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DS_Liste_depot.xsc">
-      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Liste_depot.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Liste_depot.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Liste_depot.xss">
-      <DependentUpon>DS_Liste_depot.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Liste_fabricant.xsc">
-      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Liste_fabricant.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Liste_fabricant.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Liste_fabricant.xss">
-      <DependentUpon>DS_Liste_fabricant.xsd</DependentUpon>
-    </None>
     <None Include="DS_Selection_Article.xsc">
       <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
     </None>
@@ -326,6 +304,28 @@
     </None>
     <None Include="DS_selection_Inventaire.xss">
       <DependentUpon>DS_selection_Inventaire.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_liste_Depot1.xsc">
+      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_liste_Depot1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_liste_Depot1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_liste_Depot1.xss">
+      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Liste_Fabricant1.xsc">
+      <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Liste_Fabricant1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_Liste_Fabricant1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_Liste_Fabricant1.xss">
+      <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </None>
     <None Include="DS_selection_MouvStock.xsc">
       <DependentUpon>DS_selection_MouvStock.xsd</DependentUpon>
