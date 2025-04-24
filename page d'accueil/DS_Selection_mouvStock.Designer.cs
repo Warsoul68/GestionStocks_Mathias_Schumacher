@@ -285,7 +285,7 @@ namespace page_d_accueil {
             
             private global::System.Data.DataColumn columndepot;
             
-            private global::System.Data.DataColumn columnType;
+            private global::System.Data.DataColumn columntype;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -346,9 +346,9 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TypeColumn {
+            public global::System.Data.DataColumn typeColumn {
                 get {
-                    return this.columnType;
+                    return this.columntype;
                 }
             }
             
@@ -389,13 +389,13 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Selection_MouvStockRow AddSelection_MouvStockRow(int id, string article, string depot, string Type) {
+            public Selection_MouvStockRow AddSelection_MouvStockRow(int id, string article, string depot, string type) {
                 Selection_MouvStockRow rowSelection_MouvStockRow = ((Selection_MouvStockRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
                         article,
                         depot,
-                        Type};
+                        type};
                 rowSelection_MouvStockRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSelection_MouvStockRow);
                 return rowSelection_MouvStockRow;
@@ -421,7 +421,7 @@ namespace page_d_accueil {
                 this.columnid = base.Columns["id"];
                 this.columnarticle = base.Columns["article"];
                 this.columndepot = base.Columns["depot"];
-                this.columnType = base.Columns["Type"];
+                this.columntype = base.Columns["type"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -433,12 +433,12 @@ namespace page_d_accueil {
                 base.Columns.Add(this.columnarticle);
                 this.columndepot = new global::System.Data.DataColumn("depot", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndepot);
-                this.columnType = new global::System.Data.DataColumn("Type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnType);
+                this.columntype = new global::System.Data.DataColumn("type", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntype);
                 this.columnid.AllowDBNull = false;
                 this.columnarticle.MaxLength = 120;
                 this.columndepot.MaxLength = 50;
-                this.columnType.MaxLength = 3;
+                this.columntype.MaxLength = 3;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -626,17 +626,17 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Type {
+            public string type {
                 get {
                     try {
-                        return ((string)(this[this.tableSelection_MouvStock.TypeColumn]));
+                        return ((string)(this[this.tableSelection_MouvStock.typeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Type\' dans la table \'Selection_MouvStock\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'type\' dans la table \'Selection_MouvStock\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSelection_MouvStock.TypeColumn] = value;
+                    this[this.tableSelection_MouvStock.typeColumn] = value;
                 }
             }
             
@@ -666,14 +666,14 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTypeNull() {
-                return this.IsNull(this.tableSelection_MouvStock.TypeColumn);
+            public bool IstypeNull() {
+                return this.IsNull(this.tableSelection_MouvStock.typeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTypeNull() {
-                this[this.tableSelection_MouvStock.TypeColumn] = global::System.Convert.DBNull;
+            public void SettypeNull() {
+                this[this.tableSelection_MouvStock.typeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -839,7 +839,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("article", "article");
             tableMapping.ColumnMappings.Add("depot", "depot");
-            tableMapping.ColumnMappings.Add("Type", "Type");
+            tableMapping.ColumnMappings.Add("type", "type");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -847,7 +847,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -856,7 +856,7 @@ namespace page_d_accueil.DS_selection_MouvStockTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, article, depot, Type FROM dbo.Selection_MouvStock";
+            this._commandCollection[0].CommandText = "SELECT id, article, depot, type FROM dbo.Selection_MouvStock";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

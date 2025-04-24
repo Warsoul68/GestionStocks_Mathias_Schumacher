@@ -63,132 +63,118 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(28, 42);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDate.Location = new System.Drawing.Point(21, 34);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(42, 16);
+            this.lblDate.Size = new System.Drawing.Size(36, 13);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Date :";
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(93, 38);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDate.Location = new System.Drawing.Point(70, 31);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(132, 22);
+            this.txtDate.Size = new System.Drawing.Size(100, 20);
             this.txtDate.TabIndex = 1;
             // 
             // lblHeure
             // 
             this.lblHeure.AutoSize = true;
-            this.lblHeure.Location = new System.Drawing.Point(29, 75);
-            this.lblHeure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHeure.Location = new System.Drawing.Point(22, 61);
             this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(50, 16);
+            this.lblHeure.Size = new System.Drawing.Size(42, 13);
             this.lblHeure.TabIndex = 2;
             this.lblHeure.Text = "Heure :";
             // 
             // txtHeure
             // 
-            this.txtHeure.Location = new System.Drawing.Point(93, 71);
-            this.txtHeure.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHeure.Location = new System.Drawing.Point(70, 58);
             this.txtHeure.Name = "txtHeure";
-            this.txtHeure.Size = new System.Drawing.Size(132, 22);
+            this.txtHeure.Size = new System.Drawing.Size(100, 20);
             this.txtHeure.TabIndex = 3;
             // 
             // lblFiDepot
             // 
             this.lblFiDepot.AutoSize = true;
-            this.lblFiDepot.Location = new System.Drawing.Point(417, 42);
-            this.lblFiDepot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiDepot.Location = new System.Drawing.Point(313, 34);
             this.lblFiDepot.Name = "lblFiDepot";
-            this.lblFiDepot.Size = new System.Drawing.Size(110, 16);
+            this.lblFiDepot.Size = new System.Drawing.Size(89, 13);
             this.lblFiDepot.TabIndex = 4;
             this.lblFiDepot.Text = "Filtrer par dépôt : ";
             // 
             // cbFiDepot
             // 
             this.cbFiDepot.FormattingEnabled = true;
-            this.cbFiDepot.Location = new System.Drawing.Point(544, 38);
-            this.cbFiDepot.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFiDepot.Location = new System.Drawing.Point(408, 31);
             this.cbFiDepot.Name = "cbFiDepot";
-            this.cbFiDepot.Size = new System.Drawing.Size(160, 24);
+            this.cbFiDepot.Size = new System.Drawing.Size(121, 21);
             this.cbFiDepot.TabIndex = 5;
             // 
             // lblFiVille
             // 
             this.lblFiVille.AutoSize = true;
-            this.lblFiVille.Location = new System.Drawing.Point(417, 75);
-            this.lblFiVille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiVille.Location = new System.Drawing.Point(313, 61);
             this.lblFiVille.Name = "lblFiVille";
-            this.lblFiVille.Size = new System.Drawing.Size(96, 16);
+            this.lblFiVille.Size = new System.Drawing.Size(77, 13);
             this.lblFiVille.TabIndex = 6;
             this.lblFiVille.Text = "Filtrer par ville :";
             // 
             // cbFiVille
             // 
             this.cbFiVille.FormattingEnabled = true;
-            this.cbFiVille.Location = new System.Drawing.Point(544, 75);
-            this.cbFiVille.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFiVille.Location = new System.Drawing.Point(408, 61);
             this.cbFiVille.Name = "cbFiVille";
-            this.cbFiVille.Size = new System.Drawing.Size(160, 24);
+            this.cbFiVille.Size = new System.Drawing.Size(121, 21);
             this.cbFiVille.TabIndex = 7;
             // 
             // lblFiPays
             // 
             this.lblFiPays.AutoSize = true;
-            this.lblFiPays.Location = new System.Drawing.Point(417, 111);
-            this.lblFiPays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiPays.Location = new System.Drawing.Point(313, 90);
             this.lblFiPays.Name = "lblFiPays";
-            this.lblFiPays.Size = new System.Drawing.Size(102, 16);
+            this.lblFiPays.Size = new System.Drawing.Size(81, 13);
             this.lblFiPays.TabIndex = 8;
             this.lblFiPays.Text = "Filtrer par pays :";
             // 
             // cbFiPays
             // 
             this.cbFiPays.FormattingEnabled = true;
-            this.cbFiPays.Location = new System.Drawing.Point(544, 107);
-            this.cbFiPays.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFiPays.Location = new System.Drawing.Point(408, 87);
             this.cbFiPays.Name = "cbFiPays";
-            this.cbFiPays.Size = new System.Drawing.Size(160, 24);
+            this.cbFiPays.Size = new System.Drawing.Size(121, 21);
             this.cbFiPays.TabIndex = 9;
             // 
             // lblFiCategorieArticle
             // 
             this.lblFiCategorieArticle.AutoSize = true;
-            this.lblFiCategorieArticle.Location = new System.Drawing.Point(29, 107);
-            this.lblFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiCategorieArticle.Location = new System.Drawing.Point(22, 87);
             this.lblFiCategorieArticle.Name = "lblFiCategorieArticle";
-            this.lblFiCategorieArticle.Size = new System.Drawing.Size(179, 16);
+            this.lblFiCategorieArticle.Size = new System.Drawing.Size(142, 13);
             this.lblFiCategorieArticle.TabIndex = 10;
             this.lblFiCategorieArticle.Text = "Filtrer par catégorie d\'article :";
             // 
             // cbFiCategorieArticle
             // 
             this.cbFiCategorieArticle.FormattingEnabled = true;
-            this.cbFiCategorieArticle.Location = new System.Drawing.Point(227, 103);
-            this.cbFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFiCategorieArticle.Location = new System.Drawing.Point(170, 84);
             this.cbFiCategorieArticle.Name = "cbFiCategorieArticle";
-            this.cbFiCategorieArticle.Size = new System.Drawing.Size(107, 24);
+            this.cbFiCategorieArticle.Size = new System.Drawing.Size(81, 21);
             this.cbFiCategorieArticle.TabIndex = 11;
             // 
             // lblFiFabricant
             // 
             this.lblFiFabricant.AutoSize = true;
-            this.lblFiFabricant.Location = new System.Drawing.Point(276, 154);
-            this.lblFiFabricant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiFabricant.Location = new System.Drawing.Point(207, 125);
             this.lblFiFabricant.Name = "lblFiFabricant";
-            this.lblFiFabricant.Size = new System.Drawing.Size(123, 16);
+            this.lblFiFabricant.Size = new System.Drawing.Size(100, 13);
             this.lblFiFabricant.TabIndex = 12;
             this.lblFiFabricant.Text = "Filtrer par fabricant :";
             // 
             // cbFiFabricant
             // 
             this.cbFiFabricant.FormattingEnabled = true;
-            this.cbFiFabricant.Location = new System.Drawing.Point(417, 150);
-            this.cbFiFabricant.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFiFabricant.Location = new System.Drawing.Point(313, 122);
             this.cbFiFabricant.Name = "cbFiFabricant";
-            this.cbFiFabricant.Size = new System.Drawing.Size(160, 24);
+            this.cbFiFabricant.Size = new System.Drawing.Size(121, 21);
             this.cbFiFabricant.TabIndex = 13;
             // 
             // dataGridView1
@@ -201,49 +187,44 @@
             this.depotDataGridViewTextBoxColumn,
             this.typeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.selectionMouvStockBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 206);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 167);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(717, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(538, 214);
             this.dataGridView1.TabIndex = 14;
             // 
             // btnFiltrer
             // 
-            this.btnFiltrer.Location = new System.Drawing.Point(605, 476);
-            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFiltrer.Location = new System.Drawing.Point(454, 387);
             this.btnFiltrer.Name = "btnFiltrer";
-            this.btnFiltrer.Size = new System.Drawing.Size(100, 28);
+            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
             this.btnFiltrer.TabIndex = 15;
             this.btnFiltrer.Text = "Filtrer";
             this.btnFiltrer.UseVisualStyleBackColor = true;
             // 
             // btnCreer
             // 
-            this.btnCreer.Location = new System.Drawing.Point(417, 476);
-            this.btnCreer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreer.Location = new System.Drawing.Point(313, 387);
             this.btnCreer.Name = "btnCreer";
-            this.btnCreer.Size = new System.Drawing.Size(100, 28);
+            this.btnCreer.Size = new System.Drawing.Size(75, 23);
             this.btnCreer.TabIndex = 16;
             this.btnCreer.Text = "Créer";
             this.btnCreer.UseVisualStyleBackColor = true;
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(235, 476);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSupprimer.Location = new System.Drawing.Point(176, 387);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(100, 28);
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 17;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(32, 476);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnnuler.Location = new System.Drawing.Point(24, 387);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 18;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
@@ -266,39 +247,31 @@
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // articleDataGridViewTextBoxColumn
             // 
             this.articleDataGridViewTextBoxColumn.DataPropertyName = "article";
             this.articleDataGridViewTextBoxColumn.HeaderText = "article";
-            this.articleDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.articleDataGridViewTextBoxColumn.Name = "articleDataGridViewTextBoxColumn";
-            this.articleDataGridViewTextBoxColumn.Width = 125;
             // 
             // depotDataGridViewTextBoxColumn
             // 
             this.depotDataGridViewTextBoxColumn.DataPropertyName = "depot";
             this.depotDataGridViewTextBoxColumn.HeaderText = "depot";
-            this.depotDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.depotDataGridViewTextBoxColumn.Name = "depotDataGridViewTextBoxColumn";
-            this.depotDataGridViewTextBoxColumn.Width = 125;
             // 
             // typeDataGridViewTextBoxColumn
             // 
-            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
-            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
-            this.typeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "type";
             this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            this.typeDataGridViewTextBoxColumn.Width = 125;
             // 
             // MouvStock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 554);
+            this.ClientSize = new System.Drawing.Size(583, 450);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnCreer);
@@ -318,7 +291,6 @@
             this.Controls.Add(this.lblHeure);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.lblDate);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MouvStock";
             this.Text = "Mouvement de Stock";
             this.Load += new System.EventHandler(this.MouvStock_Load);
