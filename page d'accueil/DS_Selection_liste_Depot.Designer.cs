@@ -20,17 +20,17 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_parametre_categorie")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_liste_Depot")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Selection_parametre_categorie : global::System.Data.DataSet {
+    public partial class DS_Selection_liste_Depot : global::System.Data.DataSet {
         
-        private CategorieDataTable tableCategorie;
+        private DepotDataTable tableDepot;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Selection_parametre_categorie() {
+        public DS_Selection_liste_Depot() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Selection_parametre_categorie(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_liste_Depot(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Categorie"] != null)) {
-                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
+                if ((ds.Tables["Depot"] != null)) {
+                    base.Tables.Add(new DepotDataTable(ds.Tables["Depot"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace page_d_accueil {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public CategorieDataTable Categorie {
+        public DepotDataTable Depot {
             get {
-                return this.tableCategorie;
+                return this.tableDepot;
             }
         }
         
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Selection_parametre_categorie cln = ((DS_Selection_parametre_categorie)(base.Clone()));
+            DS_Selection_liste_Depot cln = ((DS_Selection_liste_Depot)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Categorie"] != null)) {
-                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
+                if ((ds.Tables["Depot"] != null)) {
+                    base.Tables.Add(new DepotDataTable(ds.Tables["Depot"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableCategorie = ((CategorieDataTable)(base.Tables["Categorie"]));
+            this.tableDepot = ((DepotDataTable)(base.Tables["Depot"]));
             if ((initTable == true)) {
-                if ((this.tableCategorie != null)) {
-                    this.tableCategorie.InitVars();
+                if ((this.tableDepot != null)) {
+                    this.tableDepot.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Selection_parametre_categorie";
+            this.DataSetName = "DS_Selection_liste_Depot";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Selection_parametre_categorie.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_liste_Depot.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableCategorie = new CategorieDataTable();
-            base.Tables.Add(this.tableCategorie);
+            this.tableDepot = new DepotDataTable();
+            base.Tables.Add(this.tableDepot);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeCategorie() {
+        private bool ShouldSerializeDepot() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Selection_parametre_categorie ds = new DS_Selection_parametre_categorie();
+            DS_Selection_liste_Depot ds = new DS_Selection_liste_Depot();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,31 @@ namespace page_d_accueil {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void CategorieRowChangeEventHandler(object sender, CategorieRowChangeEvent e);
+        public delegate void DepotRowChangeEventHandler(object sender, DepotRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CategorieDataTable : global::System.Data.TypedTableBase<CategorieRow> {
+        public partial class DepotDataTable : global::System.Data.TypedTableBase<DepotRow> {
             
-            private global::System.Data.DataColumn columncodeCategorie;
+            private global::System.Data.DataColumn columnnum;
             
-            private global::System.Data.DataColumn columnlibelle;
+            private global::System.Data.DataColumn columnnom;
+            
+            private global::System.Data.DataColumn columnville;
+            
+            private global::System.Data.DataColumn columnpays;
+            
+            private global::System.Data.DataColumn columnlongitude;
+            
+            private global::System.Data.DataColumn columnlatitude;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieDataTable() {
-                this.TableName = "Categorie";
+            public DepotDataTable() {
+                this.TableName = "Depot";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +302,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal CategorieDataTable(global::System.Data.DataTable table) {
+            internal DepotDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +319,56 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected CategorieDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DepotDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn codeCategorieColumn {
+            public global::System.Data.DataColumn numColumn {
                 get {
-                    return this.columncodeCategorie;
+                    return this.columnnum;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn libelleColumn {
+            public global::System.Data.DataColumn nomColumn {
                 get {
-                    return this.columnlibelle;
+                    return this.columnnom;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn villeColumn {
+                get {
+                    return this.columnville;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn paysColumn {
+                get {
+                    return this.columnpays;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn longitudeColumn {
+                get {
+                    return this.columnlongitude;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn latitudeColumn {
+                get {
+                    return this.columnlatitude;
                 }
             }
             
@@ -343,53 +383,57 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRow this[int index] {
+            public DepotRow this[int index] {
                 get {
-                    return ((CategorieRow)(this.Rows[index]));
+                    return ((DepotRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event CategorieRowChangeEventHandler CategorieRowChanging;
+            public event DepotRowChangeEventHandler DepotRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event CategorieRowChangeEventHandler CategorieRowChanged;
+            public event DepotRowChangeEventHandler DepotRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event CategorieRowChangeEventHandler CategorieRowDeleting;
+            public event DepotRowChangeEventHandler DepotRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event CategorieRowChangeEventHandler CategorieRowDeleted;
+            public event DepotRowChangeEventHandler DepotRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddCategorieRow(CategorieRow row) {
+            public void AddDepotRow(DepotRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRow AddCategorieRow(string codeCategorie, string libelle) {
-                CategorieRow rowCategorieRow = ((CategorieRow)(this.NewRow()));
+            public DepotRow AddDepotRow(int num, string nom, string ville, string pays, string longitude, string latitude) {
+                DepotRow rowDepotRow = ((DepotRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        codeCategorie,
-                        libelle};
-                rowCategorieRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowCategorieRow);
-                return rowCategorieRow;
+                        num,
+                        nom,
+                        ville,
+                        pays,
+                        longitude,
+                        latitude};
+                rowDepotRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDepotRow);
+                return rowDepotRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRow FindBycodeCategorie(string codeCategorie) {
-                return ((CategorieRow)(this.Rows.Find(new object[] {
-                            codeCategorie})));
+            public DepotRow FindBynum(int num) {
+                return ((DepotRow)(this.Rows.Find(new object[] {
+                            num})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                CategorieDataTable cln = ((CategorieDataTable)(base.Clone()));
+                DepotDataTable cln = ((DepotDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +441,70 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new CategorieDataTable();
+                return new DepotDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columncodeCategorie = base.Columns["codeCategorie"];
-                this.columnlibelle = base.Columns["libelle"];
+                this.columnnum = base.Columns["num"];
+                this.columnnom = base.Columns["nom"];
+                this.columnville = base.Columns["ville"];
+                this.columnpays = base.Columns["pays"];
+                this.columnlongitude = base.Columns["longitude"];
+                this.columnlatitude = base.Columns["latitude"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columncodeCategorie = new global::System.Data.DataColumn("codeCategorie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncodeCategorie);
-                this.columnlibelle = new global::System.Data.DataColumn("libelle", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlibelle);
+                this.columnnum = new global::System.Data.DataColumn("num", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnum);
+                this.columnnom = new global::System.Data.DataColumn("nom", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnom);
+                this.columnville = new global::System.Data.DataColumn("ville", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnville);
+                this.columnpays = new global::System.Data.DataColumn("pays", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpays);
+                this.columnlongitude = new global::System.Data.DataColumn("longitude", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlongitude);
+                this.columnlatitude = new global::System.Data.DataColumn("latitude", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlatitude);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncodeCategorie}, true));
-                this.columncodeCategorie.AllowDBNull = false;
-                this.columncodeCategorie.Unique = true;
-                this.columncodeCategorie.MaxLength = 5;
-                this.columnlibelle.MaxLength = 50;
+                                this.columnnum}, true));
+                this.columnnum.AllowDBNull = false;
+                this.columnnum.Unique = true;
+                this.columnnom.MaxLength = 50;
+                this.columnville.MaxLength = 50;
+                this.columnpays.MaxLength = 50;
+                this.columnlongitude.MaxLength = 50;
+                this.columnlatitude.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRow NewCategorieRow() {
-                return ((CategorieRow)(this.NewRow()));
+            public DepotRow NewDepotRow() {
+                return ((DepotRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new CategorieRow(builder);
+                return new DepotRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(CategorieRow);
+                return typeof(DepotRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.CategorieRowChanged != null)) {
-                    this.CategorieRowChanged(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
+                if ((this.DepotRowChanged != null)) {
+                    this.DepotRowChanged(this, new DepotRowChangeEvent(((DepotRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +512,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.CategorieRowChanging != null)) {
-                    this.CategorieRowChanging(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
+                if ((this.DepotRowChanging != null)) {
+                    this.DepotRowChanging(this, new DepotRowChangeEvent(((DepotRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +521,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.CategorieRowDeleted != null)) {
-                    this.CategorieRowDeleted(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
+                if ((this.DepotRowDeleted != null)) {
+                    this.DepotRowDeleted(this, new DepotRowChangeEvent(((DepotRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +530,14 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.CategorieRowDeleting != null)) {
-                    this.CategorieRowDeleting(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
+                if ((this.DepotRowDeleting != null)) {
+                    this.DepotRowDeleting(this, new DepotRowChangeEvent(((DepotRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveCategorieRow(CategorieRow row) {
+            public void RemoveDepotRow(DepotRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +546,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Selection_parametre_categorie ds = new DS_Selection_parametre_categorie();
+                DS_Selection_liste_Depot ds = new DS_Selection_liste_Depot();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +564,7 @@ namespace page_d_accueil {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "CategorieDataTable";
+                attribute2.FixedValue = "DepotDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,54 +608,166 @@ namespace page_d_accueil {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class CategorieRow : global::System.Data.DataRow {
+        public partial class DepotRow : global::System.Data.DataRow {
             
-            private CategorieDataTable tableCategorie;
+            private DepotDataTable tableDepot;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal CategorieRow(global::System.Data.DataRowBuilder rb) : 
+            internal DepotRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableCategorie = ((CategorieDataTable)(this.Table));
+                this.tableDepot = ((DepotDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string codeCategorie {
+            public int num {
                 get {
-                    return ((string)(this[this.tableCategorie.codeCategorieColumn]));
+                    return ((int)(this[this.tableDepot.numColumn]));
                 }
                 set {
-                    this[this.tableCategorie.codeCategorieColumn] = value;
+                    this[this.tableDepot.numColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string libelle {
+            public string nom {
                 get {
                     try {
-                        return ((string)(this[this.tableCategorie.libelleColumn]));
+                        return ((string)(this[this.tableDepot.nomColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'libelle\' dans la table \'Categorie\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'nom\' dans la table \'Depot\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCategorie.libelleColumn] = value;
+                    this[this.tableDepot.nomColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IslibelleNull() {
-                return this.IsNull(this.tableCategorie.libelleColumn);
+            public string ville {
+                get {
+                    try {
+                        return ((string)(this[this.tableDepot.villeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'ville\' dans la table \'Depot\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDepot.villeColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetlibelleNull() {
-                this[this.tableCategorie.libelleColumn] = global::System.Convert.DBNull;
+            public string pays {
+                get {
+                    try {
+                        return ((string)(this[this.tableDepot.paysColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'pays\' dans la table \'Depot\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDepot.paysColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string longitude {
+                get {
+                    try {
+                        return ((string)(this[this.tableDepot.longitudeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'longitude\' dans la table \'Depot\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDepot.longitudeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string latitude {
+                get {
+                    try {
+                        return ((string)(this[this.tableDepot.latitudeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'latitude\' dans la table \'Depot\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDepot.latitudeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsnomNull() {
+                return this.IsNull(this.tableDepot.nomColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetnomNull() {
+                this[this.tableDepot.nomColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsvilleNull() {
+                return this.IsNull(this.tableDepot.villeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetvilleNull() {
+                this[this.tableDepot.villeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IspaysNull() {
+                return this.IsNull(this.tableDepot.paysColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetpaysNull() {
+                this[this.tableDepot.paysColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IslongitudeNull() {
+                return this.IsNull(this.tableDepot.longitudeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetlongitudeNull() {
+                this[this.tableDepot.longitudeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IslatitudeNull() {
+                return this.IsNull(this.tableDepot.latitudeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetlatitudeNull() {
+                this[this.tableDepot.latitudeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -604,22 +775,22 @@ namespace page_d_accueil {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class CategorieRowChangeEvent : global::System.EventArgs {
+        public class DepotRowChangeEvent : global::System.EventArgs {
             
-            private CategorieRow eventRow;
+            private DepotRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRowChangeEvent(CategorieRow row, global::System.Data.DataRowAction action) {
+            public DepotRowChangeEvent(DepotRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CategorieRow Row {
+            public DepotRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -635,7 +806,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Selection_parametre_categorieTableAdapters {
+namespace page_d_accueil.DS_Selection_liste_DepotTableAdapters {
     
     
     /// <summary>
@@ -647,7 +818,7 @@ namespace page_d_accueil.DS_Selection_parametre_categorieTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class CategorieTableAdapter : global::System.ComponentModel.Component {
+    public partial class DepotTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -661,7 +832,7 @@ namespace page_d_accueil.DS_Selection_parametre_categorieTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public CategorieTableAdapter() {
+        public DepotTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -758,44 +929,70 @@ namespace page_d_accueil.DS_Selection_parametre_categorieTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Categorie";
-            tableMapping.ColumnMappings.Add("codeCategorie", "codeCategorie");
-            tableMapping.ColumnMappings.Add("libelle", "libelle");
+            tableMapping.DataSetTable = "Depot";
+            tableMapping.ColumnMappings.Add("num", "num");
+            tableMapping.ColumnMappings.Add("nom", "nom");
+            tableMapping.ColumnMappings.Add("ville", "ville");
+            tableMapping.ColumnMappings.Add("pays", "pays");
+            tableMapping.ColumnMappings.Add("longitude", "longitude");
+            tableMapping.ColumnMappings.Add("latitude", "latitude");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Categorie] WHERE (([codeCategorie] = @Original_codeCategorie) " +
-                "AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libel" +
-                "le)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Depot] WHERE (([num] = @Original_num) AND ((@IsNull_nom = 1 AND [nom] IS NULL) OR ([nom] = @Original_nom)) AND ((@IsNull_ville = 1 AND [ville] IS NULL) OR ([ville] = @Original_ville)) AND ((@IsNull_pays = 1 AND [pays] IS NULL) OR ([pays] = @Original_pays)) AND ((@IsNull_longitude = 1 AND [longitude] IS NULL) OR ([longitude] = @Original_longitude)) AND ((@IsNull_latitude = 1 AND [latitude] IS NULL) OR ([latitude] = @Original_latitude)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_num", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "num", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nom", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ville", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ville", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_pays", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pays", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_longitude", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_longitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_latitude", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_latitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Categorie] ([codeCategorie], [libelle]) VALUES (@codeCategorie" +
-                ", @libelle);\r\nSELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie " +
-                "= @codeCategorie)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Depot] ([num], [nom], [ville], [pays], [longitude], [latitude]" +
+                ") VALUES (@num, @nom, @ville, @pays, @longitude, @latitude);\r\nSELECT num, nom, v" +
+                "ille, pays, longitude, latitude FROM Depot WHERE (num = @num)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@num", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "num", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ville", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pays", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@longitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@latitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Categorie] SET [codeCategorie] = @codeCategorie, [libelle] = @libelle WHERE (([codeCategorie] = @Original_codeCategorie) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)));
-SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategorie)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Depot] SET [num] = @num, [nom] = @nom, [ville] = @ville, [pays] = @pays, [longitude] = @longitude, [latitude] = @latitude WHERE (([num] = @Original_num) AND ((@IsNull_nom = 1 AND [nom] IS NULL) OR ([nom] = @Original_nom)) AND ((@IsNull_ville = 1 AND [ville] IS NULL) OR ([ville] = @Original_ville)) AND ((@IsNull_pays = 1 AND [pays] IS NULL) OR ([pays] = @Original_pays)) AND ((@IsNull_longitude = 1 AND [longitude] IS NULL) OR ([longitude] = @Original_longitude)) AND ((@IsNull_latitude = 1 AND [latitude] IS NULL) OR ([latitude] = @Original_latitude)));
+SELECT num, nom, ville, pays, longitude, latitude FROM Depot WHERE (num = @num)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@num", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "num", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ville", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pays", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@longitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@latitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_num", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "num", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nom", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ville", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ville", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ville", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_pays", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pays", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pays", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_longitude", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_longitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "longitude", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_latitude", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_latitude", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "latitude", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -804,7 +1001,7 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT codeCategorie, libelle FROM dbo.Categorie";
+            this._commandCollection[0].CommandText = "SELECT num, nom, ville, pays, longitude, latitude FROM dbo.Depot";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -812,7 +1009,7 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Selection_parametre_categorie.CategorieDataTable dataTable) {
+        public virtual int Fill(DS_Selection_liste_Depot.DepotDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -825,9 +1022,9 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Selection_parametre_categorie.CategorieDataTable GetData() {
+        public virtual DS_Selection_liste_Depot.DepotDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Selection_parametre_categorie.CategorieDataTable dataTable = new DS_Selection_parametre_categorie.CategorieDataTable();
+            DS_Selection_liste_Depot.DepotDataTable dataTable = new DS_Selection_liste_Depot.DepotDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -835,15 +1032,15 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_parametre_categorie.CategorieDataTable dataTable) {
+        public virtual int Update(DS_Selection_liste_Depot.DepotDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_parametre_categorie dataSet) {
-            return this.Adapter.Update(dataSet, "Categorie");
+        public virtual int Update(DS_Selection_liste_Depot dataSet) {
+            return this.Adapter.Update(dataSet, "Depot");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -865,20 +1062,47 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_codeCategorie, string Original_libelle) {
-            if ((Original_codeCategorie == null)) {
-                throw new global::System.ArgumentNullException("Original_codeCategorie");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codeCategorie));
-            }
-            if ((Original_libelle == null)) {
+        public virtual int Delete(int Original_num, string Original_nom, string Original_ville, string Original_pays, string Original_longitude, string Original_latitude) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_num));
+            if ((Original_nom == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_libelle));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_nom));
+            }
+            if ((Original_ville == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_ville));
+            }
+            if ((Original_pays == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_pays));
+            }
+            if ((Original_longitude == null)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_longitude));
+            }
+            if ((Original_latitude == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_latitude));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -900,18 +1124,37 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string codeCategorie, string libelle) {
-            if ((codeCategorie == null)) {
-                throw new global::System.ArgumentNullException("codeCategorie");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codeCategorie));
-            }
-            if ((libelle == null)) {
+        public virtual int Insert(int num, string nom, string ville, string pays, string longitude, string latitude) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(num));
+            if ((nom == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(libelle));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(nom));
+            }
+            if ((ville == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ville));
+            }
+            if ((pays == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(pays));
+            }
+            if ((longitude == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(longitude));
+            }
+            if ((latitude == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(latitude));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -933,32 +1176,78 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string codeCategorie, string libelle, string Original_codeCategorie, string Original_libelle) {
-            if ((codeCategorie == null)) {
-                throw new global::System.ArgumentNullException("codeCategorie");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codeCategorie));
-            }
-            if ((libelle == null)) {
+        public virtual int Update(int num, string nom, string ville, string pays, string longitude, string latitude, int Original_num, string Original_nom, string Original_ville, string Original_pays, string Original_longitude, string Original_latitude) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(num));
+            if ((nom == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(libelle));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(nom));
             }
-            if ((Original_codeCategorie == null)) {
-                throw new global::System.ArgumentNullException("Original_codeCategorie");
+            if ((ville == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_codeCategorie));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(ville));
             }
-            if ((Original_libelle == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
+            if ((pays == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(pays));
+            }
+            if ((longitude == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_libelle));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(longitude));
+            }
+            if ((latitude == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(latitude));
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_num));
+            if ((Original_nom == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_nom));
+            }
+            if ((Original_ville == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_ville));
+            }
+            if ((Original_pays == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_pays));
+            }
+            if ((Original_longitude == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_longitude));
+            }
+            if ((Original_latitude == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_latitude));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -980,8 +1269,8 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string libelle, string Original_codeCategorie, string Original_libelle) {
-            return this.Update(Original_codeCategorie, libelle, Original_codeCategorie, Original_libelle);
+        public virtual int Update(string nom, string ville, string pays, string longitude, string latitude, int Original_num, string Original_nom, string Original_ville, string Original_pays, string Original_longitude, string Original_latitude) {
+            return this.Update(Original_num, nom, ville, pays, longitude, latitude, Original_num, Original_nom, Original_ville, Original_pays, Original_longitude, Original_latitude);
         }
     }
     
@@ -997,7 +1286,7 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         
         private UpdateOrderOption _updateOrder;
         
-        private CategorieTableAdapter _categorieTableAdapter;
+        private DepotTableAdapter _depotTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1019,12 +1308,12 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public CategorieTableAdapter CategorieTableAdapter {
+        public DepotTableAdapter DepotTableAdapter {
             get {
-                return this._categorieTableAdapter;
+                return this._depotTableAdapter;
             }
             set {
-                this._categorieTableAdapter = value;
+                this._depotTableAdapter = value;
             }
         }
         
@@ -1047,9 +1336,9 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._categorieTableAdapter != null) 
-                            && (this._categorieTableAdapter.Connection != null))) {
-                    return this._categorieTableAdapter.Connection;
+                if (((this._depotTableAdapter != null) 
+                            && (this._depotTableAdapter.Connection != null))) {
+                    return this._depotTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1064,7 +1353,7 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._categorieTableAdapter != null)) {
+                if ((this._depotTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1076,14 +1365,14 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_liste_Depot dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._categorieTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._depotTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Depot.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._categorieTableAdapter.Update(updatedRows));
+                    result = (result + this._depotTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1095,13 +1384,13 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_liste_Depot dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._categorieTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._depotTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Depot.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._categorieTableAdapter.Update(addedRows));
+                    result = (result + this._depotTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1113,13 +1402,13 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Selection_parametre_categorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_liste_Depot dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._categorieTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._depotTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Depot.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._categorieTableAdapter.Update(deletedRows));
+                    result = (result + this._depotTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1155,15 +1444,15 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Selection_parametre_categorie dataSet) {
+        public virtual int UpdateAll(DS_Selection_liste_Depot dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._categorieTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._categorieTableAdapter.Connection) == false))) {
+            if (((this._depotTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._depotTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
                         "e chaîne de connexion.");
             }
@@ -1201,13 +1490,13 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._categorieTableAdapter != null)) {
-                    revertConnections.Add(this._categorieTableAdapter, this._categorieTableAdapter.Connection);
-                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._categorieTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._categorieTableAdapter.Adapter);
+                if ((this._depotTableAdapter != null)) {
+                    revertConnections.Add(this._depotTableAdapter, this._depotTableAdapter.Connection);
+                    this._depotTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._depotTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._depotTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._depotTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._depotTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1268,9 +1557,9 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._categorieTableAdapter != null)) {
-                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._categorieTableAdapter]));
-                    this._categorieTableAdapter.Transaction = null;
+                if ((this._depotTableAdapter != null)) {
+                    this._depotTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._depotTableAdapter]));
+                    this._depotTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

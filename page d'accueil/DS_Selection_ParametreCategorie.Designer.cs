@@ -20,17 +20,17 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_parametre_Unite")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_ParametreCategorie")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Selection_parametre_Unite : global::System.Data.DataSet {
+    public partial class DS_Selection_ParametreCategorie : global::System.Data.DataSet {
         
-        private UniteDataTable tableUnite;
+        private CategorieDataTable tableCategorie;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Selection_parametre_Unite() {
+        public DS_Selection_ParametreCategorie() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Selection_parametre_Unite(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_ParametreCategorie(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Unite"] != null)) {
-                    base.Tables.Add(new UniteDataTable(ds.Tables["Unite"]));
+                if ((ds.Tables["Categorie"] != null)) {
+                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace page_d_accueil {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public UniteDataTable Unite {
+        public CategorieDataTable Categorie {
             get {
-                return this.tableUnite;
+                return this.tableCategorie;
             }
         }
         
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Selection_parametre_Unite cln = ((DS_Selection_parametre_Unite)(base.Clone()));
+            DS_Selection_ParametreCategorie cln = ((DS_Selection_ParametreCategorie)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Unite"] != null)) {
-                    base.Tables.Add(new UniteDataTable(ds.Tables["Unite"]));
+                if ((ds.Tables["Categorie"] != null)) {
+                    base.Tables.Add(new CategorieDataTable(ds.Tables["Categorie"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableUnite = ((UniteDataTable)(base.Tables["Unite"]));
+            this.tableCategorie = ((CategorieDataTable)(base.Tables["Categorie"]));
             if ((initTable == true)) {
-                if ((this.tableUnite != null)) {
-                    this.tableUnite.InitVars();
+                if ((this.tableCategorie != null)) {
+                    this.tableCategorie.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Selection_parametre_Unite";
+            this.DataSetName = "DS_Selection_ParametreCategorie";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Selection_parametre_Unite.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_ParametreCategorie.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableUnite = new UniteDataTable();
-            base.Tables.Add(this.tableUnite);
+            this.tableCategorie = new CategorieDataTable();
+            base.Tables.Add(this.tableCategorie);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeUnite() {
+        private bool ShouldSerializeCategorie() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Selection_parametre_Unite ds = new DS_Selection_parametre_Unite();
+            DS_Selection_ParametreCategorie ds = new DS_Selection_ParametreCategorie();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,23 @@ namespace page_d_accueil {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void UniteRowChangeEventHandler(object sender, UniteRowChangeEvent e);
+        public delegate void CategorieRowChangeEventHandler(object sender, CategorieRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class UniteDataTable : global::System.Data.TypedTableBase<UniteRow> {
+        public partial class CategorieDataTable : global::System.Data.TypedTableBase<CategorieRow> {
             
-            private global::System.Data.DataColumn columncodeUnite;
+            private global::System.Data.DataColumn columncodeCategorie;
             
             private global::System.Data.DataColumn columnlibelle;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteDataTable() {
-                this.TableName = "Unite";
+            public CategorieDataTable() {
+                this.TableName = "Categorie";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +294,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal UniteDataTable(global::System.Data.DataTable table) {
+            internal CategorieDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,16 +311,16 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected UniteDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected CategorieDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn codeUniteColumn {
+            public global::System.Data.DataColumn codeCategorieColumn {
                 get {
-                    return this.columncodeUnite;
+                    return this.columncodeCategorie;
                 }
             }
             
@@ -343,53 +343,53 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRow this[int index] {
+            public CategorieRow this[int index] {
                 get {
-                    return ((UniteRow)(this.Rows[index]));
+                    return ((CategorieRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UniteRowChangeEventHandler UniteRowChanging;
+            public event CategorieRowChangeEventHandler CategorieRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UniteRowChangeEventHandler UniteRowChanged;
+            public event CategorieRowChangeEventHandler CategorieRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UniteRowChangeEventHandler UniteRowDeleting;
+            public event CategorieRowChangeEventHandler CategorieRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UniteRowChangeEventHandler UniteRowDeleted;
+            public event CategorieRowChangeEventHandler CategorieRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddUniteRow(UniteRow row) {
+            public void AddCategorieRow(CategorieRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRow AddUniteRow(string codeUnite, string libelle) {
-                UniteRow rowUniteRow = ((UniteRow)(this.NewRow()));
+            public CategorieRow AddCategorieRow(string codeCategorie, string libelle) {
+                CategorieRow rowCategorieRow = ((CategorieRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        codeUnite,
+                        codeCategorie,
                         libelle};
-                rowUniteRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowUniteRow);
-                return rowUniteRow;
+                rowCategorieRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowCategorieRow);
+                return rowCategorieRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRow FindBycodeUnite(string codeUnite) {
-                return ((UniteRow)(this.Rows.Find(new object[] {
-                            codeUnite})));
+            public CategorieRow FindBycodeCategorie(string codeCategorie) {
+                return ((CategorieRow)(this.Rows.Find(new object[] {
+                            codeCategorie})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                UniteDataTable cln = ((UniteDataTable)(base.Clone()));
+                CategorieDataTable cln = ((CategorieDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +397,55 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new UniteDataTable();
+                return new CategorieDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columncodeUnite = base.Columns["codeUnite"];
+                this.columncodeCategorie = base.Columns["codeCategorie"];
                 this.columnlibelle = base.Columns["libelle"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columncodeUnite = new global::System.Data.DataColumn("codeUnite", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncodeUnite);
+                this.columncodeCategorie = new global::System.Data.DataColumn("codeCategorie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodeCategorie);
                 this.columnlibelle = new global::System.Data.DataColumn("libelle", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlibelle);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncodeUnite}, true));
-                this.columncodeUnite.AllowDBNull = false;
-                this.columncodeUnite.Unique = true;
-                this.columncodeUnite.MaxLength = 3;
-                this.columnlibelle.MaxLength = 30;
+                                this.columncodeCategorie}, true));
+                this.columncodeCategorie.AllowDBNull = false;
+                this.columncodeCategorie.Unique = true;
+                this.columncodeCategorie.MaxLength = 5;
+                this.columnlibelle.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRow NewUniteRow() {
-                return ((UniteRow)(this.NewRow()));
+            public CategorieRow NewCategorieRow() {
+                return ((CategorieRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new UniteRow(builder);
+                return new CategorieRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(UniteRow);
+                return typeof(CategorieRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.UniteRowChanged != null)) {
-                    this.UniteRowChanged(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
+                if ((this.CategorieRowChanged != null)) {
+                    this.CategorieRowChanged(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +453,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.UniteRowChanging != null)) {
-                    this.UniteRowChanging(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
+                if ((this.CategorieRowChanging != null)) {
+                    this.CategorieRowChanging(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +462,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.UniteRowDeleted != null)) {
-                    this.UniteRowDeleted(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
+                if ((this.CategorieRowDeleted != null)) {
+                    this.CategorieRowDeleted(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +471,14 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.UniteRowDeleting != null)) {
-                    this.UniteRowDeleting(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
+                if ((this.CategorieRowDeleting != null)) {
+                    this.CategorieRowDeleting(this, new CategorieRowChangeEvent(((CategorieRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveUniteRow(UniteRow row) {
+            public void RemoveCategorieRow(CategorieRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +487,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Selection_parametre_Unite ds = new DS_Selection_parametre_Unite();
+                DS_Selection_ParametreCategorie ds = new DS_Selection_ParametreCategorie();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +505,7 @@ namespace page_d_accueil {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "UniteDataTable";
+                attribute2.FixedValue = "CategorieDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,25 +549,25 @@ namespace page_d_accueil {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class UniteRow : global::System.Data.DataRow {
+        public partial class CategorieRow : global::System.Data.DataRow {
             
-            private UniteDataTable tableUnite;
+            private CategorieDataTable tableCategorie;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal UniteRow(global::System.Data.DataRowBuilder rb) : 
+            internal CategorieRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableUnite = ((UniteDataTable)(this.Table));
+                this.tableCategorie = ((CategorieDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string codeUnite {
+            public string codeCategorie {
                 get {
-                    return ((string)(this[this.tableUnite.codeUniteColumn]));
+                    return ((string)(this[this.tableCategorie.codeCategorieColumn]));
                 }
                 set {
-                    this[this.tableUnite.codeUniteColumn] = value;
+                    this[this.tableCategorie.codeCategorieColumn] = value;
                 }
             }
             
@@ -576,27 +576,27 @@ namespace page_d_accueil {
             public string libelle {
                 get {
                     try {
-                        return ((string)(this[this.tableUnite.libelleColumn]));
+                        return ((string)(this[this.tableCategorie.libelleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'libelle\' dans la table \'Unite\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'libelle\' dans la table \'Categorie\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableUnite.libelleColumn] = value;
+                    this[this.tableCategorie.libelleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IslibelleNull() {
-                return this.IsNull(this.tableUnite.libelleColumn);
+                return this.IsNull(this.tableCategorie.libelleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetlibelleNull() {
-                this[this.tableUnite.libelleColumn] = global::System.Convert.DBNull;
+                this[this.tableCategorie.libelleColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -604,22 +604,22 @@ namespace page_d_accueil {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class UniteRowChangeEvent : global::System.EventArgs {
+        public class CategorieRowChangeEvent : global::System.EventArgs {
             
-            private UniteRow eventRow;
+            private CategorieRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRowChangeEvent(UniteRow row, global::System.Data.DataRowAction action) {
+            public CategorieRowChangeEvent(CategorieRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UniteRow Row {
+            public CategorieRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -635,7 +635,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Selection_parametre_UniteTableAdapters {
+namespace page_d_accueil.DS_Selection_ParametreCategorieTableAdapters {
     
     
     /// <summary>
@@ -647,7 +647,7 @@ namespace page_d_accueil.DS_Selection_parametre_UniteTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class UniteTableAdapter : global::System.ComponentModel.Component {
+    public partial class CategorieTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -661,7 +661,7 @@ namespace page_d_accueil.DS_Selection_parametre_UniteTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public UniteTableAdapter() {
+        public CategorieTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -758,33 +758,35 @@ namespace page_d_accueil.DS_Selection_parametre_UniteTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Unite";
-            tableMapping.ColumnMappings.Add("codeUnite", "codeUnite");
+            tableMapping.DataSetTable = "Categorie";
+            tableMapping.ColumnMappings.Add("codeCategorie", "codeCategorie");
             tableMapping.ColumnMappings.Add("libelle", "libelle");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Unite] WHERE (([codeUnite] = @Original_codeUnite) AND ((@IsNul" +
-                "l_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Categorie] WHERE (([codeCategorie] = @Original_codeCategorie) " +
+                "AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libel" +
+                "le)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Unite] ([codeUnite], [libelle]) VALUES (@codeUnite, @libelle);" +
-                "\r\nSELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Categorie] ([codeCategorie], [libelle]) VALUES (@codeCategorie" +
+                ", @libelle);\r\nSELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie " +
+                "= @codeCategorie)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Unite] SET [codeUnite] = @codeUnite, [libelle] = @libelle WHERE (([codeUnite] = @Original_codeUnite) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)));
-SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Categorie] SET [codeCategorie] = @codeCategorie, [libelle] = @libelle WHERE (([codeCategorie] = @Original_codeCategorie) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)));
+SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategorie)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeCategorie", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeCategorie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
@@ -793,7 +795,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -802,7 +804,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT codeUnite, libelle FROM dbo.Unite";
+            this._commandCollection[0].CommandText = "SELECT codeCategorie, libelle FROM dbo.Categorie";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -810,7 +812,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Selection_parametre_Unite.UniteDataTable dataTable) {
+        public virtual int Fill(DS_Selection_ParametreCategorie.CategorieDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -823,9 +825,9 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Selection_parametre_Unite.UniteDataTable GetData() {
+        public virtual DS_Selection_ParametreCategorie.CategorieDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Selection_parametre_Unite.UniteDataTable dataTable = new DS_Selection_parametre_Unite.UniteDataTable();
+            DS_Selection_ParametreCategorie.CategorieDataTable dataTable = new DS_Selection_ParametreCategorie.CategorieDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -833,15 +835,15 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_parametre_Unite.UniteDataTable dataTable) {
+        public virtual int Update(DS_Selection_ParametreCategorie.CategorieDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_parametre_Unite dataSet) {
-            return this.Adapter.Update(dataSet, "Unite");
+        public virtual int Update(DS_Selection_ParametreCategorie dataSet) {
+            return this.Adapter.Update(dataSet, "Categorie");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -863,12 +865,12 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_codeUnite, string Original_libelle) {
-            if ((Original_codeUnite == null)) {
-                throw new global::System.ArgumentNullException("Original_codeUnite");
+        public virtual int Delete(string Original_codeCategorie, string Original_libelle) {
+            if ((Original_codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("Original_codeCategorie");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codeUnite));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codeCategorie));
             }
             if ((Original_libelle == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -898,12 +900,12 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string codeUnite, string libelle) {
-            if ((codeUnite == null)) {
-                throw new global::System.ArgumentNullException("codeUnite");
+        public virtual int Insert(string codeCategorie, string libelle) {
+            if ((codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("codeCategorie");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codeUnite));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codeCategorie));
             }
             if ((libelle == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -931,12 +933,12 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string codeUnite, string libelle, string Original_codeUnite, string Original_libelle) {
-            if ((codeUnite == null)) {
-                throw new global::System.ArgumentNullException("codeUnite");
+        public virtual int Update(string codeCategorie, string libelle, string Original_codeCategorie, string Original_libelle) {
+            if ((codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("codeCategorie");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codeUnite));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codeCategorie));
             }
             if ((libelle == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -944,11 +946,11 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(libelle));
             }
-            if ((Original_codeUnite == null)) {
-                throw new global::System.ArgumentNullException("Original_codeUnite");
+            if ((Original_codeCategorie == null)) {
+                throw new global::System.ArgumentNullException("Original_codeCategorie");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_codeUnite));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_codeCategorie));
             }
             if ((Original_libelle == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
@@ -978,8 +980,8 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string libelle, string Original_codeUnite, string Original_libelle) {
-            return this.Update(Original_codeUnite, libelle, Original_codeUnite, Original_libelle);
+        public virtual int Update(string libelle, string Original_codeCategorie, string Original_libelle) {
+            return this.Update(Original_codeCategorie, libelle, Original_codeCategorie, Original_libelle);
         }
     }
     
@@ -995,7 +997,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         
         private UpdateOrderOption _updateOrder;
         
-        private UniteTableAdapter _uniteTableAdapter;
+        private CategorieTableAdapter _categorieTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1017,12 +1019,12 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public UniteTableAdapter UniteTableAdapter {
+        public CategorieTableAdapter CategorieTableAdapter {
             get {
-                return this._uniteTableAdapter;
+                return this._categorieTableAdapter;
             }
             set {
-                this._uniteTableAdapter = value;
+                this._categorieTableAdapter = value;
             }
         }
         
@@ -1045,9 +1047,9 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._uniteTableAdapter != null) 
-                            && (this._uniteTableAdapter.Connection != null))) {
-                    return this._uniteTableAdapter.Connection;
+                if (((this._categorieTableAdapter != null) 
+                            && (this._categorieTableAdapter.Connection != null))) {
+                    return this._categorieTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1062,7 +1064,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._uniteTableAdapter != null)) {
+                if ((this._categorieTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1074,14 +1076,14 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Selection_parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_ParametreCategorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._uniteTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._uniteTableAdapter.Update(updatedRows));
+                    result = (result + this._categorieTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1093,13 +1095,13 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Selection_parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_ParametreCategorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._uniteTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._uniteTableAdapter.Update(addedRows));
+                    result = (result + this._categorieTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1111,13 +1113,13 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Selection_parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_ParametreCategorie dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._uniteTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._categorieTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._uniteTableAdapter.Update(deletedRows));
+                    result = (result + this._categorieTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1153,15 +1155,15 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Selection_parametre_Unite dataSet) {
+        public virtual int UpdateAll(DS_Selection_ParametreCategorie dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._uniteTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._uniteTableAdapter.Connection) == false))) {
+            if (((this._categorieTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._categorieTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
                         "e chaîne de connexion.");
             }
@@ -1199,13 +1201,13 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._uniteTableAdapter != null)) {
-                    revertConnections.Add(this._uniteTableAdapter, this._uniteTableAdapter.Connection);
-                    this._uniteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._uniteTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._uniteTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._uniteTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._uniteTableAdapter.Adapter);
+                if ((this._categorieTableAdapter != null)) {
+                    revertConnections.Add(this._categorieTableAdapter, this._categorieTableAdapter.Connection);
+                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._categorieTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._categorieTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._categorieTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1266,9 +1268,9 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._uniteTableAdapter != null)) {
-                    this._uniteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._uniteTableAdapter]));
-                    this._uniteTableAdapter.Transaction = null;
+                if ((this._categorieTableAdapter != null)) {
+                    this._categorieTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._categorieTableAdapter]));
+                    this._categorieTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

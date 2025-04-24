@@ -93,15 +93,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_selection_niveauStock.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_parametre_categorie.Designer.cs">
+    <Compile Include="DS_Selection_ParametreCategorie.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_parametre_categorie.xsd</DependentUpon>
+      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_parametre_Unite.Designer.cs">
+    <Compile Include="DS_Selection_ParametreUnite.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_parametre_Unite.xsd</DependentUpon>
+      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
@@ -349,27 +349,27 @@
     <None Include="DS_selection_niveauStock.xss">
       <DependentUpon>DS_selection_niveauStock.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_parametre_categorie.xsc">
-      <DependentUpon>DS_Selection_parametre_categorie.xsd</DependentUpon>
+    <None Include="DS_Selection_ParametreCategorie.xsc">
+      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_parametre_categorie.xsd">
+    <None Include="DS_Selection_ParametreCategorie.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_parametre_categorie.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS_Selection_ParametreCategorie.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_parametre_categorie.xss">
-      <DependentUpon>DS_Selection_parametre_categorie.xsd</DependentUpon>
+    <None Include="DS_Selection_ParametreCategorie.xss">
+      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_parametre_Unite.xsc">
-      <DependentUpon>DS_Selection_parametre_Unite.xsd</DependentUpon>
+    <None Include="DS_Selection_ParametreUnite.xsc">
+      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_parametre_Unite.xsd">
+    <None Include="DS_Selection_ParametreUnite.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_parametre_Unite.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS_Selection_ParametreUnite.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_parametre_Unite.xss">
-      <DependentUpon>DS_Selection_parametre_Unite.xsd</DependentUpon>
+    <None Include="DS_Selection_ParametreUnite.xss">
+      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
