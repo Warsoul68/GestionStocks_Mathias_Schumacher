@@ -24,7 +24,6 @@ namespace page_d_accueil
         {
             // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Article.Vue_Selection_Article'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.vue_Selection_ArticleTableAdapter.Fill(this.dS_Selection_Article.Vue_Selection_Article);
-
             Connexion C = new Connexion();
             C.ShowDialog();
 
@@ -166,14 +165,6 @@ namespace page_d_accueil
 
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
-            string categorie = cboCategorie.SelectedItem?.ToString();
-            MessageBox.Show("Catégorie sélectionnée : " + categorie);
-
-            if (!string.IsNullOrEmpty(categorie))
-            {
-                List<VueArticle> resultats = VueArticleDAO.getCategorieFiltres(categorie);
-                vueSelectionArticleBindingSource.DataSource = resultats;
-            }
         }
     }
 }

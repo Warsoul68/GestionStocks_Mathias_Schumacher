@@ -19,8 +19,8 @@ namespace page_d_accueil
 
         private void FrArticle_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'dS_selection_FrArticle.Vue_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.vue_frArticleTableAdapter.Fill(this.dS_selection_FrArticle.Vue_frArticle);
+            // TODO: cette ligne de code charge les données dans la table 'dS_Vue_Selection_FrArticle.Vue_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.vue_frArticleTableAdapter.Fill(this.dS_Vue_Selection_FrArticle.Vue_frArticle);
 
         }
     }
