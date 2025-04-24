@@ -51,6 +51,7 @@
     <Compile Include="TypeDAO.cs" />
     <Compile Include="UniteDAO.cs" />
     <Compile Include="UtilisateurDAO.cs" />
+    <Compile Include="VueArticleDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LIB_BLL\LIB_BLL.csproj">

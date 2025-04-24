@@ -50,6 +50,7 @@
     <Compile Include="Type.cs" />
     <Compile Include="Unite.cs" />
     <Compile Include="Utilisateur.cs" />
+    <Compile Include="VueArticle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

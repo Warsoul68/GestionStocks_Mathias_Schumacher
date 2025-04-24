@@ -166,6 +166,14 @@ namespace page_d_accueil
 
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
+            string categorie = cboCategorie.SelectedItem?.ToString();
+            MessageBox.Show("Catégorie sélectionnée : " + categorie);
+
+            if (!string.IsNullOrEmpty(categorie))
+            {
+                List<VueArticle> resultats = VueArticleDAO.getCategorieFiltres(categorie);
+                vueSelectionArticleBindingSource.DataSource = resultats;
+            }
         }
     }
 }

@@ -40,12 +40,14 @@
             this.chkClassementDecroissant = new System.Windows.Forms.CheckBox();
             this.btnNewArticle = new System.Windows.Forms.Button();
             this.dgvArticle = new System.Windows.Forms.DataGridView();
-            this.btnFiltrer = new System.Windows.Forms.Button();
-            this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Article = new page_d_accueil.DS_Selection_Article();
+            this.btnFiltrer = new System.Windows.Forms.Button();
             this.tsParametres = new System.Windows.Forms.ToolStripDropDownButton();
             this.listeDesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,13 +68,11 @@
             this.listeMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
-            this.dS_Selection_Article = new page_d_accueil.DS_Selection_Article();
-            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
-            this.tsMenuApplication.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).BeginInit();
+            this.tsMenuApplication.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCategorie
@@ -174,46 +174,19 @@
             this.fabricantDataGridViewTextBoxColumn,
             this.unitéDataGridViewTextBoxColumn});
             this.dgvArticle.DataSource = this.vueSelectionArticleBindingSource;
-            this.dgvArticle.Location = new System.Drawing.Point(14, 210);
+            this.dgvArticle.Location = new System.Drawing.Point(22, 206);
             this.dgvArticle.Name = "dgvArticle";
             this.dgvArticle.RowHeadersWidth = 51;
-            this.dgvArticle.Size = new System.Drawing.Size(655, 210);
+            this.dgvArticle.Size = new System.Drawing.Size(645, 210);
             this.dgvArticle.TabIndex = 11;
             // 
-            // btnFiltrer
+            // référenceDataGridViewTextBoxColumn
             // 
-            this.btnFiltrer.Location = new System.Drawing.Point(462, 159);
-            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnFiltrer.Name = "btnFiltrer";
-            this.btnFiltrer.Size = new System.Drawing.Size(74, 19);
-            this.btnFiltrer.TabIndex = 12;
-            this.btnFiltrer.Text = "Filtrer";
-            this.btnFiltrer.UseVisualStyleBackColor = true;
-            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
-            // 
-            // unitéDataGridViewTextBoxColumn
-            // 
-            this.unitéDataGridViewTextBoxColumn.DataPropertyName = "Unité";
-            this.unitéDataGridViewTextBoxColumn.HeaderText = "Unité";
-            this.unitéDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
-            this.unitéDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fabricantDataGridViewTextBoxColumn
-            // 
-            this.fabricantDataGridViewTextBoxColumn.DataPropertyName = "Fabricant";
-            this.fabricantDataGridViewTextBoxColumn.HeaderText = "Fabricant";
-            this.fabricantDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fabricantDataGridViewTextBoxColumn.Name = "fabricantDataGridViewTextBoxColumn";
-            this.fabricantDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // catégorieDataGridViewTextBoxColumn
-            // 
-            this.catégorieDataGridViewTextBoxColumn.DataPropertyName = "Catégorie";
-            this.catégorieDataGridViewTextBoxColumn.HeaderText = "Catégorie";
-            this.catégorieDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.catégorieDataGridViewTextBoxColumn.Name = "catégorieDataGridViewTextBoxColumn";
-            this.catégorieDataGridViewTextBoxColumn.Width = 125;
+            this.référenceDataGridViewTextBoxColumn.DataPropertyName = "Référence";
+            this.référenceDataGridViewTextBoxColumn.HeaderText = "Référence";
+            this.référenceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.référenceDataGridViewTextBoxColumn.Name = "référenceDataGridViewTextBoxColumn";
+            this.référenceDataGridViewTextBoxColumn.Width = 125;
             // 
             // libelléDataGridViewTextBoxColumn
             // 
@@ -223,13 +196,50 @@
             this.libelléDataGridViewTextBoxColumn.Name = "libelléDataGridViewTextBoxColumn";
             this.libelléDataGridViewTextBoxColumn.Width = 125;
             // 
-            // référenceDataGridViewTextBoxColumn
+            // catégorieDataGridViewTextBoxColumn
             // 
-            this.référenceDataGridViewTextBoxColumn.DataPropertyName = "Référence";
-            this.référenceDataGridViewTextBoxColumn.HeaderText = "Référence";
-            this.référenceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.référenceDataGridViewTextBoxColumn.Name = "référenceDataGridViewTextBoxColumn";
-            this.référenceDataGridViewTextBoxColumn.Width = 125;
+            this.catégorieDataGridViewTextBoxColumn.DataPropertyName = "Catégorie";
+            this.catégorieDataGridViewTextBoxColumn.HeaderText = "Catégorie";
+            this.catégorieDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.catégorieDataGridViewTextBoxColumn.Name = "catégorieDataGridViewTextBoxColumn";
+            this.catégorieDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fabricantDataGridViewTextBoxColumn
+            // 
+            this.fabricantDataGridViewTextBoxColumn.DataPropertyName = "Fabricant";
+            this.fabricantDataGridViewTextBoxColumn.HeaderText = "Fabricant";
+            this.fabricantDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fabricantDataGridViewTextBoxColumn.Name = "fabricantDataGridViewTextBoxColumn";
+            this.fabricantDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // unitéDataGridViewTextBoxColumn
+            // 
+            this.unitéDataGridViewTextBoxColumn.DataPropertyName = "Unité";
+            this.unitéDataGridViewTextBoxColumn.HeaderText = "Unité";
+            this.unitéDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
+            this.unitéDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // vueSelectionArticleBindingSource
+            // 
+            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
+            this.vueSelectionArticleBindingSource.DataSource = this.dS_Selection_Article;
+            // 
+            // dS_Selection_Article
+            // 
+            this.dS_Selection_Article.DataSetName = "DS_Selection_Article";
+            this.dS_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnFiltrer
+            // 
+            this.btnFiltrer.Location = new System.Drawing.Point(462, 159);
+            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiltrer.Name = "btnFiltrer";
+            this.btnFiltrer.Size = new System.Drawing.Size(74, 19);
+            this.btnFiltrer.TabIndex = 12;
+            this.btnFiltrer.Text = "Filtrer";
+            this.btnFiltrer.UseVisualStyleBackColor = true;
+            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
             // 
             // tsParametres
             // 
@@ -395,16 +405,6 @@
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
-            // dS_Selection_Article
-            // 
-            this.dS_Selection_Article.DataSetName = "DS_Selection_Article";
-            this.dS_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueSelectionArticleBindingSource
-            // 
-            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
-            this.vueSelectionArticleBindingSource.DataSource = this.dS_Selection_Article;
-            // 
             // vue_Selection_ArticleTableAdapter
             // 
             this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
@@ -431,10 +431,10 @@
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).EndInit();
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

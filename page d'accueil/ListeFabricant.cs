@@ -21,8 +21,6 @@ namespace page_d_accueil
         {
             // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Liste_Fabricant.Fabricant'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.fabricantTableAdapter.Fill(this.dS_Selection_Liste_Fabricant.Fabricant);
-            // TODO: cette ligne de code charge les données dans la table 'dS_Liste_fabricant.Fabricant'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.fabricantTableAdapter.Fill(this.dS_Liste_fabricant.Fabricant);
 
         }
     }
