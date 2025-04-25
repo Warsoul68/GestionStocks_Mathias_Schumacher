@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DS_Selection_ParametreCategorie" targetNamespace="http://tempuri.org/DS_Selection_ParametreCategorie.xsd" xmlns:mstns="http://tempuri.org/DS_Selection_ParametreCategorie.xsd" xmlns="http://tempuri.org/DS_Selection_ParametreCategorie.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DS_Selection_Parametre_Categorie" targetNamespace="http://tempuri.org/DS_Selection_Parametre_Categorie1.xsd" xmlns:mstns="http://tempuri.org/DS_Selection_Parametre_Categorie1.xsd" xmlns="http://tempuri.org/DS_Selection_Parametre_Categorie1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CategorieTableAdapter" GeneratorDataComponentClassName="CategorieTableAdapter" Name="Categorie" UserDataComponentName="CategorieTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Categorie" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Categorie" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Categorie] WHERE (([codeCategorie] = @Original_codeCategorie) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)))</CommandText>
@@ -62,7 +62,7 @@ SELECT codeCategorie, libelle FROM Categorie WHERE (codeCategorie = @codeCategor
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DS_Selection_ParametreCategorie" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DS_Selection_ParametreCategorie" msprop:Generator_DataSetName="DS_Selection_ParametreCategorie">
+  <xs:element name="DS_Selection_Parametre_Categorie" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DS_Selection_Parametre_Categorie" msprop:Generator_DataSetName="DS_Selection_Parametre_Categorie">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Categorie" msprop:Generator_RowEvHandlerName="CategorieRowChangeEventHandler" msprop:Generator_RowDeletedName="CategorieRowDeleted" msprop:Generator_RowDeletingName="CategorieRowDeleting" msprop:Generator_RowEvArgName="CategorieRowChangeEvent" msprop:Generator_TablePropName="Categorie" msprop:Generator_RowChangedName="CategorieRowChanged" msprop:Generator_RowChangingName="CategorieRowChanging" msprop:Generator_TableClassName="CategorieDataTable" msprop:Generator_RowClassName="CategorieRow" msprop:Generator_TableVarName="tableCategorie" msprop:Generator_UserTableName="Categorie">

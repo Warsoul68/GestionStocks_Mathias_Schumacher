@@ -818,7 +818,7 @@ namespace page_d_accueil.DS_Selection_Liste_FabricantTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

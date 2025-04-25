@@ -53,30 +53,30 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_Article.Designer.cs">
+    <Compile Include="BD_STOCK_SCHUMACHERDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_liste_Depot1.Designer.cs">
+    <Compile Include="DS_Selection_Liste_Depot1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+      <DependentUpon>DS_Selection_Liste_Depot1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_Selection_Liste_Fabricant1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_ParametreCategorie.Designer.cs">
+    <Compile Include="DS_Selection_Parametre_Categorie1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
+      <DependentUpon>DS_Selection_Parametre_Categorie1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_Selection_ParametreUnite.Designer.cs">
+    <Compile Include="DS_Selection_Unite_Parametre.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
+      <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_Vue_Selection_FrArticle.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -256,27 +256,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="DS_Selection_Article.xsc">
-      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xsc">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_Article.xsd">
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_Article.Designer.cs</LastGenOutput>
+      <LastGenOutput>BD_STOCK_SCHUMACHERDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_Article.xss">
-      <DependentUpon>DS_Selection_Article.xsd</DependentUpon>
+    <None Include="BD_STOCK_SCHUMACHERDataSet.xss">
+      <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_liste_Depot1.xsc">
-      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+    <None Include="DS_Selection_Liste_Depot1.xsc">
+      <DependentUpon>DS_Selection_Liste_Depot1.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_liste_Depot1.xsd">
+    <None Include="DS_Selection_Liste_Depot1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_liste_Depot1.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS_Selection_Liste_Depot1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_liste_Depot1.xss">
-      <DependentUpon>DS_Selection_liste_Depot1.xsd</DependentUpon>
+    <None Include="DS_Selection_Liste_Depot1.xss">
+      <DependentUpon>DS_Selection_Liste_Depot1.xsd</DependentUpon>
     </None>
     <None Include="DS_Selection_Liste_Fabricant1.xsc">
       <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
@@ -289,27 +289,27 @@
     <None Include="DS_Selection_Liste_Fabricant1.xss">
       <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_ParametreCategorie.xsc">
-      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
+    <None Include="DS_Selection_Parametre_Categorie1.xsc">
+      <DependentUpon>DS_Selection_Parametre_Categorie1.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_ParametreCategorie.xsd">
+    <None Include="DS_Selection_Parametre_Categorie1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_ParametreCategorie.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS_Selection_Parametre_Categorie1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_ParametreCategorie.xss">
-      <DependentUpon>DS_Selection_ParametreCategorie.xsd</DependentUpon>
+    <None Include="DS_Selection_Parametre_Categorie1.xss">
+      <DependentUpon>DS_Selection_Parametre_Categorie1.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_ParametreUnite.xsc">
-      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
+    <None Include="DS_Selection_Unite_Parametre.xsc">
+      <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
     </None>
-    <None Include="DS_Selection_ParametreUnite.xsd">
+    <None Include="DS_Selection_Unite_Parametre.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Selection_ParametreUnite.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS_Selection_Unite_Parametre.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DS_Selection_ParametreUnite.xss">
-      <DependentUpon>DS_Selection_ParametreUnite.xsd</DependentUpon>
+    <None Include="DS_Selection_Unite_Parametre.xss">
+      <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
     </None>
     <None Include="DS_Vue_Selection_FrArticle.xsc">
       <DependentUpon>DS_Vue_Selection_FrArticle.xsd</DependentUpon>

@@ -20,17 +20,17 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Article")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Unite_Parametre")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Selection_Article : global::System.Data.DataSet {
+    public partial class DS_Selection_Unite_Parametre : global::System.Data.DataSet {
         
-        private Vue_Selection_ArticleDataTable tableVue_Selection_Article;
+        private UniteDataTable tableUnite;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Selection_Article() {
+        public DS_Selection_Unite_Parametre() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Selection_Article(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_Unite_Parametre(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vue_Selection_Article"] != null)) {
-                    base.Tables.Add(new Vue_Selection_ArticleDataTable(ds.Tables["Vue_Selection_Article"]));
+                if ((ds.Tables["Unite"] != null)) {
+                    base.Tables.Add(new UniteDataTable(ds.Tables["Unite"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace page_d_accueil {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Vue_Selection_ArticleDataTable Vue_Selection_Article {
+        public UniteDataTable Unite {
             get {
-                return this.tableVue_Selection_Article;
+                return this.tableUnite;
             }
         }
         
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Selection_Article cln = ((DS_Selection_Article)(base.Clone()));
+            DS_Selection_Unite_Parametre cln = ((DS_Selection_Unite_Parametre)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vue_Selection_Article"] != null)) {
-                    base.Tables.Add(new Vue_Selection_ArticleDataTable(ds.Tables["Vue_Selection_Article"]));
+                if ((ds.Tables["Unite"] != null)) {
+                    base.Tables.Add(new UniteDataTable(ds.Tables["Unite"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVue_Selection_Article = ((Vue_Selection_ArticleDataTable)(base.Tables["Vue_Selection_Article"]));
+            this.tableUnite = ((UniteDataTable)(base.Tables["Unite"]));
             if ((initTable == true)) {
-                if ((this.tableVue_Selection_Article != null)) {
-                    this.tableVue_Selection_Article.InitVars();
+                if ((this.tableUnite != null)) {
+                    this.tableUnite.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Selection_Article";
+            this.DataSetName = "DS_Selection_Unite_Parametre";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Selection_Article.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_Unite_Parametre.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVue_Selection_Article = new Vue_Selection_ArticleDataTable();
-            base.Tables.Add(this.tableVue_Selection_Article);
+            this.tableUnite = new UniteDataTable();
+            base.Tables.Add(this.tableUnite);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeVue_Selection_Article() {
+        private bool ShouldSerializeUnite() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Selection_Article ds = new DS_Selection_Article();
+            DS_Selection_Unite_Parametre ds = new DS_Selection_Unite_Parametre();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,23 @@ namespace page_d_accueil {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Vue_Selection_ArticleRowChangeEventHandler(object sender, Vue_Selection_ArticleRowChangeEvent e);
+        public delegate void UniteRowChangeEventHandler(object sender, UniteRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Vue_Selection_ArticleDataTable : global::System.Data.TypedTableBase<Vue_Selection_ArticleRow> {
+        public partial class UniteDataTable : global::System.Data.TypedTableBase<UniteRow> {
             
-            private global::System.Data.DataColumn columnRéférence;
+            private global::System.Data.DataColumn columncodeUnite;
             
-            private global::System.Data.DataColumn columnLibellé;
-            
-            private global::System.Data.DataColumn columnCatégorie;
-            
-            private global::System.Data.DataColumn columnFabricant;
-            
-            private global::System.Data.DataColumn columnUnité;
+            private global::System.Data.DataColumn columnlibelle;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleDataTable() {
-                this.TableName = "Vue_Selection_Article";
+            public UniteDataTable() {
+                this.TableName = "Unite";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +294,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vue_Selection_ArticleDataTable(global::System.Data.DataTable table) {
+            internal UniteDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,48 +311,24 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Vue_Selection_ArticleDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected UniteDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn RéférenceColumn {
+            public global::System.Data.DataColumn codeUniteColumn {
                 get {
-                    return this.columnRéférence;
+                    return this.columncodeUnite;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LibelléColumn {
+            public global::System.Data.DataColumn libelleColumn {
                 get {
-                    return this.columnLibellé;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CatégorieColumn {
-                get {
-                    return this.columnCatégorie;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FabricantColumn {
-                get {
-                    return this.columnFabricant;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UnitéColumn {
-                get {
-                    return this.columnUnité;
+                    return this.columnlibelle;
                 }
             }
             
@@ -373,49 +343,53 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRow this[int index] {
+            public UniteRow this[int index] {
                 get {
-                    return ((Vue_Selection_ArticleRow)(this.Rows[index]));
+                    return ((UniteRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Selection_ArticleRowChangeEventHandler Vue_Selection_ArticleRowChanging;
+            public event UniteRowChangeEventHandler UniteRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Selection_ArticleRowChangeEventHandler Vue_Selection_ArticleRowChanged;
+            public event UniteRowChangeEventHandler UniteRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Selection_ArticleRowChangeEventHandler Vue_Selection_ArticleRowDeleting;
+            public event UniteRowChangeEventHandler UniteRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Selection_ArticleRowChangeEventHandler Vue_Selection_ArticleRowDeleted;
+            public event UniteRowChangeEventHandler UniteRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddVue_Selection_ArticleRow(Vue_Selection_ArticleRow row) {
+            public void AddUniteRow(UniteRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRow AddVue_Selection_ArticleRow(string Référence, string Libellé, string Catégorie, string Fabricant, string Unité) {
-                Vue_Selection_ArticleRow rowVue_Selection_ArticleRow = ((Vue_Selection_ArticleRow)(this.NewRow()));
+            public UniteRow AddUniteRow(string codeUnite, string libelle) {
+                UniteRow rowUniteRow = ((UniteRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Référence,
-                        Libellé,
-                        Catégorie,
-                        Fabricant,
-                        Unité};
-                rowVue_Selection_ArticleRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVue_Selection_ArticleRow);
-                return rowVue_Selection_ArticleRow;
+                        codeUnite,
+                        libelle};
+                rowUniteRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowUniteRow);
+                return rowUniteRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public UniteRow FindBycodeUnite(string codeUnite) {
+                return ((UniteRow)(this.Rows.Find(new object[] {
+                            codeUnite})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Vue_Selection_ArticleDataTable cln = ((Vue_Selection_ArticleDataTable)(base.Clone()));
+                UniteDataTable cln = ((UniteDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -423,63 +397,55 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Vue_Selection_ArticleDataTable();
+                return new UniteDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnRéférence = base.Columns["Référence"];
-                this.columnLibellé = base.Columns["Libellé"];
-                this.columnCatégorie = base.Columns["Catégorie"];
-                this.columnFabricant = base.Columns["Fabricant"];
-                this.columnUnité = base.Columns["Unité"];
+                this.columncodeUnite = base.Columns["codeUnite"];
+                this.columnlibelle = base.Columns["libelle"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnRéférence = new global::System.Data.DataColumn("Référence", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRéférence);
-                this.columnLibellé = new global::System.Data.DataColumn("Libellé", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLibellé);
-                this.columnCatégorie = new global::System.Data.DataColumn("Catégorie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCatégorie);
-                this.columnFabricant = new global::System.Data.DataColumn("Fabricant", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFabricant);
-                this.columnUnité = new global::System.Data.DataColumn("Unité", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUnité);
-                this.columnRéférence.MaxLength = 20;
-                this.columnLibellé.MaxLength = 120;
-                this.columnCatégorie.MaxLength = 50;
-                this.columnFabricant.MaxLength = 50;
-                this.columnUnité.MaxLength = 30;
+                this.columncodeUnite = new global::System.Data.DataColumn("codeUnite", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodeUnite);
+                this.columnlibelle = new global::System.Data.DataColumn("libelle", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlibelle);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columncodeUnite}, true));
+                this.columncodeUnite.AllowDBNull = false;
+                this.columncodeUnite.Unique = true;
+                this.columncodeUnite.MaxLength = 3;
+                this.columnlibelle.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRow NewVue_Selection_ArticleRow() {
-                return ((Vue_Selection_ArticleRow)(this.NewRow()));
+            public UniteRow NewUniteRow() {
+                return ((UniteRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Vue_Selection_ArticleRow(builder);
+                return new UniteRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Vue_Selection_ArticleRow);
+                return typeof(UniteRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Vue_Selection_ArticleRowChanged != null)) {
-                    this.Vue_Selection_ArticleRowChanged(this, new Vue_Selection_ArticleRowChangeEvent(((Vue_Selection_ArticleRow)(e.Row)), e.Action));
+                if ((this.UniteRowChanged != null)) {
+                    this.UniteRowChanged(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -487,8 +453,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Vue_Selection_ArticleRowChanging != null)) {
-                    this.Vue_Selection_ArticleRowChanging(this, new Vue_Selection_ArticleRowChangeEvent(((Vue_Selection_ArticleRow)(e.Row)), e.Action));
+                if ((this.UniteRowChanging != null)) {
+                    this.UniteRowChanging(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -496,8 +462,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Vue_Selection_ArticleRowDeleted != null)) {
-                    this.Vue_Selection_ArticleRowDeleted(this, new Vue_Selection_ArticleRowChangeEvent(((Vue_Selection_ArticleRow)(e.Row)), e.Action));
+                if ((this.UniteRowDeleted != null)) {
+                    this.UniteRowDeleted(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -505,14 +471,14 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Vue_Selection_ArticleRowDeleting != null)) {
-                    this.Vue_Selection_ArticleRowDeleting(this, new Vue_Selection_ArticleRowChangeEvent(((Vue_Selection_ArticleRow)(e.Row)), e.Action));
+                if ((this.UniteRowDeleting != null)) {
+                    this.UniteRowDeleting(this, new UniteRowChangeEvent(((UniteRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveVue_Selection_ArticleRow(Vue_Selection_ArticleRow row) {
+            public void RemoveUniteRow(UniteRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -521,7 +487,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Selection_Article ds = new DS_Selection_Article();
+                DS_Selection_Unite_Parametre ds = new DS_Selection_Unite_Parametre();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -539,7 +505,7 @@ namespace page_d_accueil {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Vue_Selection_ArticleDataTable";
+                attribute2.FixedValue = "UniteDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -583,160 +549,54 @@ namespace page_d_accueil {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Vue_Selection_ArticleRow : global::System.Data.DataRow {
+        public partial class UniteRow : global::System.Data.DataRow {
             
-            private Vue_Selection_ArticleDataTable tableVue_Selection_Article;
+            private UniteDataTable tableUnite;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vue_Selection_ArticleRow(global::System.Data.DataRowBuilder rb) : 
+            internal UniteRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVue_Selection_Article = ((Vue_Selection_ArticleDataTable)(this.Table));
+                this.tableUnite = ((UniteDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Référence {
+            public string codeUnite {
+                get {
+                    return ((string)(this[this.tableUnite.codeUniteColumn]));
+                }
+                set {
+                    this[this.tableUnite.codeUniteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string libelle {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Selection_Article.RéférenceColumn]));
+                        return ((string)(this[this.tableUnite.libelleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Référence\' dans la table \'Vue_Selection_Article\' est D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'libelle\' dans la table \'Unite\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Selection_Article.RéférenceColumn] = value;
+                    this[this.tableUnite.libelleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Libellé {
-                get {
-                    try {
-                        return ((string)(this[this.tableVue_Selection_Article.LibelléColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Libellé\' dans la table \'Vue_Selection_Article\' est DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableVue_Selection_Article.LibelléColumn] = value;
-                }
+            public bool IslibelleNull() {
+                return this.IsNull(this.tableUnite.libelleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Catégorie {
-                get {
-                    try {
-                        return ((string)(this[this.tableVue_Selection_Article.CatégorieColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Catégorie\' dans la table \'Vue_Selection_Article\' est D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableVue_Selection_Article.CatégorieColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Fabricant {
-                get {
-                    try {
-                        return ((string)(this[this.tableVue_Selection_Article.FabricantColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Fabricant\' dans la table \'Vue_Selection_Article\' est D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableVue_Selection_Article.FabricantColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Unité {
-                get {
-                    try {
-                        return ((string)(this[this.tableVue_Selection_Article.UnitéColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Unité\' dans la table \'Vue_Selection_Article\' est DBNul" +
-                                "l.", e);
-                    }
-                }
-                set {
-                    this[this.tableVue_Selection_Article.UnitéColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsRéférenceNull() {
-                return this.IsNull(this.tableVue_Selection_Article.RéférenceColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetRéférenceNull() {
-                this[this.tableVue_Selection_Article.RéférenceColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsLibelléNull() {
-                return this.IsNull(this.tableVue_Selection_Article.LibelléColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetLibelléNull() {
-                this[this.tableVue_Selection_Article.LibelléColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCatégorieNull() {
-                return this.IsNull(this.tableVue_Selection_Article.CatégorieColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCatégorieNull() {
-                this[this.tableVue_Selection_Article.CatégorieColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFabricantNull() {
-                return this.IsNull(this.tableVue_Selection_Article.FabricantColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFabricantNull() {
-                this[this.tableVue_Selection_Article.FabricantColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsUnitéNull() {
-                return this.IsNull(this.tableVue_Selection_Article.UnitéColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetUnitéNull() {
-                this[this.tableVue_Selection_Article.UnitéColumn] = global::System.Convert.DBNull;
+            public void SetlibelleNull() {
+                this[this.tableUnite.libelleColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -744,22 +604,22 @@ namespace page_d_accueil {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Vue_Selection_ArticleRowChangeEvent : global::System.EventArgs {
+        public class UniteRowChangeEvent : global::System.EventArgs {
             
-            private Vue_Selection_ArticleRow eventRow;
+            private UniteRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRowChangeEvent(Vue_Selection_ArticleRow row, global::System.Data.DataRowAction action) {
+            public UniteRowChangeEvent(UniteRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRow Row {
+            public UniteRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -775,7 +635,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
+namespace page_d_accueil.DS_Selection_Unite_ParametreTableAdapters {
     
     
     /// <summary>
@@ -787,7 +647,7 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Vue_Selection_ArticleTableAdapter : global::System.ComponentModel.Component {
+    public partial class UniteTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -801,7 +661,7 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Vue_Selection_ArticleTableAdapter() {
+        public UniteTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -898,13 +758,35 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Vue_Selection_Article";
-            tableMapping.ColumnMappings.Add("Référence", "Référence");
-            tableMapping.ColumnMappings.Add("Libellé", "Libellé");
-            tableMapping.ColumnMappings.Add("Catégorie", "Catégorie");
-            tableMapping.ColumnMappings.Add("Fabricant", "Fabricant");
-            tableMapping.ColumnMappings.Add("Unité", "Unité");
+            tableMapping.DataSetTable = "Unite";
+            tableMapping.ColumnMappings.Add("codeUnite", "codeUnite");
+            tableMapping.ColumnMappings.Add("libelle", "libelle");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Unite] WHERE (([codeUnite] = @Original_codeUnite) AND ((@IsNul" +
+                "l_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Unite] ([codeUnite], [libelle]) VALUES (@codeUnite, @libelle);" +
+                "\r\nSELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Unite] SET [codeUnite] = @codeUnite, [libelle] = @libelle WHERE (([codeUnite] = @Original_codeUnite) AND ((@IsNull_libelle = 1 AND [libelle] IS NULL) OR ([libelle] = @Original_libelle)));
+SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codeUnite", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codeUnite", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_libelle", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_libelle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "libelle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -920,8 +802,7 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Référence, Libellé, Catégorie, Fabricant, Unité FROM dbo.Vue_Selection_Art" +
-                "icle";
+            this._commandCollection[0].CommandText = "SELECT codeUnite, libelle FROM dbo.Unite";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -929,7 +810,7 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Selection_Article.Vue_Selection_ArticleDataTable dataTable) {
+        public virtual int Fill(DS_Selection_Unite_Parametre.UniteDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -942,11 +823,163 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Selection_Article.Vue_Selection_ArticleDataTable GetData() {
+        public virtual DS_Selection_Unite_Parametre.UniteDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Selection_Article.Vue_Selection_ArticleDataTable dataTable = new DS_Selection_Article.Vue_Selection_ArticleDataTable();
+            DS_Selection_Unite_Parametre.UniteDataTable dataTable = new DS_Selection_Unite_Parametre.UniteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Selection_Unite_Parametre.UniteDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Selection_Unite_Parametre dataSet) {
+            return this.Adapter.Update(dataSet, "Unite");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_codeUnite, string Original_libelle) {
+            if ((Original_codeUnite == null)) {
+                throw new global::System.ArgumentNullException("Original_codeUnite");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codeUnite));
+            }
+            if ((Original_libelle == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string codeUnite, string libelle) {
+            if ((codeUnite == null)) {
+                throw new global::System.ArgumentNullException("codeUnite");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codeUnite));
+            }
+            if ((libelle == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string codeUnite, string libelle, string Original_codeUnite, string Original_libelle) {
+            if ((codeUnite == null)) {
+                throw new global::System.ArgumentNullException("codeUnite");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codeUnite));
+            }
+            if ((libelle == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(libelle));
+            }
+            if ((Original_codeUnite == null)) {
+                throw new global::System.ArgumentNullException("Original_codeUnite");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_codeUnite));
+            }
+            if ((Original_libelle == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_libelle));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string libelle, string Original_codeUnite, string Original_libelle) {
+            return this.Update(Original_codeUnite, libelle, Original_codeUnite, Original_libelle);
         }
     }
     
@@ -962,6 +995,8 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private UniteTableAdapter _uniteTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -974,6 +1009,20 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public UniteTableAdapter UniteTableAdapter {
+            get {
+                return this._uniteTableAdapter;
+            }
+            set {
+                this._uniteTableAdapter = value;
             }
         }
         
@@ -996,6 +1045,10 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._uniteTableAdapter != null) 
+                            && (this._uniteTableAdapter.Connection != null))) {
+                    return this._uniteTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -1009,6 +1062,9 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._uniteTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -1018,8 +1074,17 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._uniteTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._uniteTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -1028,8 +1093,16 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._uniteTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._uniteTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1038,8 +1111,16 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._uniteTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._uniteTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1072,12 +1153,17 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Selection_Article dataSet) {
+        public virtual int UpdateAll(DS_Selection_Unite_Parametre dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._uniteTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._uniteTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
+                        "e chaîne de connexion.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1113,6 +1199,15 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._uniteTableAdapter != null)) {
+                    revertConnections.Add(this._uniteTableAdapter, this._uniteTableAdapter.Connection);
+                    this._uniteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._uniteTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._uniteTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._uniteTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._uniteTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1170,6 +1265,10 @@ namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._uniteTableAdapter != null)) {
+                    this._uniteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._uniteTableAdapter]));
+                    this._uniteTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

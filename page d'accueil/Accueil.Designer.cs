@@ -60,9 +60,9 @@
             this.listeMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
-            this.dS_Selection_Article = new page_d_accueil.DS_Selection_Article();
+            this.bD_STOCK_SCHUMACHERDataSet = new page_d_accueil.BD_STOCK_SCHUMACHERDataSet();
             this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
+            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters.Vue_Selection_ArticleTableAdapter();
             this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,7 +70,7 @@
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
             this.tsMenuApplication.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@
             // 
             this.cboCategorie.FormattingEnabled = true;
             this.cboCategorie.Location = new System.Drawing.Point(199, 78);
-            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategorie.Name = "cboCategorie";
             this.cboCategorie.Size = new System.Drawing.Size(160, 24);
             this.cboCategorie.TabIndex = 2;
@@ -107,7 +107,7 @@
             // 
             this.cboFabricant.FormattingEnabled = true;
             this.cboFabricant.Location = new System.Drawing.Point(199, 121);
-            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboFabricant.Margin = new System.Windows.Forms.Padding(4);
             this.cboFabricant.Name = "cboFabricant";
             this.cboFabricant.Size = new System.Drawing.Size(319, 24);
             this.cboFabricant.TabIndex = 4;
@@ -126,7 +126,7 @@
             // 
             this.cboDepot.FormattingEnabled = true;
             this.cboDepot.Location = new System.Drawing.Point(199, 160);
-            this.cboDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboDepot.Margin = new System.Windows.Forms.Padding(4);
             this.cboDepot.Name = "cboDepot";
             this.cboDepot.Size = new System.Drawing.Size(319, 24);
             this.cboDepot.TabIndex = 6;
@@ -145,7 +145,7 @@
             // 
             this.cboLibelle.FormattingEnabled = true;
             this.cboLibelle.Location = new System.Drawing.Point(199, 196);
-            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboLibelle.Margin = new System.Windows.Forms.Padding(4);
             this.cboLibelle.Name = "cboLibelle";
             this.cboLibelle.Size = new System.Drawing.Size(397, 24);
             this.cboLibelle.TabIndex = 8;
@@ -154,7 +154,7 @@
             // 
             this.chkClassementDecroissant.AutoSize = true;
             this.chkClassementDecroissant.Location = new System.Drawing.Point(707, 78);
-            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkClassementDecroissant.Margin = new System.Windows.Forms.Padding(4);
             this.chkClassementDecroissant.Name = "chkClassementDecroissant";
             this.chkClassementDecroissant.Size = new System.Drawing.Size(173, 20);
             this.chkClassementDecroissant.TabIndex = 9;
@@ -164,7 +164,7 @@
             // btnNewArticle
             // 
             this.btnNewArticle.Location = new System.Drawing.Point(768, 196);
-            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewArticle.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewArticle.Name = "btnNewArticle";
             this.btnNewArticle.Size = new System.Drawing.Size(112, 28);
             this.btnNewArticle.TabIndex = 10;
@@ -184,7 +184,7 @@
             this.unitéDataGridViewTextBoxColumn});
             this.dgvArticle.DataSource = this.vueSelectionArticleBindingSource;
             this.dgvArticle.Location = new System.Drawing.Point(29, 254);
-            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticle.Name = "dgvArticle";
             this.dgvArticle.RowHeadersWidth = 51;
             this.dgvArticle.Size = new System.Drawing.Size(860, 258);
@@ -354,15 +354,15 @@
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
-            // dS_Selection_Article
+            // bD_STOCK_SCHUMACHERDataSet
             // 
-            this.dS_Selection_Article.DataSetName = "DS_Selection_Article";
-            this.dS_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bD_STOCK_SCHUMACHERDataSet.DataSetName = "BD_STOCK_SCHUMACHERDataSet";
+            this.bD_STOCK_SCHUMACHERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // vueSelectionArticleBindingSource
             // 
             this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
-            this.vueSelectionArticleBindingSource.DataSource = this.dS_Selection_Article;
+            this.vueSelectionArticleBindingSource.DataSource = this.bD_STOCK_SCHUMACHERDataSet;
             // 
             // vue_Selection_ArticleTableAdapter
             // 
@@ -425,14 +425,14 @@
             this.Controls.Add(this.cboCategorie);
             this.Controls.Add(this.lblCategorie);
             this.Controls.Add(this.tsMenuApplication);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Article)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -471,9 +471,9 @@
         private System.Windows.Forms.ToolStripMenuItem listeMultiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeMulticritèresDesMouvementsDeStockToolStripMenuItem;
         private System.Windows.Forms.ToolStrip tsMenuApplication;
-        private DS_Selection_Article dS_Selection_Article;
+        private BD_STOCK_SCHUMACHERDataSet bD_STOCK_SCHUMACHERDataSet;
         private System.Windows.Forms.BindingSource vueSelectionArticleBindingSource;
-        private DS_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
+        private BD_STOCK_SCHUMACHERDataSetTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn référenceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn libelléDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn catégorieDataGridViewTextBoxColumn;
