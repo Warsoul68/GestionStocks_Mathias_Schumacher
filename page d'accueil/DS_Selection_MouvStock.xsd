@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Selection_MouvStock" targetNamespace="http://tempuri.org/DS_Selection_MouvStock.xsd" xmlns:mstns="http://tempuri.org/DS_Selection_MouvStock.xsd" xmlns="http://tempuri.org/DS_Selection_MouvStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vue_Selection_MouvStockTableAdapter" GeneratorDataComponentClassName="Vue_Selection_MouvStockTableAdapter" Name="Vue_Selection_MouvStock" UserDataComponentName="Vue_Selection_MouvStockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Vue_Selection_MouvStock" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Article, Date_et_heure, Dépot, Catégorie, Fabricant, Type FROM dbo.Vue_Selection_MouvStock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Article" DataSetColumn="Article" />
+              <Mapping SourceColumn="Date_et_heure" DataSetColumn="Date_et_heure" />
+              <Mapping SourceColumn="Dépot" DataSetColumn="Dépot" />
+              <Mapping SourceColumn="Catégorie" DataSetColumn="Catégorie" />
+              <Mapping SourceColumn="Fabricant" DataSetColumn="Fabricant" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Selection_MouvStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DS_Selection_MouvStock" msprop:Generator_DataSetName="DS_Selection_MouvStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Vue_Selection_MouvStock" msprop:Generator_RowEvHandlerName="Vue_Selection_MouvStockRowChangeEventHandler" msprop:Generator_RowDeletedName="Vue_Selection_MouvStockRowDeleted" msprop:Generator_RowDeletingName="Vue_Selection_MouvStockRowDeleting" msprop:Generator_RowEvArgName="Vue_Selection_MouvStockRowChangeEvent" msprop:Generator_TablePropName="Vue_Selection_MouvStock" msprop:Generator_RowChangedName="Vue_Selection_MouvStockRowChanged" msprop:Generator_RowChangingName="Vue_Selection_MouvStockRowChanging" msprop:Generator_TableClassName="Vue_Selection_MouvStockDataTable" msprop:Generator_RowClassName="Vue_Selection_MouvStockRow" msprop:Generator_TableVarName="tableVue_Selection_MouvStock" msprop:Generator_UserTableName="Vue_Selection_MouvStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Article" msprop:Generator_ColumnPropNameInRow="Article" msprop:Generator_ColumnPropNameInTable="ArticleColumn" msprop:Generator_ColumnVarNameInTable="columnArticle" msprop:Generator_UserColumnName="Article" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_et_heure" msprop:Generator_ColumnPropNameInRow="Date_et_heure" msprop:Generator_ColumnPropNameInTable="Date_et_heureColumn" msprop:Generator_ColumnVarNameInTable="columnDate_et_heure" msprop:Generator_UserColumnName="Date_et_heure" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Dépot" msprop:Generator_ColumnPropNameInRow="Dépot" msprop:Generator_ColumnPropNameInTable="DépotColumn" msprop:Generator_ColumnVarNameInTable="columnDépot" msprop:Generator_UserColumnName="Dépot" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Catégorie" msprop:Generator_ColumnPropNameInRow="Catégorie" msprop:Generator_ColumnPropNameInTable="CatégorieColumn" msprop:Generator_ColumnVarNameInTable="columnCatégorie" msprop:Generator_UserColumnName="Catégorie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fabricant" msprop:Generator_ColumnPropNameInRow="Fabricant" msprop:Generator_ColumnPropNameInTable="FabricantColumn" msprop:Generator_ColumnVarNameInTable="columnFabricant" msprop:Generator_UserColumnName="Fabricant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

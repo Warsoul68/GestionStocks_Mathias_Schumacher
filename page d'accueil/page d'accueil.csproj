@@ -68,6 +68,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Selection_MouvStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_MouvStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Selection_Niveau_Stock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_Niveau_Stock.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Selection_Parametre_Categorie1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,16 +97,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS_Vue_Selection_MouvStock.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Vue_Selection_MouvStock.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS_Vue_Selection_NiveauxStock.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Vue_Selection_NiveauxStock.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
@@ -289,6 +289,28 @@
     <None Include="DS_Selection_Liste_Fabricant1.xss">
       <DependentUpon>DS_Selection_Liste_Fabricant1.xsd</DependentUpon>
     </None>
+    <None Include="DS_Selection_MouvStock.xsc">
+      <DependentUpon>DS_Selection_MouvStock.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_MouvStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_MouvStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_MouvStock.xss">
+      <DependentUpon>DS_Selection_MouvStock.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Niveau_Stock.xsc">
+      <DependentUpon>DS_Selection_Niveau_Stock.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Niveau_Stock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_Niveau_Stock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_Niveau_Stock.xss">
+      <DependentUpon>DS_Selection_Niveau_Stock.xsd</DependentUpon>
+    </None>
     <None Include="DS_Selection_Parametre_Categorie1.xsc">
       <DependentUpon>DS_Selection_Parametre_Categorie1.xsd</DependentUpon>
     </None>
@@ -332,28 +354,6 @@
     </None>
     <None Include="DS_Vue_Selection_Inventaire.xss">
       <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_MouvStock.xsc">
-      <DependentUpon>DS_Vue_Selection_MouvStock.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_MouvStock.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Vue_Selection_MouvStock.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Vue_Selection_MouvStock.xss">
-      <DependentUpon>DS_Vue_Selection_MouvStock.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_NiveauxStock.xsc">
-      <DependentUpon>DS_Vue_Selection_NiveauxStock.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_NiveauxStock.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Vue_Selection_NiveauxStock.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Vue_Selection_NiveauxStock.xss">
-      <DependentUpon>DS_Vue_Selection_NiveauxStock.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -42,16 +42,16 @@
             this.lblDateHeure = new System.Windows.Forms.Label();
             this.txtDateHeure = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dS_Vue_Selection_NiveauxStock = new page_d_accueil.DS_Vue_Selection_NiveauxStock();
-            this.selectionniveauStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.selection_niveauStockTableAdapter = new page_d_accueil.DS_Vue_Selection_NiveauxStockTableAdapters.Selection_niveauStockTableAdapter();
-            this.dépôtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dS_Selection_Niveau_Stock = new page_d_accueil.DS_Selection_Niveau_Stock();
+            this.vueNiveauStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vue_Niveau_StockTableAdapter = new page_d_accueil.DS_Selection_Niveau_StockTableAdapters.Vue_Niveau_StockTableAdapter();
+            this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_NiveauxStock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.selectionniveauStockBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueNiveauStockBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDepot
@@ -68,7 +68,7 @@
             // 
             this.cbDepot.FormattingEnabled = true;
             this.cbDepot.Location = new System.Drawing.Point(100, 7);
-            this.cbDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDepot.Margin = new System.Windows.Forms.Padding(4);
             this.cbDepot.Name = "cbDepot";
             this.cbDepot.Size = new System.Drawing.Size(341, 24);
             this.cbDepot.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.cbFabricant.FormattingEnabled = true;
             this.cbFabricant.Location = new System.Drawing.Point(100, 46);
-            this.cbFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFabricant.Margin = new System.Windows.Forms.Padding(4);
             this.cbFabricant.Name = "cbFabricant";
             this.cbFabricant.Size = new System.Drawing.Size(379, 24);
             this.cbFabricant.TabIndex = 3;
@@ -106,7 +106,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(100, 78);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(252, 24);
             this.comboBox1.TabIndex = 5;
@@ -134,7 +134,7 @@
             // txtStockInferieurOuEgale
             // 
             this.txtStockInferieurOuEgale.Location = new System.Drawing.Point(616, 9);
-            this.txtStockInferieurOuEgale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStockInferieurOuEgale.Margin = new System.Windows.Forms.Padding(4);
             this.txtStockInferieurOuEgale.Name = "txtStockInferieurOuEgale";
             this.txtStockInferieurOuEgale.Size = new System.Drawing.Size(83, 22);
             this.txtStockInferieurOuEgale.TabIndex = 8;
@@ -142,7 +142,7 @@
             // txtStockSuperieurOuEgale
             // 
             this.txtStockSuperieurOuEgale.Location = new System.Drawing.Point(616, 41);
-            this.txtStockSuperieurOuEgale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStockSuperieurOuEgale.Margin = new System.Windows.Forms.Padding(4);
             this.txtStockSuperieurOuEgale.Name = "txtStockSuperieurOuEgale";
             this.txtStockSuperieurOuEgale.Size = new System.Drawing.Size(83, 22);
             this.txtStockSuperieurOuEgale.TabIndex = 9;
@@ -160,7 +160,7 @@
             // txtDateHeure
             // 
             this.txtDateHeure.Location = new System.Drawing.Point(616, 78);
-            this.txtDateHeure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDateHeure.Margin = new System.Windows.Forms.Padding(4);
             this.txtDateHeure.Name = "txtDateHeure";
             this.txtDateHeure.Size = new System.Drawing.Size(132, 22);
             this.txtDateHeure.TabIndex = 11;
@@ -170,39 +170,39 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dépôtDataGridViewTextBoxColumn,
+            this.dépotDataGridViewTextBoxColumn,
             this.articleDataGridViewTextBoxColumn,
-            this.quantitéDataGridViewTextBoxColumn,
+            this.qteDataGridViewTextBoxColumn,
             this.unitéDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.selectionniveauStockBindingSource;
+            this.dataGridView1.DataSource = this.vueNiveauStockBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(16, 135);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(763, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 233);
             this.dataGridView1.TabIndex = 12;
             // 
-            // dS_Vue_Selection_NiveauxStock
+            // dS_Selection_Niveau_Stock
             // 
-            this.dS_Vue_Selection_NiveauxStock.DataSetName = "DS_Vue_Selection_NiveauxStock";
-            this.dS_Vue_Selection_NiveauxStock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dS_Selection_Niveau_Stock.DataSetName = "DS_Selection_Niveau_Stock";
+            this.dS_Selection_Niveau_Stock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // selectionniveauStockBindingSource
+            // vueNiveauStockBindingSource
             // 
-            this.selectionniveauStockBindingSource.DataMember = "Selection_niveauStock";
-            this.selectionniveauStockBindingSource.DataSource = this.dS_Vue_Selection_NiveauxStock;
+            this.vueNiveauStockBindingSource.DataMember = "Vue_Niveau_Stock";
+            this.vueNiveauStockBindingSource.DataSource = this.dS_Selection_Niveau_Stock;
             // 
-            // selection_niveauStockTableAdapter
+            // vue_Niveau_StockTableAdapter
             // 
-            this.selection_niveauStockTableAdapter.ClearBeforeFill = true;
+            this.vue_Niveau_StockTableAdapter.ClearBeforeFill = true;
             // 
-            // dépôtDataGridViewTextBoxColumn
+            // dépotDataGridViewTextBoxColumn
             // 
-            this.dépôtDataGridViewTextBoxColumn.DataPropertyName = "Dépôt";
-            this.dépôtDataGridViewTextBoxColumn.HeaderText = "Dépôt";
-            this.dépôtDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dépôtDataGridViewTextBoxColumn.Name = "dépôtDataGridViewTextBoxColumn";
-            this.dépôtDataGridViewTextBoxColumn.Width = 125;
+            this.dépotDataGridViewTextBoxColumn.DataPropertyName = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.HeaderText = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dépotDataGridViewTextBoxColumn.Name = "dépotDataGridViewTextBoxColumn";
+            this.dépotDataGridViewTextBoxColumn.Width = 125;
             // 
             // articleDataGridViewTextBoxColumn
             // 
@@ -212,13 +212,13 @@
             this.articleDataGridViewTextBoxColumn.Name = "articleDataGridViewTextBoxColumn";
             this.articleDataGridViewTextBoxColumn.Width = 125;
             // 
-            // quantitéDataGridViewTextBoxColumn
+            // qteDataGridViewTextBoxColumn
             // 
-            this.quantitéDataGridViewTextBoxColumn.DataPropertyName = "Quantité";
-            this.quantitéDataGridViewTextBoxColumn.HeaderText = "Quantité";
-            this.quantitéDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantitéDataGridViewTextBoxColumn.Name = "quantitéDataGridViewTextBoxColumn";
-            this.quantitéDataGridViewTextBoxColumn.Width = 125;
+            this.qteDataGridViewTextBoxColumn.DataPropertyName = "Qte";
+            this.qteDataGridViewTextBoxColumn.HeaderText = "Qte";
+            this.qteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.qteDataGridViewTextBoxColumn.Name = "qteDataGridViewTextBoxColumn";
+            this.qteDataGridViewTextBoxColumn.Width = 125;
             // 
             // unitéDataGridViewTextBoxColumn
             // 
@@ -246,13 +246,13 @@
             this.Controls.Add(this.lblFabricant);
             this.Controls.Add(this.cbDepot);
             this.Controls.Add(this.lblDepot);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NiveauStock";
             this.Text = "Niveaux de stock";
             this.Load += new System.EventHandler(this.NiveauStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_NiveauxStock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.selectionniveauStockBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueNiveauStockBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,12 +273,12 @@
         private System.Windows.Forms.Label lblDateHeure;
         private System.Windows.Forms.TextBox txtDateHeure;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DS_Vue_Selection_NiveauxStock dS_Vue_Selection_NiveauxStock;
-        private System.Windows.Forms.BindingSource selectionniveauStockBindingSource;
-        private DS_Vue_Selection_NiveauxStockTableAdapters.Selection_niveauStockTableAdapter selection_niveauStockTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dépôtDataGridViewTextBoxColumn;
+        private DS_Selection_Niveau_Stock dS_Selection_Niveau_Stock;
+        private System.Windows.Forms.BindingSource vueNiveauStockBindingSource;
+        private DS_Selection_Niveau_StockTableAdapters.Vue_Niveau_StockTableAdapter vue_Niveau_StockTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dépotDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn articleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantitéDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitéDataGridViewTextBoxColumn;
     }
 }

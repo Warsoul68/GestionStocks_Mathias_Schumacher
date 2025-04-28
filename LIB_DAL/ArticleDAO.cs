@@ -35,5 +35,28 @@ namespace LIB_DAL
             }
 
         }
+
+        public static int creer(VueArticle va)
+        {
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "insert into Vue_Selection_Article values ('" + va.getReferenceVa() + "', '" + va.getLibelleVa() + "', " + va.getCategorieVa() + "', '" + va.getFabricantVa() + "', '" + va.getUniteVa() + "', '" + va.getDepotVa() + "');";
+            try
+            {
+                dr = cmd.ExecuteReader();
+                dr.Read();
+
+
+                dr.Close();
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
     }
 }

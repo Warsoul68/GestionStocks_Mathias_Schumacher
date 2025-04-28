@@ -13,14 +13,16 @@ namespace LIB_BLL
         private string categorieVa;
         private string fabricantVa;
         private string uniteVa;
+        private string depotVa;
 
-        public VueArticle(string referenceVa, string libelleVa, string categorieVa, string fabricantVa, string uniteVa)
+        public VueArticle(string referenceVa, string libelleVa, string categorieVa, string fabricantVa, string uniteVa, string depotVa)
         {
             this.referenceVa = referenceVa;
             this.libelleVa = libelleVa;
             this.categorieVa = categorieVa;
             this.fabricantVa = fabricantVa;
             this.uniteVa = uniteVa;
+            this.depotVa = depotVa;
         }
 
         public string getReferenceVa()
@@ -71,6 +73,16 @@ namespace LIB_BLL
         public void setUniteVa(string uniteVa)
         {
             this.uniteVa = uniteVa;
+        }
+
+        public string getDepotVa()
+        {
+            return depotVa;
+        }
+
+        public void setDepotVa(string depotVa)
+        {
+            this.depotVa = depotVa;
         }
     }
 }

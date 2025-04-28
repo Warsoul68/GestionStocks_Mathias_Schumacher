@@ -111,7 +111,7 @@
             // lblUnite
             // 
             this.lblUnite.AutoSize = true;
-            this.lblUnite.Location = new System.Drawing.Point(195, 115);
+            this.lblUnite.Location = new System.Drawing.Point(40, 112);
             this.lblUnite.Name = "lblUnite";
             this.lblUnite.Size = new System.Drawing.Size(44, 16);
             this.lblUnite.TabIndex = 8;
@@ -120,7 +120,7 @@
             // cbUnite
             // 
             this.cbUnite.FormattingEnabled = true;
-            this.cbUnite.Location = new System.Drawing.Point(245, 112);
+            this.cbUnite.Location = new System.Drawing.Point(90, 104);
             this.cbUnite.Name = "cbUnite";
             this.cbUnite.Size = new System.Drawing.Size(51, 24);
             this.cbUnite.TabIndex = 9;
@@ -143,6 +143,7 @@
             this.btnAjouter.TabIndex = 11;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // FrNouvelArticle
             // 
@@ -161,9 +162,10 @@
             this.Controls.Add(this.lblLibelle);
             this.Controls.Add(this.txtRef);
             this.Controls.Add(this.lblRef);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrNouvelArticle";
             this.Text = "Ajouter un nouvel article";
+            this.Load += new System.EventHandler(this.FrNouvelArticle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
