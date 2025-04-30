@@ -52,5 +52,40 @@ namespace LIB_DAL
 
             }
         }
+
+        public static int modifier(Article a)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "UPDATE Article SET libelle = '" + a.getLibelleA() + "', codeUnite= " + a.getCodeUnite() + ", codeCategorie= " + a.getCodeCategorie() + ", idFabricant= " + a.getIdFabricant() +  " WHERE  reference_ = '" + a.getReferenceA() + "';";
+            try
+            {
+
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
+
+        public static int supprimer(Article a)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "DELETE FROM Article WHERE libelle = '" + a.getLibelleA() + "';";
+            try
+            {
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
     }
 }

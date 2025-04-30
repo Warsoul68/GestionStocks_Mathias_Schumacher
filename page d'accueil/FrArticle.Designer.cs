@@ -32,7 +32,7 @@
             this.lblReRef = new System.Windows.Forms.Label();
             this.cbReRef = new System.Windows.Forms.ComboBox();
             this.lblReLibelle = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbLibelleArticle = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblRef = new System.Windows.Forms.Label();
             this.txtRef = new System.Windows.Forms.TextBox();
@@ -49,14 +49,14 @@
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dS_Vue_Selection_FrArticle = new page_d_accueil.DS_Vue_Selection_FrArticle();
-            this.vuefrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_frArticleTableAdapter = new page_d_accueil.DS_Vue_Selection_FrArticleTableAdapters.Vue_frArticleTableAdapter();
-            this.dépôtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dS_Selection_FrArticle = new page_d_accueil.DS_Selection_FrArticle();
+            this.vueSelectionFrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vue_Selection_FrArticleTableAdapter = new page_d_accueil.DS_Selection_FrArticleTableAdapters.Vue_Selection_FrArticleTableAdapter();
+            this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_FrArticle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vuefrArticleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_FrArticle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionFrArticleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReRef
@@ -74,7 +74,7 @@
             // 
             this.cbReRef.FormattingEnabled = true;
             this.cbReRef.Location = new System.Drawing.Point(200, 21);
-            this.cbReRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbReRef.Margin = new System.Windows.Forms.Padding(4);
             this.cbReRef.Name = "cbReRef";
             this.cbReRef.Size = new System.Drawing.Size(160, 24);
             this.cbReRef.TabIndex = 1;
@@ -90,20 +90,20 @@
             this.lblReLibelle.TabIndex = 2;
             this.lblReLibelle.Text = "Recherche par libellé :";
             // 
-            // comboBox1
+            // cbLibelleArticle
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(200, 54);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(419, 24);
-            this.comboBox1.TabIndex = 3;
+            this.cbLibelleArticle.FormattingEnabled = true;
+            this.cbLibelleArticle.Location = new System.Drawing.Point(200, 54);
+            this.cbLibelleArticle.Margin = new System.Windows.Forms.Padding(4);
+            this.cbLibelleArticle.Name = "cbLibelleArticle";
+            this.cbLibelleArticle.Size = new System.Drawing.Size(419, 24);
+            this.cbLibelleArticle.TabIndex = 3;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Red;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(949, 111);
             this.flowLayoutPanel1.TabIndex = 4;
@@ -121,7 +121,7 @@
             // txtRef
             // 
             this.txtRef.Location = new System.Drawing.Point(108, 128);
-            this.txtRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRef.Margin = new System.Windows.Forms.Padding(4);
             this.txtRef.Name = "txtRef";
             this.txtRef.Size = new System.Drawing.Size(132, 22);
             this.txtRef.TabIndex = 6;
@@ -129,7 +129,7 @@
             // btnPoint
             // 
             this.btnPoint.Location = new System.Drawing.Point(249, 124);
-            this.btnPoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPoint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPoint.Name = "btnPoint";
             this.btnPoint.Size = new System.Drawing.Size(57, 28);
             this.btnPoint.TabIndex = 7;
@@ -149,7 +149,7 @@
             // txtLibelle
             // 
             this.txtLibelle.Location = new System.Drawing.Point(108, 170);
-            this.txtLibelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLibelle.Margin = new System.Windows.Forms.Padding(4);
             this.txtLibelle.Name = "txtLibelle";
             this.txtLibelle.Size = new System.Drawing.Size(392, 22);
             this.txtLibelle.TabIndex = 9;
@@ -168,7 +168,7 @@
             // 
             this.cbCategorie.FormattingEnabled = true;
             this.cbCategorie.Location = new System.Drawing.Point(101, 223);
-            this.cbCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategorie.Name = "cbCategorie";
             this.cbCategorie.Size = new System.Drawing.Size(160, 24);
             this.cbCategorie.TabIndex = 11;
@@ -187,7 +187,7 @@
             // 
             this.cbFabricant.FormattingEnabled = true;
             this.cbFabricant.Location = new System.Drawing.Point(101, 261);
-            this.cbFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFabricant.Margin = new System.Windows.Forms.Padding(4);
             this.cbFabricant.Name = "cbFabricant";
             this.cbFabricant.Size = new System.Drawing.Size(399, 24);
             this.cbFabricant.TabIndex = 13;
@@ -206,7 +206,7 @@
             // 
             this.cbUnite.FormattingEnabled = true;
             this.cbUnite.Location = new System.Drawing.Point(101, 308);
-            this.cbUnite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUnite.Margin = new System.Windows.Forms.Padding(4);
             this.cbUnite.Name = "cbUnite";
             this.cbUnite.Size = new System.Drawing.Size(140, 24);
             this.cbUnite.TabIndex = 15;
@@ -214,7 +214,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.Location = new System.Drawing.Point(35, 356);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
             this.btnAnnuler.TabIndex = 16;
@@ -224,59 +224,61 @@
             // btnEnregistrer
             // 
             this.btnEnregistrer.Location = new System.Drawing.Point(163, 356);
-            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(100, 28);
             this.btnEnregistrer.TabIndex = 17;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // btnSupprimer
             // 
             this.btnSupprimer.Location = new System.Drawing.Point(284, 356);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(100, 28);
             this.btnSupprimer.TabIndex = 18;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dépôtDataGridViewTextBoxColumn,
+            this.dépotDataGridViewTextBoxColumn,
             this.stockDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.vuefrArticleBindingSource;
+            this.dataGridView1.DataSource = this.vueSelectionFrArticleBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(628, 132);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(308, 252);
             this.dataGridView1.TabIndex = 19;
             // 
-            // dS_Vue_Selection_FrArticle
+            // dS_Selection_FrArticle
             // 
-            this.dS_Vue_Selection_FrArticle.DataSetName = "DS_Vue_Selection_FrArticle";
-            this.dS_Vue_Selection_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dS_Selection_FrArticle.DataSetName = "DS_Selection_FrArticle";
+            this.dS_Selection_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // vuefrArticleBindingSource
+            // vueSelectionFrArticleBindingSource
             // 
-            this.vuefrArticleBindingSource.DataMember = "Vue_frArticle";
-            this.vuefrArticleBindingSource.DataSource = this.dS_Vue_Selection_FrArticle;
+            this.vueSelectionFrArticleBindingSource.DataMember = "Vue_Selection_FrArticle";
+            this.vueSelectionFrArticleBindingSource.DataSource = this.dS_Selection_FrArticle;
             // 
-            // vue_frArticleTableAdapter
+            // vue_Selection_FrArticleTableAdapter
             // 
-            this.vue_frArticleTableAdapter.ClearBeforeFill = true;
+            this.vue_Selection_FrArticleTableAdapter.ClearBeforeFill = true;
             // 
-            // dépôtDataGridViewTextBoxColumn
+            // dépotDataGridViewTextBoxColumn
             // 
-            this.dépôtDataGridViewTextBoxColumn.DataPropertyName = "Dépôt";
-            this.dépôtDataGridViewTextBoxColumn.HeaderText = "Dépôt";
-            this.dépôtDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dépôtDataGridViewTextBoxColumn.Name = "dépôtDataGridViewTextBoxColumn";
-            this.dépôtDataGridViewTextBoxColumn.Width = 125;
+            this.dépotDataGridViewTextBoxColumn.DataPropertyName = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.HeaderText = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dépotDataGridViewTextBoxColumn.Name = "dépotDataGridViewTextBoxColumn";
+            this.dépotDataGridViewTextBoxColumn.Width = 125;
             // 
             // stockDataGridViewTextBoxColumn
             // 
@@ -306,18 +308,18 @@
             this.Controls.Add(this.btnPoint);
             this.Controls.Add(this.txtRef);
             this.Controls.Add(this.lblRef);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbLibelleArticle);
             this.Controls.Add(this.lblReLibelle);
             this.Controls.Add(this.cbReRef);
             this.Controls.Add(this.lblReRef);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrArticle";
             this.Text = "Article";
             this.Load += new System.EventHandler(this.FrArticle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_FrArticle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vuefrArticleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_FrArticle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionFrArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,7 +330,7 @@
         private System.Windows.Forms.Label lblReRef;
         private System.Windows.Forms.ComboBox cbReRef;
         private System.Windows.Forms.Label lblReLibelle;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbLibelleArticle;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label lblRef;
         private System.Windows.Forms.TextBox txtRef;
@@ -345,10 +347,10 @@
         private System.Windows.Forms.Button btnEnregistrer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DS_Vue_Selection_FrArticle dS_Vue_Selection_FrArticle;
-        private System.Windows.Forms.BindingSource vuefrArticleBindingSource;
-        private DS_Vue_Selection_FrArticleTableAdapters.Vue_frArticleTableAdapter vue_frArticleTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dépôtDataGridViewTextBoxColumn;
+        private DS_Selection_FrArticle dS_Selection_FrArticle;
+        private System.Windows.Forms.BindingSource vueSelectionFrArticleBindingSource;
+        private DS_Selection_FrArticleTableAdapters.Vue_Selection_FrArticleTableAdapter vue_Selection_FrArticleTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dépotDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
     }
 }

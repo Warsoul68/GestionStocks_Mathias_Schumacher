@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LIB_BLL;
+using LIB_DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +21,72 @@ namespace page_d_accueil
 
         private void FrArticle_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'dS_Vue_Selection_FrArticle.Vue_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.vue_frArticleTableAdapter.Fill(this.dS_Vue_Selection_FrArticle.Vue_frArticle);
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_FrArticle.Vue_Selection_FrArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.vue_Selection_FrArticleTableAdapter.Fill(this.dS_Selection_FrArticle.Vue_Selection_FrArticle);
 
+            foreach (Article a in ArticleDAO.getTouteLesArticle())
+            {
+                cbReRef.Items.Add(a.getReferenceA());
+                cbLibelleArticle.Items.Add(a.getLibelleA());
+            }
+
+            foreach (Categorie c in CategorieDAO.getTouteLesCategorie())
+            {
+                cbCategorie.Items.Add(c);
+            }
+            foreach (Fabricant f in FabricantDAO.getTousLesFabricant())
+            {
+                cbFabricant.Items.Add(f);
+            }
+            foreach (Unite u in UniteDAO.getTouteLesUnites())
+            {
+                cbUnite.Items.Add(u);
+            }
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            Categorie c = (Categorie)cbCategorie.SelectedItem;
+            Fabricant f = (Fabricant)cbFabricant.SelectedItem;
+            Unite u = (Unite)cbUnite.SelectedItem;
+
+            string codeCategorie = c.getCodeCategorie();
+            int idFabricant = f.getIdF();
+            string codeUnite = u.getCodeUnite();
+
+            Article unArticle = new Article(txtRef.Text, txtLibelle.Text, codeUnite, codeCategorie, idFabricant);
+            int res = ArticleDAO.supprimer(unArticle);
+            if (res == 1)
+            {
+                MessageBox.Show("Suppression effectuée");
+            }
+            else
+            {
+                MessageBox.Show("Problème sur  la suppression");
+            }
+
+        }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
+            Categorie c = (Categorie)cbCategorie.SelectedItem;
+            Fabricant f = (Fabricant)cbFabricant.SelectedItem;
+            Unite u = (Unite)cbUnite.SelectedItem;
+                           
+            string codeCategorie = c.getCodeCategorie();
+            int idFabricant = f.getIdF();
+            string codeUnite = u.getCodeUnite();
+
+            Article unArticle = new Article(txtRef.Text, txtLibelle.Text, codeUnite, codeCategorie, idFabricant);
+            int res = ArticleDAO.modifier(unArticle);
+            if (res == 1)
+            {
+                MessageBox.Show("Modification effectuée");
+            }
+            else
+            {
+                MessageBox.Show("Problème sur la modification");
+            }
         }
     }
 }

@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Selection_FrArticle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_FrArticle.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Selection_Liste_Depot1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,11 +92,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS_Vue_Selection_FrArticle.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Vue_Selection_FrArticle.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_Vue_Selection_Inventaire.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -267,6 +267,17 @@
     <None Include="BD_STOCK_SCHUMACHERDataSet.xss">
       <DependentUpon>BD_STOCK_SCHUMACHERDataSet.xsd</DependentUpon>
     </None>
+    <None Include="DS_Selection_FrArticle.xsc">
+      <DependentUpon>DS_Selection_FrArticle.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_FrArticle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_FrArticle.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_FrArticle.xss">
+      <DependentUpon>DS_Selection_FrArticle.xsd</DependentUpon>
+    </None>
     <None Include="DS_Selection_Liste_Depot1.xsc">
       <DependentUpon>DS_Selection_Liste_Depot1.xsd</DependentUpon>
     </None>
@@ -332,17 +343,6 @@
     </None>
     <None Include="DS_Selection_Unite_Parametre.xss">
       <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_FrArticle.xsc">
-      <DependentUpon>DS_Vue_Selection_FrArticle.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_FrArticle.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Vue_Selection_FrArticle.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Vue_Selection_FrArticle.xss">
-      <DependentUpon>DS_Vue_Selection_FrArticle.xsd</DependentUpon>
     </None>
     <None Include="DS_Vue_Selection_Inventaire.xsc">
       <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
