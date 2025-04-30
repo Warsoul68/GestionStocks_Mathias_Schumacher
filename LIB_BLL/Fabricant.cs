@@ -60,6 +60,11 @@ namespace LIB_BLL
         {
             this.marque = marque;
         }
+
+        public override string ToString()
+        {
+            return nomEntreprise;
+        }
     }
 }
 

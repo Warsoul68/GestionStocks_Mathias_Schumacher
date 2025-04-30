@@ -13,14 +13,14 @@ namespace LIB_DAL
             SqlCommand cmd = new SqlCommand();
             SqlDataReader dr;
             cmd.Connection = Bdd.getConnexion();
-            cmd.CommandText = "select * from Article";
+            cmd.CommandText = "SELECT reference_, libelle, codeUnite, codeCategorie, idFabricant FROM dbo.Article";
             try
             {
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
 
                 {
-                    Article a = new Article(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetInt32(5));
+                    Article a = new Article(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4));
                     res.Add(a);
                 }
 
@@ -36,19 +36,13 @@ namespace LIB_DAL
 
         }
 
-        public static int creer(VueArticle va)
+        public static int creer(Article a)
         {
             SqlCommand cmd = new SqlCommand();
-            SqlDataReader dr;
             cmd.Connection = Bdd.getConnexion();
-            cmd.CommandText = "insert into Vue_Selection_Article values ('" + va.getReferenceVa() + "', '" + va.getLibelleVa() + "', " + va.getCategorieVa() + "', '" + va.getFabricantVa() + "', '" + va.getUniteVa() + "', '" + va.getDepotVa() + "');";
+            cmd.CommandText = "INSERT INTO Article VALUES ('" + a.getReferenceA() + "', '" + a.getLibelleA() + "', '" + a.getCodeUnite() + "', '" + a.getCodeCategorie() + "', '" + a.getIdFabricant() + "')";
             try
             {
-                dr = cmd.ExecuteReader();
-                dr.Read();
-
-
-                dr.Close();
                 return cmd.ExecuteNonQuery();
             }
             catch

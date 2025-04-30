@@ -36,5 +36,10 @@ namespace LIB_BLL
         {
             this.libelleCU = libelleCU;
         }
+
+        public override string ToString()
+        {
+            return libelleCU; // ou getlibelleCU()
+        }
     }
 }

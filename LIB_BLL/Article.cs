@@ -8,31 +8,20 @@ namespace LIB_BLL
 {
     public class Article
     {
-        private int idA;
         private string referenceA;
         private string libelleA;
         private string codeUnite;
         private string codeCategorie;
         public int idFabricant;
 
-        public Article(int idA, string referenceA, string libelleA, string codeUnite, string codeCategorie, int idFabricant)
+        public Article(string referenceA, string libelleA, string codeUnite, string codeCategorie, int idFabricant)
         {
-            this.idA = idA;
+
             this.referenceA = referenceA;
             this.libelleA = libelleA;
             this.codeUnite = codeUnite;
             this.codeCategorie = codeCategorie;
             this.idFabricant = idFabricant;
-        }
-
-        public int getIdA()
-        {
-            return idA;
-        }
-
-        public void setIdA(int idA)
-        {
-            this.idA = idA;
         }
 
         public string getReferenceA()

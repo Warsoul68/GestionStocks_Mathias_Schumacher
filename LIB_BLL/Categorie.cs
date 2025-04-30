@@ -36,5 +36,10 @@ namespace LIB_BLL
         {
             this.libelleCC = libelleCC;
         }
+
+        public override string ToString()
+        {
+            return this.libelleCC;
+        }
     }
 }
