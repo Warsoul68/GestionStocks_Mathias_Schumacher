@@ -20,17 +20,17 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Niveau_Stock")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_NiveauxStock")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Selection_Niveau_Stock : global::System.Data.DataSet {
+    public partial class DS_Selection_NiveauxStock : global::System.Data.DataSet {
         
-        private Vue_Niveau_StockDataTable tableVue_Niveau_Stock;
+        private Vue_Selection_NiveauStockDataTable tableVue_Selection_NiveauStock;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Selection_Niveau_Stock() {
+        public DS_Selection_NiveauxStock() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Selection_Niveau_Stock(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_NiveauxStock(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vue_Niveau_Stock"] != null)) {
-                    base.Tables.Add(new Vue_Niveau_StockDataTable(ds.Tables["Vue_Niveau_Stock"]));
+                if ((ds.Tables["Vue_Selection_NiveauStock"] != null)) {
+                    base.Tables.Add(new Vue_Selection_NiveauStockDataTable(ds.Tables["Vue_Selection_NiveauStock"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace page_d_accueil {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Vue_Niveau_StockDataTable Vue_Niveau_Stock {
+        public Vue_Selection_NiveauStockDataTable Vue_Selection_NiveauStock {
             get {
-                return this.tableVue_Niveau_Stock;
+                return this.tableVue_Selection_NiveauStock;
             }
         }
         
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Selection_Niveau_Stock cln = ((DS_Selection_Niveau_Stock)(base.Clone()));
+            DS_Selection_NiveauxStock cln = ((DS_Selection_NiveauxStock)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vue_Niveau_Stock"] != null)) {
-                    base.Tables.Add(new Vue_Niveau_StockDataTable(ds.Tables["Vue_Niveau_Stock"]));
+                if ((ds.Tables["Vue_Selection_NiveauStock"] != null)) {
+                    base.Tables.Add(new Vue_Selection_NiveauStockDataTable(ds.Tables["Vue_Selection_NiveauStock"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVue_Niveau_Stock = ((Vue_Niveau_StockDataTable)(base.Tables["Vue_Niveau_Stock"]));
+            this.tableVue_Selection_NiveauStock = ((Vue_Selection_NiveauStockDataTable)(base.Tables["Vue_Selection_NiveauStock"]));
             if ((initTable == true)) {
-                if ((this.tableVue_Niveau_Stock != null)) {
-                    this.tableVue_Niveau_Stock.InitVars();
+                if ((this.tableVue_Selection_NiveauStock != null)) {
+                    this.tableVue_Selection_NiveauStock.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Selection_Niveau_Stock";
+            this.DataSetName = "DS_Selection_NiveauxStock";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Selection_Niveau_Stock.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_NiveauxStock.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVue_Niveau_Stock = new Vue_Niveau_StockDataTable();
-            base.Tables.Add(this.tableVue_Niveau_Stock);
+            this.tableVue_Selection_NiveauStock = new Vue_Selection_NiveauStockDataTable();
+            base.Tables.Add(this.tableVue_Selection_NiveauStock);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeVue_Niveau_Stock() {
+        private bool ShouldSerializeVue_Selection_NiveauStock() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Selection_Niveau_Stock ds = new DS_Selection_Niveau_Stock();
+            DS_Selection_NiveauxStock ds = new DS_Selection_NiveauxStock();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace page_d_accueil {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Vue_Niveau_StockRowChangeEventHandler(object sender, Vue_Niveau_StockRowChangeEvent e);
+        public delegate void Vue_Selection_NiveauStockRowChangeEventHandler(object sender, Vue_Selection_NiveauStockRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Vue_Niveau_StockDataTable : global::System.Data.TypedTableBase<Vue_Niveau_StockRow> {
+        public partial class Vue_Selection_NiveauStockDataTable : global::System.Data.TypedTableBase<Vue_Selection_NiveauStockRow> {
             
             private global::System.Data.DataColumn columnDépot;
             
@@ -291,8 +291,8 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockDataTable() {
-                this.TableName = "Vue_Niveau_Stock";
+            public Vue_Selection_NiveauStockDataTable() {
+                this.TableName = "Vue_Selection_NiveauStock";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +300,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vue_Niveau_StockDataTable(global::System.Data.DataTable table) {
+            internal Vue_Selection_NiveauStockDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,7 +317,7 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Vue_Niveau_StockDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Vue_Selection_NiveauStockDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -373,49 +373,49 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockRow this[int index] {
+            public Vue_Selection_NiveauStockRow this[int index] {
                 get {
-                    return ((Vue_Niveau_StockRow)(this.Rows[index]));
+                    return ((Vue_Selection_NiveauStockRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Niveau_StockRowChangeEventHandler Vue_Niveau_StockRowChanging;
+            public event Vue_Selection_NiveauStockRowChangeEventHandler Vue_Selection_NiveauStockRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Niveau_StockRowChangeEventHandler Vue_Niveau_StockRowChanged;
+            public event Vue_Selection_NiveauStockRowChangeEventHandler Vue_Selection_NiveauStockRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Niveau_StockRowChangeEventHandler Vue_Niveau_StockRowDeleting;
+            public event Vue_Selection_NiveauStockRowChangeEventHandler Vue_Selection_NiveauStockRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vue_Niveau_StockRowChangeEventHandler Vue_Niveau_StockRowDeleted;
+            public event Vue_Selection_NiveauStockRowChangeEventHandler Vue_Selection_NiveauStockRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddVue_Niveau_StockRow(Vue_Niveau_StockRow row) {
+            public void AddVue_Selection_NiveauStockRow(Vue_Selection_NiveauStockRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockRow AddVue_Niveau_StockRow(string Dépot, string Article, decimal Qte, string Unité, string Fabricant) {
-                Vue_Niveau_StockRow rowVue_Niveau_StockRow = ((Vue_Niveau_StockRow)(this.NewRow()));
+            public Vue_Selection_NiveauStockRow AddVue_Selection_NiveauStockRow(string Dépot, string Article, decimal Qte, string Unité, string Fabricant) {
+                Vue_Selection_NiveauStockRow rowVue_Selection_NiveauStockRow = ((Vue_Selection_NiveauStockRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Dépot,
                         Article,
                         Qte,
                         Unité,
                         Fabricant};
-                rowVue_Niveau_StockRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVue_Niveau_StockRow);
-                return rowVue_Niveau_StockRow;
+                rowVue_Selection_NiveauStockRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowVue_Selection_NiveauStockRow);
+                return rowVue_Selection_NiveauStockRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Vue_Niveau_StockDataTable cln = ((Vue_Niveau_StockDataTable)(base.Clone()));
+                Vue_Selection_NiveauStockDataTable cln = ((Vue_Selection_NiveauStockDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -423,7 +423,7 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Vue_Niveau_StockDataTable();
+                return new Vue_Selection_NiveauStockDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -457,28 +457,28 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockRow NewVue_Niveau_StockRow() {
-                return ((Vue_Niveau_StockRow)(this.NewRow()));
+            public Vue_Selection_NiveauStockRow NewVue_Selection_NiveauStockRow() {
+                return ((Vue_Selection_NiveauStockRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Vue_Niveau_StockRow(builder);
+                return new Vue_Selection_NiveauStockRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Vue_Niveau_StockRow);
+                return typeof(Vue_Selection_NiveauStockRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Vue_Niveau_StockRowChanged != null)) {
-                    this.Vue_Niveau_StockRowChanged(this, new Vue_Niveau_StockRowChangeEvent(((Vue_Niveau_StockRow)(e.Row)), e.Action));
+                if ((this.Vue_Selection_NiveauStockRowChanged != null)) {
+                    this.Vue_Selection_NiveauStockRowChanged(this, new Vue_Selection_NiveauStockRowChangeEvent(((Vue_Selection_NiveauStockRow)(e.Row)), e.Action));
                 }
             }
             
@@ -486,8 +486,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Vue_Niveau_StockRowChanging != null)) {
-                    this.Vue_Niveau_StockRowChanging(this, new Vue_Niveau_StockRowChangeEvent(((Vue_Niveau_StockRow)(e.Row)), e.Action));
+                if ((this.Vue_Selection_NiveauStockRowChanging != null)) {
+                    this.Vue_Selection_NiveauStockRowChanging(this, new Vue_Selection_NiveauStockRowChangeEvent(((Vue_Selection_NiveauStockRow)(e.Row)), e.Action));
                 }
             }
             
@@ -495,8 +495,8 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Vue_Niveau_StockRowDeleted != null)) {
-                    this.Vue_Niveau_StockRowDeleted(this, new Vue_Niveau_StockRowChangeEvent(((Vue_Niveau_StockRow)(e.Row)), e.Action));
+                if ((this.Vue_Selection_NiveauStockRowDeleted != null)) {
+                    this.Vue_Selection_NiveauStockRowDeleted(this, new Vue_Selection_NiveauStockRowChangeEvent(((Vue_Selection_NiveauStockRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,14 +504,14 @@ namespace page_d_accueil {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Vue_Niveau_StockRowDeleting != null)) {
-                    this.Vue_Niveau_StockRowDeleting(this, new Vue_Niveau_StockRowChangeEvent(((Vue_Niveau_StockRow)(e.Row)), e.Action));
+                if ((this.Vue_Selection_NiveauStockRowDeleting != null)) {
+                    this.Vue_Selection_NiveauStockRowDeleting(this, new Vue_Selection_NiveauStockRowChangeEvent(((Vue_Selection_NiveauStockRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveVue_Niveau_StockRow(Vue_Niveau_StockRow row) {
+            public void RemoveVue_Selection_NiveauStockRow(Vue_Selection_NiveauStockRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -520,7 +520,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Selection_Niveau_Stock ds = new DS_Selection_Niveau_Stock();
+                DS_Selection_NiveauxStock ds = new DS_Selection_NiveauxStock();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -538,7 +538,7 @@ namespace page_d_accueil {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Vue_Niveau_StockDataTable";
+                attribute2.FixedValue = "Vue_Selection_NiveauStockDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -582,15 +582,15 @@ namespace page_d_accueil {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Vue_Niveau_StockRow : global::System.Data.DataRow {
+        public partial class Vue_Selection_NiveauStockRow : global::System.Data.DataRow {
             
-            private Vue_Niveau_StockDataTable tableVue_Niveau_Stock;
+            private Vue_Selection_NiveauStockDataTable tableVue_Selection_NiveauStock;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vue_Niveau_StockRow(global::System.Data.DataRowBuilder rb) : 
+            internal Vue_Selection_NiveauStockRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVue_Niveau_Stock = ((Vue_Niveau_StockDataTable)(this.Table));
+                this.tableVue_Selection_NiveauStock = ((Vue_Selection_NiveauStockDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -598,14 +598,15 @@ namespace page_d_accueil {
             public string Dépot {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Niveau_Stock.DépotColumn]));
+                        return ((string)(this[this.tableVue_Selection_NiveauStock.DépotColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Dépot\' dans la table \'Vue_Niveau_Stock\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Dépot\' dans la table \'Vue_Selection_NiveauStock\' est D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Niveau_Stock.DépotColumn] = value;
+                    this[this.tableVue_Selection_NiveauStock.DépotColumn] = value;
                 }
             }
             
@@ -614,14 +615,15 @@ namespace page_d_accueil {
             public string Article {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Niveau_Stock.ArticleColumn]));
+                        return ((string)(this[this.tableVue_Selection_NiveauStock.ArticleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Article\' dans la table \'Vue_Niveau_Stock\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Article\' dans la table \'Vue_Selection_NiveauStock\' est" +
+                                " DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Niveau_Stock.ArticleColumn] = value;
+                    this[this.tableVue_Selection_NiveauStock.ArticleColumn] = value;
                 }
             }
             
@@ -630,14 +632,15 @@ namespace page_d_accueil {
             public decimal Qte {
                 get {
                     try {
-                        return ((decimal)(this[this.tableVue_Niveau_Stock.QteColumn]));
+                        return ((decimal)(this[this.tableVue_Selection_NiveauStock.QteColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Qte\' dans la table \'Vue_Niveau_Stock\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Qte\' dans la table \'Vue_Selection_NiveauStock\' est DBN" +
+                                "ull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Niveau_Stock.QteColumn] = value;
+                    this[this.tableVue_Selection_NiveauStock.QteColumn] = value;
                 }
             }
             
@@ -646,14 +649,15 @@ namespace page_d_accueil {
             public string Unité {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Niveau_Stock.UnitéColumn]));
+                        return ((string)(this[this.tableVue_Selection_NiveauStock.UnitéColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Unité\' dans la table \'Vue_Niveau_Stock\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Unité\' dans la table \'Vue_Selection_NiveauStock\' est D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Niveau_Stock.UnitéColumn] = value;
+                    this[this.tableVue_Selection_NiveauStock.UnitéColumn] = value;
                 }
             }
             
@@ -662,76 +666,76 @@ namespace page_d_accueil {
             public string Fabricant {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Niveau_Stock.FabricantColumn]));
+                        return ((string)(this[this.tableVue_Selection_NiveauStock.FabricantColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Fabricant\' dans la table \'Vue_Niveau_Stock\' est DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Fabricant\' dans la table \'Vue_Selection_NiveauStock\' e" +
+                                "st DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Niveau_Stock.FabricantColumn] = value;
+                    this[this.tableVue_Selection_NiveauStock.FabricantColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDépotNull() {
-                return this.IsNull(this.tableVue_Niveau_Stock.DépotColumn);
+                return this.IsNull(this.tableVue_Selection_NiveauStock.DépotColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDépotNull() {
-                this[this.tableVue_Niveau_Stock.DépotColumn] = global::System.Convert.DBNull;
+                this[this.tableVue_Selection_NiveauStock.DépotColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsArticleNull() {
-                return this.IsNull(this.tableVue_Niveau_Stock.ArticleColumn);
+                return this.IsNull(this.tableVue_Selection_NiveauStock.ArticleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetArticleNull() {
-                this[this.tableVue_Niveau_Stock.ArticleColumn] = global::System.Convert.DBNull;
+                this[this.tableVue_Selection_NiveauStock.ArticleColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsQteNull() {
-                return this.IsNull(this.tableVue_Niveau_Stock.QteColumn);
+                return this.IsNull(this.tableVue_Selection_NiveauStock.QteColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetQteNull() {
-                this[this.tableVue_Niveau_Stock.QteColumn] = global::System.Convert.DBNull;
+                this[this.tableVue_Selection_NiveauStock.QteColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsUnitéNull() {
-                return this.IsNull(this.tableVue_Niveau_Stock.UnitéColumn);
+                return this.IsNull(this.tableVue_Selection_NiveauStock.UnitéColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetUnitéNull() {
-                this[this.tableVue_Niveau_Stock.UnitéColumn] = global::System.Convert.DBNull;
+                this[this.tableVue_Selection_NiveauStock.UnitéColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsFabricantNull() {
-                return this.IsNull(this.tableVue_Niveau_Stock.FabricantColumn);
+                return this.IsNull(this.tableVue_Selection_NiveauStock.FabricantColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFabricantNull() {
-                this[this.tableVue_Niveau_Stock.FabricantColumn] = global::System.Convert.DBNull;
+                this[this.tableVue_Selection_NiveauStock.FabricantColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -739,22 +743,22 @@ namespace page_d_accueil {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Vue_Niveau_StockRowChangeEvent : global::System.EventArgs {
+        public class Vue_Selection_NiveauStockRowChangeEvent : global::System.EventArgs {
             
-            private Vue_Niveau_StockRow eventRow;
+            private Vue_Selection_NiveauStockRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockRowChangeEvent(Vue_Niveau_StockRow row, global::System.Data.DataRowAction action) {
+            public Vue_Selection_NiveauStockRowChangeEvent(Vue_Selection_NiveauStockRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Niveau_StockRow Row {
+            public Vue_Selection_NiveauStockRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -770,7 +774,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
+namespace page_d_accueil.DS_Selection_NiveauxStockTableAdapters {
     
     
     /// <summary>
@@ -782,7 +786,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Vue_Niveau_StockTableAdapter : global::System.ComponentModel.Component {
+    public partial class Vue_Selection_NiveauStockTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -796,7 +800,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Vue_Niveau_StockTableAdapter() {
+        public Vue_Selection_NiveauStockTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -893,7 +897,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Vue_Niveau_Stock";
+            tableMapping.DataSetTable = "Vue_Selection_NiveauStock";
             tableMapping.ColumnMappings.Add("Dépot", "Dépot");
             tableMapping.ColumnMappings.Add("Article", "Article");
             tableMapping.ColumnMappings.Add("Qte", "Qte");
@@ -906,7 +910,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -915,7 +919,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Dépot, Article, Qte, Unité, Fabricant FROM dbo.Vue_Niveau_Stock";
+            this._commandCollection[0].CommandText = "SELECT Dépot, Article, Qte, Unité, Fabricant FROM dbo.Vue_Selection_NiveauStock";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -923,7 +927,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Selection_Niveau_Stock.Vue_Niveau_StockDataTable dataTable) {
+        public virtual int Fill(DS_Selection_NiveauxStock.Vue_Selection_NiveauStockDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -936,9 +940,9 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Selection_Niveau_Stock.Vue_Niveau_StockDataTable GetData() {
+        public virtual DS_Selection_NiveauxStock.Vue_Selection_NiveauStockDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Selection_Niveau_Stock.Vue_Niveau_StockDataTable dataTable = new DS_Selection_Niveau_Stock.Vue_Niveau_StockDataTable();
+            DS_Selection_NiveauxStock.Vue_Selection_NiveauStockDataTable dataTable = new DS_Selection_NiveauxStock.Vue_Selection_NiveauStockDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1012,7 +1016,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Selection_Niveau_Stock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_NiveauxStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1022,7 +1026,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Selection_Niveau_Stock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_NiveauxStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1032,7 +1036,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Selection_Niveau_Stock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_NiveauxStock dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1066,7 +1070,7 @@ namespace page_d_accueil.DS_Selection_Niveau_StockTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Selection_Niveau_Stock dataSet) {
+        public virtual int UpdateAll(DS_Selection_NiveauxStock dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

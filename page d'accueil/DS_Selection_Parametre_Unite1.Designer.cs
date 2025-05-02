@@ -20,9 +20,9 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Unite_Parametre")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Parametre_Unite")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Selection_Unite_Parametre : global::System.Data.DataSet {
+    public partial class DS_Selection_Parametre_Unite : global::System.Data.DataSet {
         
         private UniteDataTable tableUnite;
         
@@ -30,7 +30,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Selection_Unite_Parametre() {
+        public DS_Selection_Parametre_Unite() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Selection_Unite_Parametre(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_Parametre_Unite(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Selection_Unite_Parametre cln = ((DS_Selection_Unite_Parametre)(base.Clone()));
+            DS_Selection_Parametre_Unite cln = ((DS_Selection_Parametre_Unite)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Selection_Unite_Parametre";
+            this.DataSetName = "DS_Selection_Parametre_Unite";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Selection_Unite_Parametre.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_Parametre_Unite1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableUnite = new UniteDataTable();
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Selection_Unite_Parametre ds = new DS_Selection_Unite_Parametre();
+            DS_Selection_Parametre_Unite ds = new DS_Selection_Parametre_Unite();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -487,7 +487,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Selection_Unite_Parametre ds = new DS_Selection_Unite_Parametre();
+                DS_Selection_Parametre_Unite ds = new DS_Selection_Parametre_Unite();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -635,7 +635,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Selection_Unite_ParametreTableAdapters {
+namespace page_d_accueil.DS_Selection_Parametre_UniteTableAdapters {
     
     
     /// <summary>
@@ -793,7 +793,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString1;
+            this._connection.ConnectionString = global::page_d_accueil.Properties.Settings.Default.BD_STOCK_SCHUMACHERConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -810,7 +810,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Selection_Unite_Parametre.UniteDataTable dataTable) {
+        public virtual int Fill(DS_Selection_Parametre_Unite.UniteDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -823,9 +823,9 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Selection_Unite_Parametre.UniteDataTable GetData() {
+        public virtual DS_Selection_Parametre_Unite.UniteDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Selection_Unite_Parametre.UniteDataTable dataTable = new DS_Selection_Unite_Parametre.UniteDataTable();
+            DS_Selection_Parametre_Unite.UniteDataTable dataTable = new DS_Selection_Parametre_Unite.UniteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -833,14 +833,14 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_Unite_Parametre.UniteDataTable dataTable) {
+        public virtual int Update(DS_Selection_Parametre_Unite.UniteDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_Selection_Unite_Parametre dataSet) {
+        public virtual int Update(DS_Selection_Parametre_Unite dataSet) {
             return this.Adapter.Update(dataSet, "Unite");
         }
         
@@ -1074,7 +1074,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_Parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._uniteTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1093,7 +1093,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_Parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._uniteTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1111,7 +1111,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Selection_Unite_Parametre dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_Parametre_Unite dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._uniteTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Unite.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1153,7 +1153,7 @@ SELECT codeUnite, libelle FROM Unite WHERE (codeUnite = @codeUnite)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Selection_Unite_Parametre dataSet) {
+        public virtual int UpdateAll(DS_Selection_Parametre_Unite dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

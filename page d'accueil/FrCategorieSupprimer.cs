@@ -21,6 +21,8 @@ namespace page_d_accueil
         {
             // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Parametre_Categorie.Categorie'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.categorieTableAdapter.Fill(this.dS_Selection_Parametre_Categorie.Categorie);
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Parametre_Categorie.Categorie'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.categorieTableAdapter.Fill(this.dS_Selection_Parametre_Categorie.Categorie);
 
         }
     }
