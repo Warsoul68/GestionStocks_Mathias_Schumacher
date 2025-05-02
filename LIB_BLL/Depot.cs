@@ -8,31 +8,20 @@ namespace LIB_BLL
 {
     public class Depot
     {
-        private int num;
         private string nomD;
         private string ville;
         private string pays;
         private string longitude;
         private string latitude;
 
-        public Depot(int num, string nomD, string ville, string pays, string longitude, string latitude)
+        public Depot(string nomD, string ville, string pays, string longitude, string latitude)
         {
-            this.num = num;
+
             this.nomD = nomD;
             this.ville = ville;
             this.pays = pays;
             this.longitude = longitude;
             this.latitude = latitude;
-        }
-
-        public int getNum()
-        {
-            return num;
-        }
-
-        public void setNum(int num)
-        {
-            this.num = num;
         }
 
         public string getNomD()

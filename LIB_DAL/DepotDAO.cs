@@ -16,14 +16,14 @@ namespace LIB_DAL
             SqlCommand cmd = new SqlCommand();
             SqlDataReader dr;
             cmd.Connection = Bdd.getConnexion();
-            cmd.CommandText = "select * from Depot";
+            cmd.CommandText = "SELECT nom, ville, pays, longitude, latitude FROM Depot";
             try
             {
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
 
                 {
-                    Depot d = new Depot(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5));
+                    Depot d = new Depot(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4));
                     res.Add(d);
                 }
 
