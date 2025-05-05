@@ -39,6 +39,13 @@
             this.lblPays = new System.Windows.Forms.Label();
             this.txtPays = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.longitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.latitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Liste_Depot = new page_d_accueil.DS_Selection_Liste_Depot();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouterDepot = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
@@ -49,17 +56,10 @@
             this.txtLatitude = new System.Windows.Forms.TextBox();
             this.lblLongitude = new System.Windows.Forms.Label();
             this.txtLongitude = new System.Windows.Forms.TextBox();
-            this.dS_Selection_Liste_Depot = new page_d_accueil.DS_Selection_Liste_Depot();
-            this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.depotTableAdapter = new page_d_accueil.DS_Selection_Liste_DepotTableAdapters.DepotTableAdapter();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.longitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.latitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReVille
@@ -90,7 +90,7 @@
             // 
             this.cbRePays.FormattingEnabled = true;
             this.cbRePays.Location = new System.Drawing.Point(169, 7);
-            this.cbRePays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRePays.Margin = new System.Windows.Forms.Padding(4);
             this.cbRePays.Name = "cbRePays";
             this.cbRePays.Size = new System.Drawing.Size(199, 24);
             this.cbRePays.TabIndex = 2;
@@ -99,7 +99,7 @@
             // 
             this.cbReVille.FormattingEnabled = true;
             this.cbReVille.Location = new System.Drawing.Point(169, 44);
-            this.cbReVille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbReVille.Margin = new System.Windows.Forms.Padding(4);
             this.cbReVille.Name = "cbReVille";
             this.cbReVille.Size = new System.Drawing.Size(293, 24);
             this.cbReVille.TabIndex = 3;
@@ -117,7 +117,7 @@
             // txtNom
             // 
             this.txtNom.Location = new System.Drawing.Point(88, 96);
-            this.txtNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(4);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(211, 22);
             this.txtNom.TabIndex = 6;
@@ -126,7 +126,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Blue;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 81);
             this.flowLayoutPanel1.TabIndex = 7;
@@ -144,7 +144,7 @@
             // txtPays
             // 
             this.txtPays.Location = new System.Drawing.Point(84, 162);
-            this.txtPays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPays.Margin = new System.Windows.Forms.Padding(4);
             this.txtPays.Name = "txtPays";
             this.txtPays.Size = new System.Drawing.Size(177, 22);
             this.txtPays.TabIndex = 9;
@@ -161,16 +161,66 @@
             this.latitudeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.depotBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(13, 388);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(716, 225);
             this.dataGridView1.TabIndex = 16;
             // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "nom";
+            this.nomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // villeDataGridViewTextBoxColumn
+            // 
+            this.villeDataGridViewTextBoxColumn.DataPropertyName = "ville";
+            this.villeDataGridViewTextBoxColumn.HeaderText = "ville";
+            this.villeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.villeDataGridViewTextBoxColumn.Name = "villeDataGridViewTextBoxColumn";
+            this.villeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // paysDataGridViewTextBoxColumn
+            // 
+            this.paysDataGridViewTextBoxColumn.DataPropertyName = "pays";
+            this.paysDataGridViewTextBoxColumn.HeaderText = "pays";
+            this.paysDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.paysDataGridViewTextBoxColumn.Name = "paysDataGridViewTextBoxColumn";
+            this.paysDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // longitudeDataGridViewTextBoxColumn
+            // 
+            this.longitudeDataGridViewTextBoxColumn.DataPropertyName = "longitude";
+            this.longitudeDataGridViewTextBoxColumn.HeaderText = "longitude";
+            this.longitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.longitudeDataGridViewTextBoxColumn.Name = "longitudeDataGridViewTextBoxColumn";
+            this.longitudeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // latitudeDataGridViewTextBoxColumn
+            // 
+            this.latitudeDataGridViewTextBoxColumn.DataPropertyName = "latitude";
+            this.latitudeDataGridViewTextBoxColumn.HeaderText = "latitude";
+            this.latitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.latitudeDataGridViewTextBoxColumn.Name = "latitudeDataGridViewTextBoxColumn";
+            this.latitudeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // depotBindingSource
+            // 
+            this.depotBindingSource.DataMember = "Depot";
+            this.depotBindingSource.DataSource = this.dS_Selection_Liste_Depot;
+            // 
+            // dS_Selection_Liste_Depot
+            // 
+            this.dS_Selection_Liste_Depot.DataSetName = "DS_Selection_Liste_Depot";
+            this.dS_Selection_Liste_Depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // btnAnnuler
             // 
             this.btnAnnuler.Location = new System.Drawing.Point(36, 334);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
             this.btnAnnuler.TabIndex = 17;
@@ -180,32 +230,35 @@
             // btnAjouterDepot
             // 
             this.btnAjouterDepot.Location = new System.Drawing.Point(169, 334);
-            this.btnAjouterDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouterDepot.Margin = new System.Windows.Forms.Padding(4);
             this.btnAjouterDepot.Name = "btnAjouterDepot";
             this.btnAjouterDepot.Size = new System.Drawing.Size(135, 28);
             this.btnAjouterDepot.TabIndex = 18;
             this.btnAjouterDepot.Text = "Ajouter un dépot";
             this.btnAjouterDepot.UseVisualStyleBackColor = true;
+            this.btnAjouterDepot.Click += new System.EventHandler(this.btnAjouterDepot_Click);
             // 
             // btnEnregistrer
             // 
             this.btnEnregistrer.Location = new System.Drawing.Point(324, 334);
-            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(100, 28);
             this.btnEnregistrer.TabIndex = 19;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // btnSupprimer
             // 
             this.btnSupprimer.Location = new System.Drawing.Point(445, 334);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(100, 28);
             this.btnSupprimer.TabIndex = 20;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // lblVille
             // 
@@ -258,59 +311,9 @@
             this.txtLongitude.Size = new System.Drawing.Size(199, 22);
             this.txtLongitude.TabIndex = 26;
             // 
-            // dS_Selection_Liste_Depot
-            // 
-            this.dS_Selection_Liste_Depot.DataSetName = "DS_Selection_Liste_Depot";
-            this.dS_Selection_Liste_Depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // depotBindingSource
-            // 
-            this.depotBindingSource.DataMember = "Depot";
-            this.depotBindingSource.DataSource = this.dS_Selection_Liste_Depot;
-            // 
             // depotTableAdapter
             // 
             this.depotTableAdapter.ClearBeforeFill = true;
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "nom";
-            this.nomDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            this.nomDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // villeDataGridViewTextBoxColumn
-            // 
-            this.villeDataGridViewTextBoxColumn.DataPropertyName = "ville";
-            this.villeDataGridViewTextBoxColumn.HeaderText = "ville";
-            this.villeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.villeDataGridViewTextBoxColumn.Name = "villeDataGridViewTextBoxColumn";
-            this.villeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // paysDataGridViewTextBoxColumn
-            // 
-            this.paysDataGridViewTextBoxColumn.DataPropertyName = "pays";
-            this.paysDataGridViewTextBoxColumn.HeaderText = "pays";
-            this.paysDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.paysDataGridViewTextBoxColumn.Name = "paysDataGridViewTextBoxColumn";
-            this.paysDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // longitudeDataGridViewTextBoxColumn
-            // 
-            this.longitudeDataGridViewTextBoxColumn.DataPropertyName = "longitude";
-            this.longitudeDataGridViewTextBoxColumn.HeaderText = "longitude";
-            this.longitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.longitudeDataGridViewTextBoxColumn.Name = "longitudeDataGridViewTextBoxColumn";
-            this.longitudeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // latitudeDataGridViewTextBoxColumn
-            // 
-            this.latitudeDataGridViewTextBoxColumn.DataPropertyName = "latitude";
-            this.latitudeDataGridViewTextBoxColumn.HeaderText = "latitude";
-            this.latitudeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.latitudeDataGridViewTextBoxColumn.Name = "latitudeDataGridViewTextBoxColumn";
-            this.latitudeDataGridViewTextBoxColumn.Width = 125;
             // 
             // ListeDepot
             // 
@@ -337,13 +340,13 @@
             this.Controls.Add(this.lblReNum);
             this.Controls.Add(this.lblReVille);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListeDepot";
             this.Text = "Liste des dépots";
             this.Load += new System.EventHandler(this.ListeDepot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
