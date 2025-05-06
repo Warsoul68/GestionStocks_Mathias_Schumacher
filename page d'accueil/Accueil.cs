@@ -165,8 +165,6 @@ namespace page_d_accueil
 
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
-            List<VueArticle> fVa = VueArticleDAO.getVueArticleFiltre(cboLibelle.Text);
-            dgvArticle.DataSource = fVa;
         }
     }
 }
