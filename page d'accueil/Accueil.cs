@@ -166,6 +166,20 @@ namespace page_d_accueil
 
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
+            string libelleFiltre = cboLibelle.Text;
+
+            List<VueArticle> fVa = VueArticleDAO.getVueArticleFiltre(libelleFiltre);
+
+            if (fVa != null && fVa.Count > 0)
+            {
+                dgvArticle.DataSource = fVa;
+            }
+            else
+            {
+                MessageBox.Show("Aucun article trouvé pour le libellé spécifié.");
+                dgvArticle.DataSource = null;
+            }
+
         }
     }
 }
