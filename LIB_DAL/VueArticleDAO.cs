@@ -18,7 +18,7 @@ namespace LIB_DAL
             cmd.Connection = Bdd.getConnexion();
             cmd.CommandText = "SELECT * FROM Vue_Selection_Article WHERE 1=1 ";
 
-            if (libelleVueVA != "") cmd.CommandText += " AND Libellé='%" + libelleVueVA + "%'";
+            if (libelleVueVA != "") cmd.CommandText += " AND Libellé='" + libelleVueVA + "'";
 
             try
             {
