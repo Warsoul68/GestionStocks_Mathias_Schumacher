@@ -1,10 +1,6 @@
 ﻿using LIB_BLL;
-using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LIB_DAL
 {
@@ -16,9 +12,10 @@ namespace LIB_DAL
             SqlCommand cmd = new SqlCommand();
             SqlDataReader dr;
             cmd.Connection = Bdd.getConnexion();
+
             cmd.CommandText = "SELECT * FROM Vue_Selection_Article WHERE 1=1 ";
 
-            if (libelleVueVA != "") cmd.CommandText += " AND Libellé='" + libelleVueVA + "'";
+            if (libelleVueVA != "") cmd.CommandText += " AND Libellé LIKE '%" + libelleVueVA + "%'";
 
             try
             {
@@ -28,16 +25,16 @@ namespace LIB_DAL
                 {
                     VueArticle va = new VueArticle(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5));
                     res.Add(va);
+
                 }
 
                 dr.Close();
                 return res;
             }
+
             catch
             {
                 return null;
-
-
             }
 
         }

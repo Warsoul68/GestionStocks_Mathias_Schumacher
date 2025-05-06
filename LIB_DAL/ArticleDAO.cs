@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace LIB_DAL
 {
@@ -67,6 +68,30 @@ namespace LIB_DAL
 
             }
 
+        }
+
+        public static Article rechercher(string vRefA, string vLibelleA)
+        {
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "SELECT reference_, libelle, codeUnite, codeCategorie, idFabricant FROM Article WHERE reference_ = '" + vRefA + "' OR libelle = '" + vLibelleA + "';";
+            try
+            {
+                dr = cmd.ExecuteReader();
+                dr.Read();
+
+                Article a = new Article(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4));
+
+                dr.Close();
+                return a ;
+            }
+            catch
+            {
+                return null;
+
+
+            }
         }
 
         public static int creer(Article a)

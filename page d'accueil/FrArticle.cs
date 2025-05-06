@@ -89,9 +89,35 @@ namespace page_d_accueil
             }
         }
 
-        private void btnFiltrer_Click(object sender, EventArgs e)
+        private void btnRechercher_Click(object sender, EventArgs e)
         {
-            List<Article> liste = ArticleDAO.getArticleFiltre( cbReRef.Text, cbLibelleArticle.Text ) ;
+
+            string referenceArticle = cbReRef.Text;
+            string libelleArticle = cbLibelleArticle.Text;
+
+            Article a = ArticleDAO.rechercher(referenceArticle, libelleArticle);
+            if (a != null)
+            {
+                txtRef.Text = a.getReferenceA();
+                txtLibelle.Text = a.getLibelleA();
+
+                cbCategorie.SelectedItem = cbCategorie.Items
+                    .Cast<Categorie>()
+                    .FirstOrDefault(c => c.getCodeCategorie() == a.getCodeCategorie());
+
+                cbFabricant.SelectedItem = cbFabricant.Items
+                    .Cast<Fabricant>()
+                    .FirstOrDefault(f => f.getIdF() == a.getIdFabricant());
+
+                cbUnite.SelectedItem = cbUnite.Items
+                  .Cast<Unite>()
+                  .FirstOrDefault(u => u.getCodeUnite() == a.getCodeUnite());
+            }
+            else
+            {
+                MessageBox.Show("Article non trouvé.");
+            }
+
         }
     }
 }
