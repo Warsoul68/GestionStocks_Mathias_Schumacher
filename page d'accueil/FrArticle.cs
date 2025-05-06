@@ -119,5 +119,10 @@ namespace page_d_accueil
             }
 
         }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
