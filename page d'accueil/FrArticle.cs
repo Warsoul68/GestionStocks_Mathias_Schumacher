@@ -88,5 +88,10 @@ namespace page_d_accueil
                 MessageBox.Show("Problème sur la modification");
             }
         }
+
+        private void btnFiltrer_Click(object sender, EventArgs e)
+        {
+            List<Article> liste = ArticleDAO.getArticleFiltre( cbReRef.Text, cbLibelleArticle.Text ) ;
+        }
     }
 }

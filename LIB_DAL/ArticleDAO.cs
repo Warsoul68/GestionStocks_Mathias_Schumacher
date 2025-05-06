@@ -36,6 +36,39 @@ namespace LIB_DAL
 
         }
 
+        public static List<Article> getArticleFiltre(string refA="", string libelleA="")
+        {
+            List<Article> res = new List<Article>();
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "SELECT reference_, libelle, codeUnite, codeCategorie, idFabricant FROM dbo.Article WHERE 1=1 ";
+            
+            if (refA != "") cmd.CommandText += " AND reference_='" + refA + "'";
+            if (libelleA != "") cmd.CommandText += " AND libelle= LIKE '%" + libelleA + "%'";
+
+            try
+            {
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+
+                {
+                    Article a = new Article(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4));
+                    res.Add(a);
+                }
+
+                dr.Close();
+                return res;
+            }
+            catch
+            {
+                return null;
+
+
+            }
+
+        }
+
         public static int creer(Article a)
         {
             SqlCommand cmd = new SqlCommand();
