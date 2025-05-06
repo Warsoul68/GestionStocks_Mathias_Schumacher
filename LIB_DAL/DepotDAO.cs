@@ -38,5 +38,57 @@ namespace LIB_DAL
             }
 
         }
+
+        public static int creer(Depot d)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "INSERT INTO Depot VALUES ('" + d.getNomD() + "', '" + d.getVille() + "', '" + d.getPays() + "', '" + d.getLongitude() + "', '" + d.getLatitude() + "')";
+            try
+            {
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
+
+        public static int modifier(Depot d)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "UPDATE Depot SET ville= '" + d.getVille() + "', pays= '" + d.getPays() + "', longitude= '" + d.getLongitude() + "',latitude= '" + d.getLatitude() + "' WHERE  nom = '" + d.getNomD() + "';";
+            try
+            {
+
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
+
+        public static int supprimer(Depot d)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Bdd.getConnexion();
+            cmd.CommandText = "DELETE FROM Depot WHERE nom = '" + d.getNomD() + "';";
+            try
+            {
+                return cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return 0;
+
+
+            }
+        }
     }
 }
