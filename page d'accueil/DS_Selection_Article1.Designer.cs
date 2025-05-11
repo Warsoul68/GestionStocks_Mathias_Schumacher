@@ -20,9 +20,9 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BD_STOCK_SCHUMACHERDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Article")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BD_STOCK_SCHUMACHERDataSet : global::System.Data.DataSet {
+    public partial class DS_Selection_Article : global::System.Data.DataSet {
         
         private Vue_Selection_ArticleDataTable tableVue_Selection_Article;
         
@@ -30,7 +30,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BD_STOCK_SCHUMACHERDataSet() {
+        public DS_Selection_Article() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected BD_STOCK_SCHUMACHERDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_Article(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BD_STOCK_SCHUMACHERDataSet cln = ((BD_STOCK_SCHUMACHERDataSet)(base.Clone()));
+            DS_Selection_Article cln = ((DS_Selection_Article)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BD_STOCK_SCHUMACHERDataSet";
+            this.DataSetName = "DS_Selection_Article";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BD_STOCK_SCHUMACHERDataSet.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_Article1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableVue_Selection_Article = new Vue_Selection_ArticleDataTable();
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BD_STOCK_SCHUMACHERDataSet ds = new BD_STOCK_SCHUMACHERDataSet();
+            DS_Selection_Article ds = new DS_Selection_Article();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -288,6 +288,8 @@ namespace page_d_accueil {
             private global::System.Data.DataColumn columnFabricant;
             
             private global::System.Data.DataColumn columnUnité;
+            
+            private global::System.Data.DataColumn columnDépot;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -364,6 +366,14 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DépotColumn {
+                get {
+                    return this.columnDépot;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -399,14 +409,15 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_Selection_ArticleRow AddVue_Selection_ArticleRow(string Référence, string Libellé, string Catégorie, string Fabricant, string Unité) {
+            public Vue_Selection_ArticleRow AddVue_Selection_ArticleRow(string Référence, string Libellé, string Catégorie, string Fabricant, string Unité, string Dépot) {
                 Vue_Selection_ArticleRow rowVue_Selection_ArticleRow = ((Vue_Selection_ArticleRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Référence,
                         Libellé,
                         Catégorie,
                         Fabricant,
-                        Unité};
+                        Unité,
+                        Dépot};
                 rowVue_Selection_ArticleRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowVue_Selection_ArticleRow);
                 return rowVue_Selection_ArticleRow;
@@ -434,6 +445,7 @@ namespace page_d_accueil {
                 this.columnCatégorie = base.Columns["Catégorie"];
                 this.columnFabricant = base.Columns["Fabricant"];
                 this.columnUnité = base.Columns["Unité"];
+                this.columnDépot = base.Columns["Dépot"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -449,11 +461,14 @@ namespace page_d_accueil {
                 base.Columns.Add(this.columnFabricant);
                 this.columnUnité = new global::System.Data.DataColumn("Unité", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUnité);
+                this.columnDépot = new global::System.Data.DataColumn("Dépot", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDépot);
                 this.columnRéférence.MaxLength = 20;
                 this.columnLibellé.MaxLength = 120;
                 this.columnCatégorie.MaxLength = 50;
                 this.columnFabricant.MaxLength = 50;
                 this.columnUnité.MaxLength = 30;
+                this.columnDépot.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -521,7 +536,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BD_STOCK_SCHUMACHERDataSet ds = new BD_STOCK_SCHUMACHERDataSet();
+                DS_Selection_Article ds = new DS_Selection_Article();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -681,6 +696,23 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Dépot {
+                get {
+                    try {
+                        return ((string)(this[this.tableVue_Selection_Article.DépotColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Dépot\' dans la table \'Vue_Selection_Article\' est DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableVue_Selection_Article.DépotColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsRéférenceNull() {
                 return this.IsNull(this.tableVue_Selection_Article.RéférenceColumn);
             }
@@ -738,6 +770,18 @@ namespace page_d_accueil {
             public void SetUnitéNull() {
                 this[this.tableVue_Selection_Article.UnitéColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDépotNull() {
+                return this.IsNull(this.tableVue_Selection_Article.DépotColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDépotNull() {
+                this[this.tableVue_Selection_Article.DépotColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -775,7 +819,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
+namespace page_d_accueil.DS_Selection_ArticleTableAdapters {
     
     
     /// <summary>
@@ -904,6 +948,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Catégorie", "Catégorie");
             tableMapping.ColumnMappings.Add("Fabricant", "Fabricant");
             tableMapping.ColumnMappings.Add("Unité", "Unité");
+            tableMapping.ColumnMappings.Add("Dépot", "Dépot");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -920,8 +965,8 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Référence, Libellé, Catégorie, Fabricant, Unité FROM dbo.Vue_Selection_Art" +
-                "icle";
+            this._commandCollection[0].CommandText = "SELECT Référence, Libellé, Catégorie, Fabricant, Unité, Dépot FROM dbo.Vue_Select" +
+                "ion_Article";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -929,7 +974,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BD_STOCK_SCHUMACHERDataSet.Vue_Selection_ArticleDataTable dataTable) {
+        public virtual int Fill(DS_Selection_Article.Vue_Selection_ArticleDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -942,9 +987,9 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BD_STOCK_SCHUMACHERDataSet.Vue_Selection_ArticleDataTable GetData() {
+        public virtual DS_Selection_Article.Vue_Selection_ArticleDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BD_STOCK_SCHUMACHERDataSet.Vue_Selection_ArticleDataTable dataTable = new BD_STOCK_SCHUMACHERDataSet.Vue_Selection_ArticleDataTable();
+            DS_Selection_Article.Vue_Selection_ArticleDataTable dataTable = new DS_Selection_Article.Vue_Selection_ArticleDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1018,7 +1063,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(BD_STOCK_SCHUMACHERDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1028,7 +1073,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(BD_STOCK_SCHUMACHERDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1038,7 +1083,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(BD_STOCK_SCHUMACHERDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_Article dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1072,7 +1117,7 @@ namespace page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(BD_STOCK_SCHUMACHERDataSet dataSet) {
+        public virtual int UpdateAll(DS_Selection_Article dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
