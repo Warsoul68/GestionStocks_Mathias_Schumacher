@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DS_Selection_Niveau_Stock" targetNamespace="http://tempuri.org/DS_Selection_Niveau_Stock.xsd" xmlns:mstns="http://tempuri.org/DS_Selection_Niveau_Stock.xsd" xmlns="http://tempuri.org/DS_Selection_Niveau_Stock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DS_Selection_NiveauxStock" targetNamespace="http://tempuri.org/DS_Selection_NiveauxStock.xsd" xmlns:mstns="http://tempuri.org/DS_Selection_NiveauxStock.xsd" xmlns="http://tempuri.org/DS_Selection_NiveauxStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_STOCK_SCHUMACHERConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_STOCK_SCHUMACHERConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.page_d_accueil.Properties.Settings.GlobalReference.Default.BD_STOCK_SCHUMACHERConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vue_Niveau_StockTableAdapter" GeneratorDataComponentClassName="Vue_Niveau_StockTableAdapter" Name="Vue_Niveau_Stock" UserDataComponentName="Vue_Niveau_StockTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vue_Selection_NiveauStockTableAdapter" GeneratorDataComponentClassName="Vue_Selection_NiveauStockTableAdapter" Name="Vue_Selection_NiveauStock" UserDataComponentName="Vue_Selection_NiveauStockTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString1 (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Vue_Niveau_Stock" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="BD_STOCK_SCHUMACHERConnectionString (Settings)" DbObjectName="BD_STOCK_SCHUMACHER.dbo.Vue_Selection_NiveauStock" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Dépot, Article, Qte, Unité, Fabricant FROM dbo.Vue_Niveau_Stock</CommandText>
+                    <CommandText>SELECT Dépot, Article, Qte, Unité, Fabricant FROM dbo.Vue_Selection_NiveauStock</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -32,10 +32,10 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DS_Selection_Niveau_Stock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DS_Selection_Niveau_Stock" msprop:Generator_DataSetName="DS_Selection_Niveau_Stock">
+  <xs:element name="DS_Selection_NiveauxStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DS_Selection_NiveauxStock" msprop:Generator_DataSetName="DS_Selection_NiveauxStock">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Vue_Niveau_Stock" msprop:Generator_RowEvHandlerName="Vue_Niveau_StockRowChangeEventHandler" msprop:Generator_RowDeletedName="Vue_Niveau_StockRowDeleted" msprop:Generator_RowDeletingName="Vue_Niveau_StockRowDeleting" msprop:Generator_RowEvArgName="Vue_Niveau_StockRowChangeEvent" msprop:Generator_TablePropName="Vue_Niveau_Stock" msprop:Generator_RowChangedName="Vue_Niveau_StockRowChanged" msprop:Generator_RowChangingName="Vue_Niveau_StockRowChanging" msprop:Generator_TableClassName="Vue_Niveau_StockDataTable" msprop:Generator_RowClassName="Vue_Niveau_StockRow" msprop:Generator_TableVarName="tableVue_Niveau_Stock" msprop:Generator_UserTableName="Vue_Niveau_Stock">
+        <xs:element name="Vue_Selection_NiveauStock" msprop:Generator_RowEvHandlerName="Vue_Selection_NiveauStockRowChangeEventHandler" msprop:Generator_RowDeletedName="Vue_Selection_NiveauStockRowDeleted" msprop:Generator_RowDeletingName="Vue_Selection_NiveauStockRowDeleting" msprop:Generator_RowEvArgName="Vue_Selection_NiveauStockRowChangeEvent" msprop:Generator_TablePropName="Vue_Selection_NiveauStock" msprop:Generator_RowChangedName="Vue_Selection_NiveauStockRowChanged" msprop:Generator_RowChangingName="Vue_Selection_NiveauStockRowChanging" msprop:Generator_TableClassName="Vue_Selection_NiveauStockDataTable" msprop:Generator_RowClassName="Vue_Selection_NiveauStockRow" msprop:Generator_TableVarName="tableVue_Selection_NiveauStock" msprop:Generator_UserTableName="Vue_Selection_NiveauStock">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Dépot" msprop:Generator_ColumnPropNameInRow="Dépot" msprop:Generator_ColumnPropNameInTable="DépotColumn" msprop:Generator_ColumnVarNameInTable="columnDépot" msprop:Generator_UserColumnName="Dépot" minOccurs="0">
