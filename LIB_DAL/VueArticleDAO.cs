@@ -6,7 +6,7 @@ namespace LIB_DAL
 {
     public class VueArticleDAO
     {
-        public static List<VueArticle> getVueArticleFiltre(string libelleVueVA = "")
+        public static List<VueArticle> getVueArticleFiltre(string vLibelleVA = "")
         {
             List<VueArticle> res = new List<VueArticle>();
             SqlCommand cmd = new SqlCommand();
@@ -15,7 +15,7 @@ namespace LIB_DAL
 
             cmd.CommandText = "SELECT * FROM Vue_Selection_Article WHERE 1=1 ";
 
-            if (libelleVueVA != "") cmd.CommandText += " AND Libellé LIKE '%" + libelleVueVA + "%'";
+            if (vLibelleVA != "") cmd.CommandText += " AND Libellé LIKE '%" + vLibelleVA + "%'";
 
             try
             {

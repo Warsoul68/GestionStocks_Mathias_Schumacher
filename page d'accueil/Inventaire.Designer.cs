@@ -35,28 +35,22 @@
             this.txtHeure = new System.Windows.Forms.TextBox();
             this.lbllFiDepot = new System.Windows.Forms.Label();
             this.cbFiDepot = new System.Windows.Forms.ComboBox();
-            this.lblFiVille = new System.Windows.Forms.Label();
-            this.cbFiVille = new System.Windows.Forms.ComboBox();
-            this.lblFiPays = new System.Windows.Forms.Label();
-            this.cbFiPays = new System.Windows.Forms.ComboBox();
-            this.lblFiCategorieArticle = new System.Windows.Forms.Label();
-            this.cbFiCategorieArticle = new System.Windows.Forms.ComboBox();
-            this.lblFiFabricant = new System.Windows.Forms.Label();
-            this.cbFiFabricant = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnFiltrer = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
-            this.dS_Vue_Selection_Inventaire = new page_d_accueil.DS_Vue_Selection_Inventaire();
+            this.cbRefArticle = new System.Windows.Forms.ComboBox();
+            this.lblRefArticle = new System.Windows.Forms.Label();
+            this.dS_Selection_Inventaire = new page_d_accueil.DS_Selection_Inventaire();
             this.vueInventaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_InventaireTableAdapter = new page_d_accueil.DS_Vue_Selection_InventaireTableAdapters.Vue_InventaireTableAdapter();
-            this.refArticleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.depotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vue_InventaireTableAdapter = new page_d_accueil.DS_Selection_InventaireTableAdapters.Vue_InventaireTableAdapter();
+            this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateEtHeureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateetHeureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Inventaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Inventaire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueInventaireBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +67,7 @@
             // txtDate
             // 
             this.txtDate.Location = new System.Drawing.Point(101, 34);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(132, 22);
             this.txtDate.TabIndex = 1;
@@ -91,7 +85,7 @@
             // txtHeure
             // 
             this.txtHeure.Location = new System.Drawing.Point(101, 68);
-            this.txtHeure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeure.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeure.Name = "txtHeure";
             this.txtHeure.Size = new System.Drawing.Size(132, 22);
             this.txtHeure.TabIndex = 3;
@@ -110,100 +104,24 @@
             // 
             this.cbFiDepot.FormattingEnabled = true;
             this.cbFiDepot.Location = new System.Drawing.Point(563, 31);
-            this.cbFiDepot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFiDepot.Margin = new System.Windows.Forms.Padding(4);
             this.cbFiDepot.Name = "cbFiDepot";
             this.cbFiDepot.Size = new System.Drawing.Size(160, 24);
             this.cbFiDepot.TabIndex = 5;
-            // 
-            // lblFiVille
-            // 
-            this.lblFiVille.AutoSize = true;
-            this.lblFiVille.Location = new System.Drawing.Point(440, 68);
-            this.lblFiVille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFiVille.Name = "lblFiVille";
-            this.lblFiVille.Size = new System.Drawing.Size(96, 16);
-            this.lblFiVille.TabIndex = 6;
-            this.lblFiVille.Text = "Filtrer par ville :";
-            // 
-            // cbFiVille
-            // 
-            this.cbFiVille.FormattingEnabled = true;
-            this.cbFiVille.Location = new System.Drawing.Point(563, 64);
-            this.cbFiVille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbFiVille.Name = "cbFiVille";
-            this.cbFiVille.Size = new System.Drawing.Size(160, 24);
-            this.cbFiVille.TabIndex = 7;
-            // 
-            // lblFiPays
-            // 
-            this.lblFiPays.AutoSize = true;
-            this.lblFiPays.Location = new System.Drawing.Point(440, 103);
-            this.lblFiPays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFiPays.Name = "lblFiPays";
-            this.lblFiPays.Size = new System.Drawing.Size(102, 16);
-            this.lblFiPays.TabIndex = 8;
-            this.lblFiPays.Text = "Filtrer par pays :";
-            // 
-            // cbFiPays
-            // 
-            this.cbFiPays.FormattingEnabled = true;
-            this.cbFiPays.Location = new System.Drawing.Point(563, 97);
-            this.cbFiPays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbFiPays.Name = "cbFiPays";
-            this.cbFiPays.Size = new System.Drawing.Size(160, 24);
-            this.cbFiPays.TabIndex = 9;
-            // 
-            // lblFiCategorieArticle
-            // 
-            this.lblFiCategorieArticle.AutoSize = true;
-            this.lblFiCategorieArticle.Location = new System.Drawing.Point(29, 107);
-            this.lblFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFiCategorieArticle.Name = "lblFiCategorieArticle";
-            this.lblFiCategorieArticle.Size = new System.Drawing.Size(179, 16);
-            this.lblFiCategorieArticle.TabIndex = 10;
-            this.lblFiCategorieArticle.Text = "Filtrer par catégorie d\'article :";
-            // 
-            // cbFiCategorieArticle
-            // 
-            this.cbFiCategorieArticle.FormattingEnabled = true;
-            this.cbFiCategorieArticle.Location = new System.Drawing.Point(227, 103);
-            this.cbFiCategorieArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbFiCategorieArticle.Name = "cbFiCategorieArticle";
-            this.cbFiCategorieArticle.Size = new System.Drawing.Size(115, 24);
-            this.cbFiCategorieArticle.TabIndex = 11;
-            // 
-            // lblFiFabricant
-            // 
-            this.lblFiFabricant.AutoSize = true;
-            this.lblFiFabricant.Location = new System.Drawing.Point(261, 158);
-            this.lblFiFabricant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFiFabricant.Name = "lblFiFabricant";
-            this.lblFiFabricant.Size = new System.Drawing.Size(123, 16);
-            this.lblFiFabricant.TabIndex = 12;
-            this.lblFiFabricant.Text = "Filtrer par fabricant :";
-            // 
-            // cbFiFabricant
-            // 
-            this.cbFiFabricant.FormattingEnabled = true;
-            this.cbFiFabricant.Location = new System.Drawing.Point(403, 154);
-            this.cbFiFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbFiFabricant.Name = "cbFiFabricant";
-            this.cbFiFabricant.Size = new System.Drawing.Size(160, 24);
-            this.cbFiFabricant.TabIndex = 13;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.refArticleDataGridViewTextBoxColumn,
-            this.depotDataGridViewTextBoxColumn,
+            this.référenceDataGridViewTextBoxColumn,
+            this.dépotDataGridViewTextBoxColumn,
             this.typeDataGridViewTextBoxColumn,
-            this.dateEtHeureDataGridViewTextBoxColumn,
-            this.qteDataGridViewTextBoxColumn});
+            this.dateetHeureDataGridViewTextBoxColumn,
+            this.quantitéDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.vueInventaireBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 228);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 131);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(721, 241);
@@ -211,8 +129,8 @@
             // 
             // btnFiltrer
             // 
-            this.btnFiltrer.Location = new System.Drawing.Point(655, 490);
-            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFiltrer.Location = new System.Drawing.Point(652, 405);
+            this.btnFiltrer.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltrer.Name = "btnFiltrer";
             this.btnFiltrer.Size = new System.Drawing.Size(100, 28);
             this.btnFiltrer.TabIndex = 15;
@@ -221,8 +139,8 @@
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(265, 490);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnValider.Location = new System.Drawing.Point(241, 405);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(4);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(191, 28);
             this.btnValider.TabIndex = 16;
@@ -231,43 +149,62 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(33, 490);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnnuler.Location = new System.Drawing.Point(31, 405);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
             this.btnAnnuler.TabIndex = 17;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
-            // dS_Vue_Selection_Inventaire
+            // cbRefArticle
             // 
-            this.dS_Vue_Selection_Inventaire.DataSetName = "DS_Vue_Selection_Inventaire";
-            this.dS_Vue_Selection_Inventaire.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cbRefArticle.FormattingEnabled = true;
+            this.cbRefArticle.Location = new System.Drawing.Point(627, 68);
+            this.cbRefArticle.Margin = new System.Windows.Forms.Padding(4);
+            this.cbRefArticle.Name = "cbRefArticle";
+            this.cbRefArticle.Size = new System.Drawing.Size(115, 24);
+            this.cbRefArticle.TabIndex = 11;
+            // 
+            // lblRefArticle
+            // 
+            this.lblRefArticle.AutoSize = true;
+            this.lblRefArticle.Location = new System.Drawing.Point(440, 71);
+            this.lblRefArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRefArticle.Name = "lblRefArticle";
+            this.lblRefArticle.Size = new System.Drawing.Size(179, 16);
+            this.lblRefArticle.TabIndex = 10;
+            this.lblRefArticle.Text = "Filtrer par reference d\'article :";
+            // 
+            // dS_Selection_Inventaire
+            // 
+            this.dS_Selection_Inventaire.DataSetName = "DS_Selection_Inventaire";
+            this.dS_Selection_Inventaire.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // vueInventaireBindingSource
             // 
-            this.vueInventaireBindingSource.DataMember = "Vue Inventaire";
-            this.vueInventaireBindingSource.DataSource = this.dS_Vue_Selection_Inventaire;
+            this.vueInventaireBindingSource.DataMember = "Vue_Inventaire";
+            this.vueInventaireBindingSource.DataSource = this.dS_Selection_Inventaire;
             // 
             // vue_InventaireTableAdapter
             // 
             this.vue_InventaireTableAdapter.ClearBeforeFill = true;
             // 
-            // refArticleDataGridViewTextBoxColumn
+            // référenceDataGridViewTextBoxColumn
             // 
-            this.refArticleDataGridViewTextBoxColumn.DataPropertyName = "Ref article";
-            this.refArticleDataGridViewTextBoxColumn.HeaderText = "Ref article";
-            this.refArticleDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.refArticleDataGridViewTextBoxColumn.Name = "refArticleDataGridViewTextBoxColumn";
-            this.refArticleDataGridViewTextBoxColumn.Width = 125;
+            this.référenceDataGridViewTextBoxColumn.DataPropertyName = "Référence";
+            this.référenceDataGridViewTextBoxColumn.HeaderText = "Référence";
+            this.référenceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.référenceDataGridViewTextBoxColumn.Name = "référenceDataGridViewTextBoxColumn";
+            this.référenceDataGridViewTextBoxColumn.Width = 125;
             // 
-            // depotDataGridViewTextBoxColumn
+            // dépotDataGridViewTextBoxColumn
             // 
-            this.depotDataGridViewTextBoxColumn.DataPropertyName = "Depot";
-            this.depotDataGridViewTextBoxColumn.HeaderText = "Depot";
-            this.depotDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.depotDataGridViewTextBoxColumn.Name = "depotDataGridViewTextBoxColumn";
-            this.depotDataGridViewTextBoxColumn.Width = 125;
+            this.dépotDataGridViewTextBoxColumn.DataPropertyName = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.HeaderText = "Dépot";
+            this.dépotDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dépotDataGridViewTextBoxColumn.Name = "dépotDataGridViewTextBoxColumn";
+            this.dépotDataGridViewTextBoxColumn.Width = 125;
             // 
             // typeDataGridViewTextBoxColumn
             // 
@@ -277,51 +214,45 @@
             this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
             this.typeDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dateEtHeureDataGridViewTextBoxColumn
+            // dateetHeureDataGridViewTextBoxColumn
             // 
-            this.dateEtHeureDataGridViewTextBoxColumn.DataPropertyName = "Date et Heure";
-            this.dateEtHeureDataGridViewTextBoxColumn.HeaderText = "Date et Heure";
-            this.dateEtHeureDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateEtHeureDataGridViewTextBoxColumn.Name = "dateEtHeureDataGridViewTextBoxColumn";
-            this.dateEtHeureDataGridViewTextBoxColumn.Width = 125;
+            this.dateetHeureDataGridViewTextBoxColumn.DataPropertyName = "Date_et_Heure";
+            this.dateetHeureDataGridViewTextBoxColumn.HeaderText = "Date_et_Heure";
+            this.dateetHeureDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateetHeureDataGridViewTextBoxColumn.Name = "dateetHeureDataGridViewTextBoxColumn";
+            this.dateetHeureDataGridViewTextBoxColumn.Width = 125;
             // 
-            // qteDataGridViewTextBoxColumn
+            // quantitéDataGridViewTextBoxColumn
             // 
-            this.qteDataGridViewTextBoxColumn.DataPropertyName = "Qte";
-            this.qteDataGridViewTextBoxColumn.HeaderText = "Qte";
-            this.qteDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.qteDataGridViewTextBoxColumn.Name = "qteDataGridViewTextBoxColumn";
-            this.qteDataGridViewTextBoxColumn.Width = 125;
+            this.quantitéDataGridViewTextBoxColumn.DataPropertyName = "Quantité";
+            this.quantitéDataGridViewTextBoxColumn.HeaderText = "Quantité";
+            this.quantitéDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantitéDataGridViewTextBoxColumn.Name = "quantitéDataGridViewTextBoxColumn";
+            this.quantitéDataGridViewTextBoxColumn.Width = 125;
             // 
             // Inventaire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 554);
+            this.ClientSize = new System.Drawing.Size(799, 455);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cbFiFabricant);
-            this.Controls.Add(this.lblFiFabricant);
-            this.Controls.Add(this.cbFiCategorieArticle);
-            this.Controls.Add(this.lblFiCategorieArticle);
-            this.Controls.Add(this.cbFiPays);
-            this.Controls.Add(this.lblFiPays);
-            this.Controls.Add(this.cbFiVille);
-            this.Controls.Add(this.lblFiVille);
+            this.Controls.Add(this.cbRefArticle);
+            this.Controls.Add(this.lblRefArticle);
             this.Controls.Add(this.cbFiDepot);
             this.Controls.Add(this.lbllFiDepot);
             this.Controls.Add(this.txtHeure);
             this.Controls.Add(this.lblHeure);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.lblDate);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Inventaire";
             this.Text = "Inventaire";
             this.Load += new System.EventHandler(this.Inventaire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Inventaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Inventaire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueInventaireBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -336,25 +267,19 @@
         private System.Windows.Forms.TextBox txtHeure;
         private System.Windows.Forms.Label lbllFiDepot;
         private System.Windows.Forms.ComboBox cbFiDepot;
-        private System.Windows.Forms.Label lblFiVille;
-        private System.Windows.Forms.ComboBox cbFiVille;
-        private System.Windows.Forms.Label lblFiPays;
-        private System.Windows.Forms.ComboBox cbFiPays;
-        private System.Windows.Forms.Label lblFiCategorieArticle;
-        private System.Windows.Forms.ComboBox cbFiCategorieArticle;
-        private System.Windows.Forms.Label lblFiFabricant;
-        private System.Windows.Forms.ComboBox cbFiFabricant;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnFiltrer;
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnAnnuler;
-        private DS_Vue_Selection_Inventaire dS_Vue_Selection_Inventaire;
+        private System.Windows.Forms.ComboBox cbRefArticle;
+        private System.Windows.Forms.Label lblRefArticle;
+        private DS_Selection_Inventaire dS_Selection_Inventaire;
         private System.Windows.Forms.BindingSource vueInventaireBindingSource;
-        private DS_Vue_Selection_InventaireTableAdapters.Vue_InventaireTableAdapter vue_InventaireTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn refArticleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn depotDataGridViewTextBoxColumn;
+        private DS_Selection_InventaireTableAdapters.Vue_InventaireTableAdapter vue_InventaireTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn référenceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dépotDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateEtHeureDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateetHeureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantitéDataGridViewTextBoxColumn;
     }
 }

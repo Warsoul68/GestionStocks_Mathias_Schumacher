@@ -20,9 +20,9 @@ namespace page_d_accueil {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Vue_Selection_Inventaire")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Selection_Inventaire")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Vue_Selection_Inventaire : global::System.Data.DataSet {
+    public partial class DS_Selection_Inventaire : global::System.Data.DataSet {
         
         private Vue_InventaireDataTable tableVue_Inventaire;
         
@@ -30,7 +30,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Vue_Selection_Inventaire() {
+        public DS_Selection_Inventaire() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace page_d_accueil {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Vue_Selection_Inventaire(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Selection_Inventaire(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace page_d_accueil {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vue Inventaire"] != null)) {
-                    base.Tables.Add(new Vue_InventaireDataTable(ds.Tables["Vue Inventaire"]));
+                if ((ds.Tables["Vue_Inventaire"] != null)) {
+                    base.Tables.Add(new Vue_InventaireDataTable(ds.Tables["Vue_Inventaire"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -127,7 +127,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Vue_Selection_Inventaire cln = ((DS_Vue_Selection_Inventaire)(base.Clone()));
+            DS_Selection_Inventaire cln = ((DS_Selection_Inventaire)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace page_d_accueil {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vue Inventaire"] != null)) {
-                    base.Tables.Add(new Vue_InventaireDataTable(ds.Tables["Vue Inventaire"]));
+                if ((ds.Tables["Vue_Inventaire"] != null)) {
+                    base.Tables.Add(new Vue_InventaireDataTable(ds.Tables["Vue_Inventaire"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,7 +188,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVue_Inventaire = ((Vue_InventaireDataTable)(base.Tables["Vue Inventaire"]));
+            this.tableVue_Inventaire = ((Vue_InventaireDataTable)(base.Tables["Vue_Inventaire"]));
             if ((initTable == true)) {
                 if ((this.tableVue_Inventaire != null)) {
                     this.tableVue_Inventaire.InitVars();
@@ -199,9 +199,9 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Vue_Selection_Inventaire";
+            this.DataSetName = "DS_Selection_Inventaire";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Vue_Selection_Inventaire.xsd";
+            this.Namespace = "http://tempuri.org/DS_Selection_Inventaire1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableVue_Inventaire = new Vue_InventaireDataTable();
@@ -225,7 +225,7 @@ namespace page_d_accueil {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Vue_Selection_Inventaire ds = new DS_Vue_Selection_Inventaire();
+            DS_Selection_Inventaire ds = new DS_Selection_Inventaire();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,20 +279,20 @@ namespace page_d_accueil {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class Vue_InventaireDataTable : global::System.Data.TypedTableBase<Vue_InventaireRow> {
             
-            private global::System.Data.DataColumn columnRef_article;
+            private global::System.Data.DataColumn columnRéférence;
             
-            private global::System.Data.DataColumn columnDepot;
+            private global::System.Data.DataColumn columnDépot;
             
             private global::System.Data.DataColumn columnType;
             
             private global::System.Data.DataColumn columnDate_et_Heure;
             
-            private global::System.Data.DataColumn columnQte;
+            private global::System.Data.DataColumn columnQuantité;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public Vue_InventaireDataTable() {
-                this.TableName = "Vue Inventaire";
+                this.TableName = "Vue_Inventaire";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -324,17 +324,17 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Ref_articleColumn {
+            public global::System.Data.DataColumn RéférenceColumn {
                 get {
-                    return this.columnRef_article;
+                    return this.columnRéférence;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DepotColumn {
+            public global::System.Data.DataColumn DépotColumn {
                 get {
-                    return this.columnDepot;
+                    return this.columnDépot;
                 }
             }
             
@@ -356,9 +356,9 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn QteColumn {
+            public global::System.Data.DataColumn QuantitéColumn {
                 get {
-                    return this.columnQte;
+                    return this.columnQuantité;
                 }
             }
             
@@ -399,24 +399,17 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_InventaireRow AddVue_InventaireRow(string Ref_article, int Depot, string Type, System.DateTime Date_et_Heure, decimal Qte) {
+            public Vue_InventaireRow AddVue_InventaireRow(string Référence, string Dépot, string Type, System.DateTime Date_et_Heure, decimal Quantité) {
                 Vue_InventaireRow rowVue_InventaireRow = ((Vue_InventaireRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Ref_article,
-                        Depot,
+                        Référence,
+                        Dépot,
                         Type,
                         Date_et_Heure,
-                        Qte};
+                        Quantité};
                 rowVue_InventaireRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowVue_InventaireRow);
                 return rowVue_InventaireRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vue_InventaireRow FindByDepot(int Depot) {
-                return ((Vue_InventaireRow)(this.Rows.Find(new object[] {
-                            Depot})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -436,31 +429,28 @@ namespace page_d_accueil {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnRef_article = base.Columns["Ref article"];
-                this.columnDepot = base.Columns["Depot"];
+                this.columnRéférence = base.Columns["Référence"];
+                this.columnDépot = base.Columns["Dépot"];
                 this.columnType = base.Columns["Type"];
-                this.columnDate_et_Heure = base.Columns["Date et Heure"];
-                this.columnQte = base.Columns["Qte"];
+                this.columnDate_et_Heure = base.Columns["Date_et_Heure"];
+                this.columnQuantité = base.Columns["Quantité"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnRef_article = new global::System.Data.DataColumn("Ref article", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRef_article);
-                this.columnDepot = new global::System.Data.DataColumn("Depot", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDepot);
+                this.columnRéférence = new global::System.Data.DataColumn("Référence", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRéférence);
+                this.columnDépot = new global::System.Data.DataColumn("Dépot", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDépot);
                 this.columnType = new global::System.Data.DataColumn("Type", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnType);
-                this.columnDate_et_Heure = new global::System.Data.DataColumn("Date et Heure", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnDate_et_Heure = new global::System.Data.DataColumn("Date_et_Heure", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDate_et_Heure);
-                this.columnQte = new global::System.Data.DataColumn("Qte", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnQte);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnDepot}, true));
-                this.columnRef_article.MaxLength = 20;
-                this.columnDepot.AllowDBNull = false;
-                this.columnDepot.Unique = true;
+                this.columnQuantité = new global::System.Data.DataColumn("Quantité", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQuantité);
+                this.columnRéférence.MaxLength = 20;
+                this.columnDépot.MaxLength = 50;
                 this.columnType.MaxLength = 3;
             }
             
@@ -529,7 +519,7 @@ namespace page_d_accueil {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Vue_Selection_Inventaire ds = new DS_Vue_Selection_Inventaire();
+                DS_Selection_Inventaire ds = new DS_Selection_Inventaire();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -604,29 +594,33 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Ref_article {
+            public string Référence {
                 get {
                     try {
-                        return ((string)(this[this.tableVue_Inventaire.Ref_articleColumn]));
+                        return ((string)(this[this.tableVue_Inventaire.RéférenceColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Ref article\' dans la table \'Vue Inventaire\' est DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Référence\' dans la table \'Vue_Inventaire\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Inventaire.Ref_articleColumn] = value;
+                    this[this.tableVue_Inventaire.RéférenceColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Depot {
+            public string Dépot {
                 get {
-                    return ((int)(this[this.tableVue_Inventaire.DepotColumn]));
+                    try {
+                        return ((string)(this[this.tableVue_Inventaire.DépotColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Dépot\' dans la table \'Vue_Inventaire\' est DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVue_Inventaire.DepotColumn] = value;
+                    this[this.tableVue_Inventaire.DépotColumn] = value;
                 }
             }
             
@@ -638,7 +632,7 @@ namespace page_d_accueil {
                         return ((string)(this[this.tableVue_Inventaire.TypeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Type\' dans la table \'Vue Inventaire\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Type\' dans la table \'Vue_Inventaire\' est DBNull.", e);
                     }
                 }
                 set {
@@ -654,7 +648,7 @@ namespace page_d_accueil {
                         return ((global::System.DateTime)(this[this.tableVue_Inventaire.Date_et_HeureColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Date et Heure\' dans la table \'Vue Inventaire\' est DBNu" +
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Date_et_Heure\' dans la table \'Vue_Inventaire\' est DBNu" +
                                 "ll.", e);
                     }
                 }
@@ -665,30 +659,42 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal Qte {
+            public decimal Quantité {
                 get {
                     try {
-                        return ((decimal)(this[this.tableVue_Inventaire.QteColumn]));
+                        return ((decimal)(this[this.tableVue_Inventaire.QuantitéColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Qte\' dans la table \'Vue Inventaire\' est DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Quantité\' dans la table \'Vue_Inventaire\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVue_Inventaire.QteColumn] = value;
+                    this[this.tableVue_Inventaire.QuantitéColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsRef_articleNull() {
-                return this.IsNull(this.tableVue_Inventaire.Ref_articleColumn);
+            public bool IsRéférenceNull() {
+                return this.IsNull(this.tableVue_Inventaire.RéférenceColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetRef_articleNull() {
-                this[this.tableVue_Inventaire.Ref_articleColumn] = global::System.Convert.DBNull;
+            public void SetRéférenceNull() {
+                this[this.tableVue_Inventaire.RéférenceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDépotNull() {
+                return this.IsNull(this.tableVue_Inventaire.DépotColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDépotNull() {
+                this[this.tableVue_Inventaire.DépotColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -717,14 +723,14 @@ namespace page_d_accueil {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsQteNull() {
-                return this.IsNull(this.tableVue_Inventaire.QteColumn);
+            public bool IsQuantitéNull() {
+                return this.IsNull(this.tableVue_Inventaire.QuantitéColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetQteNull() {
-                this[this.tableVue_Inventaire.QteColumn] = global::System.Convert.DBNull;
+            public void SetQuantitéNull() {
+                this[this.tableVue_Inventaire.QuantitéColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -763,7 +769,7 @@ namespace page_d_accueil {
         }
     }
 }
-namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
+namespace page_d_accueil.DS_Selection_InventaireTableAdapters {
     
     
     /// <summary>
@@ -886,12 +892,12 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Vue Inventaire";
-            tableMapping.ColumnMappings.Add("Ref article", "Ref article");
-            tableMapping.ColumnMappings.Add("Depot", "Depot");
+            tableMapping.DataSetTable = "Vue_Inventaire";
+            tableMapping.ColumnMappings.Add("Référence", "Référence");
+            tableMapping.ColumnMappings.Add("Dépot", "Dépot");
             tableMapping.ColumnMappings.Add("Type", "Type");
-            tableMapping.ColumnMappings.Add("Date et Heure", "Date et Heure");
-            tableMapping.ColumnMappings.Add("Qte", "Qte");
+            tableMapping.ColumnMappings.Add("Date_et_Heure", "Date_et_Heure");
+            tableMapping.ColumnMappings.Add("Quantité", "Quantité");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -908,8 +914,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Ref article], Depot, Type, [Date et Heure], Qte FROM dbo.[Vue Inventaire]" +
-                "";
+            this._commandCollection[0].CommandText = "SELECT Référence, Dépot, Type, Date_et_Heure, Quantité FROM dbo.Vue_Inventaire";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -917,7 +922,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Vue_Selection_Inventaire.Vue_InventaireDataTable dataTable) {
+        public virtual int Fill(DS_Selection_Inventaire.Vue_InventaireDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -930,9 +935,9 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Vue_Selection_Inventaire.Vue_InventaireDataTable GetData() {
+        public virtual DS_Selection_Inventaire.Vue_InventaireDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Vue_Selection_Inventaire.Vue_InventaireDataTable dataTable = new DS_Vue_Selection_Inventaire.Vue_InventaireDataTable();
+            DS_Selection_Inventaire.Vue_InventaireDataTable dataTable = new DS_Selection_Inventaire.Vue_InventaireDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1006,7 +1011,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Vue_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1016,7 +1021,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Vue_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1026,7 +1031,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Vue_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Selection_Inventaire dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1060,7 +1065,7 @@ namespace page_d_accueil.DS_Vue_Selection_InventaireTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Vue_Selection_Inventaire dataSet) {
+        public virtual int UpdateAll(DS_Selection_Inventaire dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -45,7 +45,7 @@ namespace page_d_accueil
                 {
                     cboDepot.Items.Add(d.getNomD());
                 }
-                foreach (Article a in ArticleDAO.getTouteLesArticle())
+                foreach (Article a in ArticleDAO.getTousLesArticle())
                 {
                     cboLibelle.Items.Add(a.getLibelleA());
                 }

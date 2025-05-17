@@ -8,7 +8,7 @@ namespace LIB_DAL
 {
     public class ArticleDAO
     {
-        public static List<Article> getTouteLesArticle()
+        public static List<Article> getTousLesArticle()
         {
             List<Article> res = new List<Article>();
             SqlCommand cmd = new SqlCommand();
@@ -37,7 +37,7 @@ namespace LIB_DAL
 
         }
 
-        public static List<Article> getArticleFiltre(string refA="", string libelleA="")
+        /* public static List<Article> getArticleFiltre(string refA="", string libelleA="")
         {
             List<Article> res = new List<Article>();
             SqlCommand cmd = new SqlCommand();
@@ -68,7 +68,7 @@ namespace LIB_DAL
 
             }
 
-        }
+        } */
 
         public static Article rechercher(string vRefA, string vLibelleA)
         {

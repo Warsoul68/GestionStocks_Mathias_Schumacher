@@ -31,27 +31,24 @@
             this.components = new System.ComponentModel.Container();
             this.lblDepot = new System.Windows.Forms.Label();
             this.cbDepot = new System.Windows.Forms.ComboBox();
-            this.lblFabricant = new System.Windows.Forms.Label();
-            this.cbFabricant = new System.Windows.Forms.ComboBox();
-            this.lblCategorie = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblArticle = new System.Windows.Forms.Label();
+            this.cboArticle = new System.Windows.Forms.ComboBox();
             this.lblStockSuperieurOuEgale = new System.Windows.Forms.Label();
             this.cbStockInferieurOuEgale = new System.Windows.Forms.Label();
             this.txtStockInferieurOuEgale = new System.Windows.Forms.TextBox();
             this.txtStockSuperieurOuEgale = new System.Windows.Forms.TextBox();
-            this.lblDateHeure = new System.Windows.Forms.Label();
-            this.txtDateHeure = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dS_Selection_Niveau_Stock = new page_d_accueil.DS_Selection_Niveau_Stock();
-            this.vueNiveauStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_Niveau_StockTableAdapter = new page_d_accueil.DS_Selection_Niveau_StockTableAdapters.Vue_Niveau_StockTableAdapter();
             this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vueNiveauStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Niveau_Stock = new page_d_accueil.DS_Selection_Niveau_Stock();
+            this.vue_Niveau_StockTableAdapter = new page_d_accueil.DS_Selection_Niveau_StockTableAdapters.Vue_Niveau_StockTableAdapter();
+            this.btnFiltrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueNiveauStockBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDepot
@@ -73,43 +70,24 @@
             this.cbDepot.Size = new System.Drawing.Size(341, 24);
             this.cbDepot.TabIndex = 1;
             // 
-            // lblFabricant
+            // lblArticle
             // 
-            this.lblFabricant.AutoSize = true;
-            this.lblFabricant.Location = new System.Drawing.Point(16, 49);
-            this.lblFabricant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFabricant.Name = "lblFabricant";
-            this.lblFabricant.Size = new System.Drawing.Size(69, 16);
-            this.lblFabricant.TabIndex = 2;
-            this.lblFabricant.Text = "Fabricant :";
+            this.lblArticle.AutoSize = true;
+            this.lblArticle.Location = new System.Drawing.Point(13, 44);
+            this.lblArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblArticle.Name = "lblArticle";
+            this.lblArticle.Size = new System.Drawing.Size(50, 16);
+            this.lblArticle.TabIndex = 4;
+            this.lblArticle.Text = "Article :";
             // 
-            // cbFabricant
+            // cboArticle
             // 
-            this.cbFabricant.FormattingEnabled = true;
-            this.cbFabricant.Location = new System.Drawing.Point(100, 46);
-            this.cbFabricant.Margin = new System.Windows.Forms.Padding(4);
-            this.cbFabricant.Name = "cbFabricant";
-            this.cbFabricant.Size = new System.Drawing.Size(379, 24);
-            this.cbFabricant.TabIndex = 3;
-            // 
-            // lblCategorie
-            // 
-            this.lblCategorie.AutoSize = true;
-            this.lblCategorie.Location = new System.Drawing.Point(16, 81);
-            this.lblCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCategorie.Name = "lblCategorie";
-            this.lblCategorie.Size = new System.Drawing.Size(72, 16);
-            this.lblCategorie.TabIndex = 4;
-            this.lblCategorie.Text = "Catégorie :";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 78);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 24);
-            this.comboBox1.TabIndex = 5;
+            this.cboArticle.FormattingEnabled = true;
+            this.cboArticle.Location = new System.Drawing.Point(100, 41);
+            this.cboArticle.Margin = new System.Windows.Forms.Padding(4);
+            this.cboArticle.Name = "cboArticle";
+            this.cboArticle.Size = new System.Drawing.Size(252, 24);
+            this.cboArticle.TabIndex = 5;
             // 
             // lblStockSuperieurOuEgale
             // 
@@ -147,24 +125,6 @@
             this.txtStockSuperieurOuEgale.Size = new System.Drawing.Size(83, 22);
             this.txtStockSuperieurOuEgale.TabIndex = 9;
             // 
-            // lblDateHeure
-            // 
-            this.lblDateHeure.AutoSize = true;
-            this.lblDateHeure.Location = new System.Drawing.Point(500, 81);
-            this.lblDateHeure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDateHeure.Name = "lblDateHeure";
-            this.lblDateHeure.Size = new System.Drawing.Size(96, 16);
-            this.lblDateHeure.TabIndex = 10;
-            this.lblDateHeure.Text = "Date et heure : ";
-            // 
-            // txtDateHeure
-            // 
-            this.txtDateHeure.Location = new System.Drawing.Point(616, 78);
-            this.txtDateHeure.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDateHeure.Name = "txtDateHeure";
-            this.txtDateHeure.Size = new System.Drawing.Size(132, 22);
-            this.txtDateHeure.TabIndex = 11;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -175,26 +135,12 @@
             this.qteDataGridViewTextBoxColumn,
             this.unitéDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.vueNiveauStockBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 135);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 125);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(732, 233);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // dS_Selection_Niveau_Stock
-            // 
-            this.dS_Selection_Niveau_Stock.DataSetName = "DS_Selection_Niveau_Stock";
-            this.dS_Selection_Niveau_Stock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueNiveauStockBindingSource
-            // 
-            this.vueNiveauStockBindingSource.DataMember = "Vue_Niveau_Stock";
-            this.vueNiveauStockBindingSource.DataSource = this.dS_Selection_Niveau_Stock;
-            // 
-            // vue_Niveau_StockTableAdapter
-            // 
-            this.vue_Niveau_StockTableAdapter.ClearBeforeFill = true;
             // 
             // dépotDataGridViewTextBoxColumn
             // 
@@ -228,22 +174,42 @@
             this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
             this.unitéDataGridViewTextBoxColumn.Width = 125;
             // 
+            // vueNiveauStockBindingSource
+            // 
+            this.vueNiveauStockBindingSource.DataMember = "Vue_Niveau_Stock";
+            this.vueNiveauStockBindingSource.DataSource = this.dS_Selection_Niveau_Stock;
+            // 
+            // dS_Selection_Niveau_Stock
+            // 
+            this.dS_Selection_Niveau_Stock.DataSetName = "DS_Selection_Niveau_Stock";
+            this.dS_Selection_Niveau_Stock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vue_Niveau_StockTableAdapter
+            // 
+            this.vue_Niveau_StockTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnFiltrer
+            // 
+            this.btnFiltrer.Location = new System.Drawing.Point(366, 85);
+            this.btnFiltrer.Name = "btnFiltrer";
+            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrer.TabIndex = 13;
+            this.btnFiltrer.Text = "Filtrer";
+            this.btnFiltrer.UseVisualStyleBackColor = true;
+            // 
             // NiveauStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 411);
+            this.ClientSize = new System.Drawing.Size(778, 371);
+            this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtDateHeure);
-            this.Controls.Add(this.lblDateHeure);
             this.Controls.Add(this.txtStockSuperieurOuEgale);
             this.Controls.Add(this.txtStockInferieurOuEgale);
             this.Controls.Add(this.cbStockInferieurOuEgale);
             this.Controls.Add(this.lblStockSuperieurOuEgale);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.lblCategorie);
-            this.Controls.Add(this.cbFabricant);
-            this.Controls.Add(this.lblFabricant);
+            this.Controls.Add(this.cboArticle);
+            this.Controls.Add(this.lblArticle);
             this.Controls.Add(this.cbDepot);
             this.Controls.Add(this.lblDepot);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -251,8 +217,8 @@
             this.Text = "Niveaux de stock";
             this.Load += new System.EventHandler(this.NiveauStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueNiveauStockBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Niveau_Stock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,16 +228,12 @@
 
         private System.Windows.Forms.Label lblDepot;
         private System.Windows.Forms.ComboBox cbDepot;
-        private System.Windows.Forms.Label lblFabricant;
-        private System.Windows.Forms.ComboBox cbFabricant;
-        private System.Windows.Forms.Label lblCategorie;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblArticle;
+        private System.Windows.Forms.ComboBox cboArticle;
         private System.Windows.Forms.Label lblStockSuperieurOuEgale;
         private System.Windows.Forms.Label cbStockInferieurOuEgale;
         private System.Windows.Forms.TextBox txtStockInferieurOuEgale;
         private System.Windows.Forms.TextBox txtStockSuperieurOuEgale;
-        private System.Windows.Forms.Label lblDateHeure;
-        private System.Windows.Forms.TextBox txtDateHeure;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DS_Selection_Niveau_Stock dS_Selection_Niveau_Stock;
         private System.Windows.Forms.BindingSource vueNiveauStockBindingSource;
@@ -280,5 +242,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn articleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn qteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitéDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnFiltrer;
     }
 }

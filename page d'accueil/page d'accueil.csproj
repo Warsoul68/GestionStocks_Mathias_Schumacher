@@ -63,6 +63,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_FrArticle.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Selection_Inventaire1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Selection_Inventaire1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Selection_Liste_Depot1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,11 +97,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS_Vue_Selection_Inventaire.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrArticle.cs">
       <SubType>Form</SubType>
@@ -278,6 +278,17 @@
     <None Include="DS_Selection_FrArticle.xss">
       <DependentUpon>DS_Selection_FrArticle.xsd</DependentUpon>
     </None>
+    <None Include="DS_Selection_Inventaire1.xsc">
+      <DependentUpon>DS_Selection_Inventaire1.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Selection_Inventaire1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Selection_Inventaire1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Selection_Inventaire1.xss">
+      <DependentUpon>DS_Selection_Inventaire1.xsd</DependentUpon>
+    </None>
     <None Include="DS_Selection_Liste_Depot1.xsc">
       <DependentUpon>DS_Selection_Liste_Depot1.xsd</DependentUpon>
     </None>
@@ -343,17 +354,6 @@
     </None>
     <None Include="DS_Selection_Unite_Parametre.xss">
       <DependentUpon>DS_Selection_Unite_Parametre.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_Inventaire.xsc">
-      <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
-    </None>
-    <None Include="DS_Vue_Selection_Inventaire.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Vue_Selection_Inventaire.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS_Vue_Selection_Inventaire.xss">
-      <DependentUpon>DS_Vue_Selection_Inventaire.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
