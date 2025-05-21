@@ -167,7 +167,7 @@ namespace page_d_accueil
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
             dgvArticle.AutoGenerateColumns = true;
-            dgvArticle.DataSource = VueArticleDAO.getVueArticleFiltre(cboLibelle.Text);
+            dgvArticle.DataSource = VueArticleDAO.getVueArticleFiltre(cboLibelle.Text, cboFabricant.Text, cboCategorie.Text);
             dgvArticle.Columns["ReferenceVAAffiche"].HeaderText = "Référence";
             dgvArticle.Columns["LibelleVAAffiche"].HeaderText = "Libellé";
             dgvArticle.Columns["CategorieVAAffiche"].HeaderText = "Catégorie";
