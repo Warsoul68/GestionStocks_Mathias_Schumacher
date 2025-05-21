@@ -166,20 +166,14 @@ namespace page_d_accueil
 
         private void btnFiltrer_Click(object sender, EventArgs e)
         {
-            string libelleFiltre = cboLibelle.Text;
-
-            List<VueArticle> fVa = VueArticleDAO.getVueArticleFiltre(libelleFiltre);
-
-            if (fVa != null && fVa.Count > 0)
-            {
-                dgvArticle.DataSource = fVa;
-            }
-            else
-            {
-                MessageBox.Show("Aucun article trouvé pour le libellé spécifié.");
-                dgvArticle.DataSource = null;
-            }
-
+            dgvArticle.AutoGenerateColumns = true;
+            dgvArticle.DataSource = VueArticleDAO.getVueArticleFiltre(cboLibelle.Text);
+            dgvArticle.Columns["ReferenceVAAffiche"].HeaderText = "Référence";
+            dgvArticle.Columns["LibelleVAAffiche"].HeaderText = "Libellé";
+            dgvArticle.Columns["CategorieVAAffiche"].HeaderText = "Catégorie";
+            dgvArticle.Columns["FabricantVAAffiche"].HeaderText = "Fabricant";
+            dgvArticle.Columns["UniteVAAffiche"].HeaderText = "Unité";
+            dgvArticle.Columns["DepotVAAffiche"].HeaderText = "Dépot";
         }
     }
 }
