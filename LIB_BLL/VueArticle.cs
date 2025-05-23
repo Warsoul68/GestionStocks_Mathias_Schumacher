@@ -84,5 +84,12 @@ namespace LIB_BLL
         {
             this.depotVa = depotVa;
         }
+
+        public string ReferenceVAAffiche => getReferenceVa();
+        public string LibelleVAAffiche => getLibelleVa();
+        public string CategorieVAAffiche => getCategorieVa();
+        public string FabricantVAAffiche => getFabricantVa();
+        public string UniteVAAffiche => getUniteVa();
+        public string DepotVAAffiche => getDepotVa();
     }
 }

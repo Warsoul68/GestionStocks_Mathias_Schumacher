@@ -60,7 +60,7 @@ namespace LIB_DAL
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Bdd.getConnexion();
-            cmd.CommandText = "UPDATE Depot SET ville= '" + d.getVille() + "', pays= '" + d.getPays() + "', longitude= '" + d.getLongitude() + "',latitude= '" + d.getLatitude()  + "' WHERE  nom = '" + d.getNomD() + "';";
+            cmd.CommandText = "UPDATE Depot SET ville= '" + d.getVille() + "', pays= '" + d.getPays() + "', longitude= '" + d.getLongitude() + "',latitude= '" + d.getLatitude() + "' WHERE  nom = '" + d.getNomD() + "';";
             try
             {
 
@@ -90,7 +90,5 @@ namespace LIB_DAL
 
             }
         }
-
-
     }
 }

@@ -46,6 +46,7 @@
             this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Vue_Selection_Article = new page_d_accueil.DS_Vue_Selection_Article();
             this.tsParametres = new System.Windows.Forms.ToolStripDropDownButton();
             this.listeDesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,18 +67,11 @@
             this.listeMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
-            this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dS_Vue_Selection_Article = new page_d_accueil.DS_Vue_Selection_Article();
-            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
+            this.btnFiltrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
-            this.tsMenuApplication.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).BeginInit();
             this.tsMenuApplication.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,8 +223,13 @@
             // vueSelectionArticleBindingSource
             // 
             this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
+            this.vueSelectionArticleBindingSource.DataSource = this.dS_Vue_Selection_Article;
             // 
-      
+            // dS_Vue_Selection_Article
+            // 
+            this.dS_Vue_Selection_Article.DataSetName = "DS_Vue_Selection_Article";
+            this.dS_Vue_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tsParametres
             // 
             this.tsParametres.BackColor = System.Drawing.Color.Transparent;
@@ -395,57 +394,26 @@
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
-            // unitéDataGridViewTextBoxColumn
-            // 
-            this.unitéDataGridViewTextBoxColumn.DataPropertyName = "Unité";
-            this.unitéDataGridViewTextBoxColumn.HeaderText = "Unité";
-            this.unitéDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
-            this.unitéDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fabricantDataGridViewTextBoxColumn
-            // 
-            this.fabricantDataGridViewTextBoxColumn.DataPropertyName = "Fabricant";
-            this.fabricantDataGridViewTextBoxColumn.HeaderText = "Fabricant";
-            this.fabricantDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fabricantDataGridViewTextBoxColumn.Name = "fabricantDataGridViewTextBoxColumn";
-            this.fabricantDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // catégorieDataGridViewTextBoxColumn
-            // 
-            this.catégorieDataGridViewTextBoxColumn.DataPropertyName = "Catégorie";
-            this.catégorieDataGridViewTextBoxColumn.HeaderText = "Catégorie";
-            this.catégorieDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.catégorieDataGridViewTextBoxColumn.Name = "catégorieDataGridViewTextBoxColumn";
-            this.catégorieDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // libelléDataGridViewTextBoxColumn
-            // 
-            this.libelléDataGridViewTextBoxColumn.DataPropertyName = "Libellé";
-            this.libelléDataGridViewTextBoxColumn.HeaderText = "Libellé";
-            this.libelléDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.libelléDataGridViewTextBoxColumn.Name = "libelléDataGridViewTextBoxColumn";
-            this.libelléDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dS_Vue_Selection_Article
-            // 
-            this.dS_Vue_Selection_Article.DataSetName = "DS_Vue_Selection_Article";
-            this.dS_Vue_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueSelectionArticleBindingSource
-            // 
-            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
-            this.vueSelectionArticleBindingSource.DataSource = this.dS_Vue_Selection_Article;
-            // 
             // vue_Selection_ArticleTableAdapter
             // 
             this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnFiltrer
+            // 
+            this.btnFiltrer.Location = new System.Drawing.Point(482, 159);
+            this.btnFiltrer.Name = "btnFiltrer";
+            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrer.TabIndex = 12;
+            this.btnFiltrer.Text = "Filtrer";
+            this.btnFiltrer.UseVisualStyleBackColor = true;
+            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
             // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 428);
+            this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dgvArticle);
             this.Controls.Add(this.btnNewArticle);
             this.Controls.Add(this.chkClassementDecroissant);
@@ -463,10 +431,9 @@
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).EndInit();
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,6 +479,7 @@
         private DS_Vue_Selection_Article dS_Vue_Selection_Article;
         private System.Windows.Forms.BindingSource vueSelectionArticleBindingSource;
         private DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
+        private System.Windows.Forms.Button btnFiltrer;
     }
 }
 
