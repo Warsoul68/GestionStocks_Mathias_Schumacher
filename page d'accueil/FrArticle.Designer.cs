@@ -54,6 +54,7 @@
             this.dS_Selection_Vue_FrArticle = new page_d_accueil.DS_Selection_Vue_FrArticle();
             this.vue_Selection_frArticleTableAdapter = new page_d_accueil.DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter();
             this.btnFiltrer = new System.Windows.Forms.Button();
+            this.btnRechercher = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionfrArticleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).BeginInit();
@@ -264,13 +265,23 @@
             this.btnFiltrer.TabIndex = 0;
             this.btnFiltrer.Text = "Filtrer";
             this.btnFiltrer.UseVisualStyleBackColor = true;
-            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
+            // 
+            // btnRechercher
+            // 
+            this.btnRechercher.Location = new System.Drawing.Point(542, 42);
+            this.btnRechercher.Name = "btnRechercher";
+            this.btnRechercher.Size = new System.Drawing.Size(75, 23);
+            this.btnRechercher.TabIndex = 20;
+            this.btnRechercher.Text = "Rechercher";
+            this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // FrArticle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 341);
+            this.Controls.Add(this.btnRechercher);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnEnregistrer);
@@ -328,5 +339,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dépotDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnFiltrer;
+        private System.Windows.Forms.Button btnRechercher;
     }
 }

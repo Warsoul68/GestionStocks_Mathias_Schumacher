@@ -36,29 +36,21 @@ namespace LIB_DAL
 
         }
 
-        public static List<Article> getArticleFiltre(string refA="", string libelleA="")
+        public static Article rechercher(string vRefA, string vLibelleA)
         {
-            List<Article> res = new List<Article>();
             SqlCommand cmd = new SqlCommand();
             SqlDataReader dr;
             cmd.Connection = Bdd.getConnexion();
-            cmd.CommandText = "SELECT reference_, libelle, codeUnite, codeCategorie, idFabricant FROM dbo.Article WHERE 1=1 ";
-            
-            if (refA != "") cmd.CommandText += " AND reference_='" + refA + "'";
-            if (libelleA != "") cmd.CommandText += " AND libelle= LIKE '%" + libelleA + "%'";
-
+            cmd.CommandText = "SELECT reference_, libelle, codeUnite, codeCategorie, idFabricant FROM Article WHERE reference_ = '" + vRefA + "' OR libelle = '" + vLibelleA + "';";
             try
             {
                 dr = cmd.ExecuteReader();
-                while (dr.Read())
+                dr.Read();
 
-                {
-                    Article a = new Article(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4));
-                    res.Add(a);
-                }
+                Article a = new Article(dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4));
 
                 dr.Close();
-                return res;
+                return a;
             }
             catch
             {
@@ -66,7 +58,6 @@ namespace LIB_DAL
 
 
             }
-
         }
 
         public static int creer(Article a)

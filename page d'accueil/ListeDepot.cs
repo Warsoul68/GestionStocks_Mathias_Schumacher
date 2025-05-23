@@ -65,7 +65,16 @@ namespace page_d_accueil
 
         private void btnEnregistrer_Click(object sender, EventArgs e)
         {
-
+            Depot unDepot = new Depot(txtNom.Text, txtVille.Text, txtPays.Text, txtLongitude.Text, txtLatitude.Text);
+            int res = DepotDAO.modifier(unDepot);
+            if (res == 1)
+            {
+                MessageBox.Show("Modification effectuée");
+            }
+            else
+            {
+                MessageBox.Show("Problème sur la modification");
+            }
         }
     }
 }

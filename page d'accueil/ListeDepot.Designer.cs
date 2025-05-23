@@ -159,7 +159,7 @@
             // lblLatitude
             // 
             this.lblLatitude.AutoSize = true;
-            this.lblLatitude.Location = new System.Drawing.Point(29, 207);
+            this.lblLatitude.Location = new System.Drawing.Point(20, 241);
             this.lblLatitude.Name = "lblLatitude";
             this.lblLatitude.Size = new System.Drawing.Size(51, 13);
             this.lblLatitude.TabIndex = 12;
@@ -167,7 +167,7 @@
             // 
             // txtLatitude
             // 
-            this.txtLatitude.Location = new System.Drawing.Point(86, 204);
+            this.txtLatitude.Location = new System.Drawing.Point(77, 241);
             this.txtLatitude.Name = "txtLatitude";
             this.txtLatitude.Size = new System.Drawing.Size(136, 20);
             this.txtLatitude.TabIndex = 13;
@@ -175,7 +175,7 @@
             // lblLongitude
             // 
             this.lblLongitude.AutoSize = true;
-            this.lblLongitude.Location = new System.Drawing.Point(30, 239);
+            this.lblLongitude.Location = new System.Drawing.Point(20, 207);
             this.lblLongitude.Name = "lblLongitude";
             this.lblLongitude.Size = new System.Drawing.Size(60, 13);
             this.lblLongitude.TabIndex = 14;
@@ -183,7 +183,7 @@
             // 
             // txtLongitude
             // 
-            this.txtLongitude.Location = new System.Drawing.Point(96, 236);
+            this.txtLongitude.Location = new System.Drawing.Point(86, 204);
             this.txtLongitude.Name = "txtLongitude";
             this.txtLongitude.Size = new System.Drawing.Size(150, 20);
             this.txtLongitude.TabIndex = 15;
