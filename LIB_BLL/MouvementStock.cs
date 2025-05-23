@@ -8,45 +8,17 @@ namespace LIB_BLL
 {
     public class MouvementStock
     {
-        private int idMS;
-        private int num;
+        private int numDepot;
         private int codeTypeMS;
         private DateTime dateHeureMS;
-        private string type;
         private float qte;
-        private int idArticle;
-        private int numDepot;
 
-        public MouvementStock(int idMS, int num, int codeTypeMS, DateTime dateHeureMS, string type, float qte, int idArticle, int numDepot)
+        public MouvementStock(int codeTypeMS, DateTime dateHeureMS, float qte, int numDepot)
         {
-            this.idMS = idMS;
-            this.num = num;
+            this.numDepot = numDepot;
             this.codeTypeMS = codeTypeMS;
             this.dateHeureMS = dateHeureMS;
-            this.type = type;
             this.qte = qte;
-            this.idArticle = idArticle;
-            this.numDepot = numDepot;
-        }
-
-        public int getIdMS()
-        {
-            return idMS;
-        }
-
-        public void setIdMS(int idMS)
-        {
-            this.idMS = idMS;
-        }
-
-        public int getNum()
-        {
-            return num;
-        }
-
-        public void setNum(int num)
-        {
-            this.num = num;
         }
 
         public int getCodeTypeMS()
@@ -69,16 +41,6 @@ namespace LIB_BLL
             this.dateHeureMS = dateHeureMS;
         }
 
-        public string getType()
-        {
-            return type;
-        }
-
-        public void setType(string type)
-        {
-            this.type = type;
-        }
-
         public float getQte()
         {
             return qte;
@@ -87,16 +49,6 @@ namespace LIB_BLL
         public void setQte(float qte)
         {
             this.qte = qte;
-        }
-
-        public int getIdArticle()
-        {
-            return idArticle;
-        }
-
-        public void setIdArticle(int idArticle)
-        {
-            this.idArticle = idArticle;
         }
 
         public int getNumDepot()

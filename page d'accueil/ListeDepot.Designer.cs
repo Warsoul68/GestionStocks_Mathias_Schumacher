@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lblReVille = new System.Windows.Forms.Label();
-            this.lblReNum = new System.Windows.Forms.Label();
-            this.cbRePays = new System.Windows.Forms.ComboBox();
+            this.lblReNom = new System.Windows.Forms.Label();
+            this.cbReNom = new System.Windows.Forms.ComboBox();
             this.cbReVille = new System.Windows.Forms.ComboBox();
             this.lblNom = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
@@ -74,26 +74,26 @@
             this.lblReVille.TabIndex = 0;
             this.lblReVille.Text = "Recherche par ville :";
             // 
-            // lblReNum
+            // lblReNom
             // 
-            this.lblReNum.AutoSize = true;
-            this.lblReNum.BackColor = System.Drawing.Color.Blue;
-            this.lblReNum.ForeColor = System.Drawing.Color.White;
-            this.lblReNum.Location = new System.Drawing.Point(16, 11);
-            this.lblReNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblReNum.Name = "lblReNum";
-            this.lblReNum.Size = new System.Drawing.Size(150, 16);
-            this.lblReNum.TabIndex = 1;
-            this.lblReNum.Text = "Recherche par numéro :";
+            this.lblReNom.AutoSize = true;
+            this.lblReNom.BackColor = System.Drawing.Color.Blue;
+            this.lblReNom.ForeColor = System.Drawing.Color.White;
+            this.lblReNom.Location = new System.Drawing.Point(16, 11);
+            this.lblReNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReNom.Name = "lblReNom";
+            this.lblReNom.Size = new System.Drawing.Size(131, 16);
+            this.lblReNom.TabIndex = 1;
+            this.lblReNom.Text = "Recherche par nom :";
             // 
-            // cbRePays
+            // cbReNom
             // 
-            this.cbRePays.FormattingEnabled = true;
-            this.cbRePays.Location = new System.Drawing.Point(169, 7);
-            this.cbRePays.Margin = new System.Windows.Forms.Padding(4);
-            this.cbRePays.Name = "cbRePays";
-            this.cbRePays.Size = new System.Drawing.Size(199, 24);
-            this.cbRePays.TabIndex = 2;
+            this.cbReNom.FormattingEnabled = true;
+            this.cbReNom.Location = new System.Drawing.Point(169, 7);
+            this.cbReNom.Margin = new System.Windows.Forms.Padding(4);
+            this.cbReNom.Name = "cbReNom";
+            this.cbReNom.Size = new System.Drawing.Size(199, 24);
+            this.cbReNom.TabIndex = 2;
             // 
             // cbReVille
             // 
@@ -336,8 +336,8 @@
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.cbReVille);
-            this.Controls.Add(this.cbRePays);
-            this.Controls.Add(this.lblReNum);
+            this.Controls.Add(this.cbReNom);
+            this.Controls.Add(this.lblReNom);
             this.Controls.Add(this.lblReVille);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -355,8 +355,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblReVille;
-        private System.Windows.Forms.Label lblReNum;
-        private System.Windows.Forms.ComboBox cbRePays;
+        private System.Windows.Forms.Label lblReNom;
+        private System.Windows.Forms.ComboBox cbReNom;
         private System.Windows.Forms.ComboBox cbReVille;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.TextBox txtNom;

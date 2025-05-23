@@ -12,7 +12,7 @@ namespace LIB_BLL
         private string libelleA;
         private string codeUnite;
         private string codeCategorie;
-        public int idFabricant;
+        private int idFabricant;
 
         public Article(string referenceA, string libelleA, string codeUnite, string codeCategorie, int idFabricant)
         {
