@@ -37,30 +37,29 @@
             this.btnPoint = new System.Windows.Forms.Button();
             this.lblNomEntreprise = new System.Windows.Forms.Label();
             this.cbReNomEntreprise = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtNomEntreprise = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbMarque = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.referenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomEntrepriseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fabricantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Liste_Fabricant = new page_d_accueil.DS_Selection_Liste_Fabricant();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnAjouterFabricant = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
-            this.dS_Selection_Liste_Fabricant = new page_d_accueil.DS_Selection_Liste_Fabricant();
-            this.fabricantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fabricantTableAdapter = new page_d_accueil.DS_Selection_Liste_FabricantTableAdapters.FabricantTableAdapter();
-            this.referenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomEntrepriseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Fabricant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fabricantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Fabricant)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReRef
             // 
             this.lblReRef.AutoSize = true;
-            this.lblReRef.BackColor = System.Drawing.Color.Lime;
+            this.lblReRef.BackColor = System.Drawing.Color.Transparent;
             this.lblReRef.Location = new System.Drawing.Point(11, 22);
             this.lblReRef.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReRef.Name = "lblReRef";
@@ -79,7 +78,7 @@
             // lblReNomEntreprise
             // 
             this.lblReNomEntreprise.AutoSize = true;
-            this.lblReNomEntreprise.BackColor = System.Drawing.Color.Lime;
+            this.lblReNomEntreprise.BackColor = System.Drawing.Color.Transparent;
             this.lblReNomEntreprise.Location = new System.Drawing.Point(11, 53);
             this.lblReNomEntreprise.Name = "lblReNomEntreprise";
             this.lblReNomEntreprise.Size = new System.Drawing.Size(164, 13);
@@ -128,14 +127,6 @@
             this.cbReNomEntreprise.Size = new System.Drawing.Size(273, 21);
             this.cbReNomEntreprise.TabIndex = 3;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Lime;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(525, 84);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
             // txtNomEntreprise
             // 
             this.txtNomEntreprise.Location = new System.Drawing.Point(109, 129);
@@ -175,6 +166,34 @@
             this.dataGridView1.Size = new System.Drawing.Size(438, 180);
             this.dataGridView1.TabIndex = 13;
             // 
+            // referenceDataGridViewTextBoxColumn
+            // 
+            this.referenceDataGridViewTextBoxColumn.DataPropertyName = "reference";
+            this.referenceDataGridViewTextBoxColumn.HeaderText = "reference";
+            this.referenceDataGridViewTextBoxColumn.Name = "referenceDataGridViewTextBoxColumn";
+            // 
+            // nomEntrepriseDataGridViewTextBoxColumn
+            // 
+            this.nomEntrepriseDataGridViewTextBoxColumn.DataPropertyName = "nomEntreprise";
+            this.nomEntrepriseDataGridViewTextBoxColumn.HeaderText = "nomEntreprise";
+            this.nomEntrepriseDataGridViewTextBoxColumn.Name = "nomEntrepriseDataGridViewTextBoxColumn";
+            // 
+            // marqueDataGridViewTextBoxColumn
+            // 
+            this.marqueDataGridViewTextBoxColumn.DataPropertyName = "marque";
+            this.marqueDataGridViewTextBoxColumn.HeaderText = "marque";
+            this.marqueDataGridViewTextBoxColumn.Name = "marqueDataGridViewTextBoxColumn";
+            // 
+            // fabricantBindingSource
+            // 
+            this.fabricantBindingSource.DataMember = "Fabricant";
+            this.fabricantBindingSource.DataSource = this.dS_Selection_Liste_Fabricant;
+            // 
+            // dS_Selection_Liste_Fabricant
+            // 
+            this.dS_Selection_Liste_Fabricant.DataSetName = "DS_Selection_Liste_Fabricant";
+            this.dS_Selection_Liste_Fabricant.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // btnAnnuler
             // 
             this.btnAnnuler.Location = new System.Drawing.Point(12, 263);
@@ -211,37 +230,9 @@
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             // 
-            // dS_Selection_Liste_Fabricant
-            // 
-            this.dS_Selection_Liste_Fabricant.DataSetName = "DS_Selection_Liste_Fabricant";
-            this.dS_Selection_Liste_Fabricant.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fabricantBindingSource
-            // 
-            this.fabricantBindingSource.DataMember = "Fabricant";
-            this.fabricantBindingSource.DataSource = this.dS_Selection_Liste_Fabricant;
-            // 
             // fabricantTableAdapter
             // 
             this.fabricantTableAdapter.ClearBeforeFill = true;
-            // 
-            // referenceDataGridViewTextBoxColumn
-            // 
-            this.referenceDataGridViewTextBoxColumn.DataPropertyName = "reference";
-            this.referenceDataGridViewTextBoxColumn.HeaderText = "reference";
-            this.referenceDataGridViewTextBoxColumn.Name = "referenceDataGridViewTextBoxColumn";
-            // 
-            // nomEntrepriseDataGridViewTextBoxColumn
-            // 
-            this.nomEntrepriseDataGridViewTextBoxColumn.DataPropertyName = "nomEntreprise";
-            this.nomEntrepriseDataGridViewTextBoxColumn.HeaderText = "nomEntreprise";
-            this.nomEntrepriseDataGridViewTextBoxColumn.Name = "nomEntrepriseDataGridViewTextBoxColumn";
-            // 
-            // marqueDataGridViewTextBoxColumn
-            // 
-            this.marqueDataGridViewTextBoxColumn.DataPropertyName = "marque";
-            this.marqueDataGridViewTextBoxColumn.HeaderText = "marque";
-            this.marqueDataGridViewTextBoxColumn.Name = "marqueDataGridViewTextBoxColumn";
             // 
             // ListeFabricant
             // 
@@ -264,14 +255,13 @@
             this.Controls.Add(this.lblReNomEntreprise);
             this.Controls.Add(this.cbReRef);
             this.Controls.Add(this.lblReRef);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListeFabricant";
             this.Text = "Liste des fabricants";
             this.Load += new System.EventHandler(this.ListeFabricant_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Fabricant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fabricantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Fabricant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,7 +277,6 @@
         private System.Windows.Forms.Button btnPoint;
         private System.Windows.Forms.Label lblNomEntreprise;
         private System.Windows.Forms.ComboBox cbReNomEntreprise;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TextBox txtNomEntreprise;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbMarque;

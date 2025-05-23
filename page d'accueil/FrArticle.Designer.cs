@@ -48,21 +48,21 @@
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dS_Selection_Vue_FrArticle = new page_d_accueil.DS_Selection_Vue_FrArticle();
-            this.vueSelectionfrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_Selection_frArticleTableAdapter = new page_d_accueil.DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter();
             this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vueSelectionfrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Vue_FrArticle = new page_d_accueil.DS_Selection_Vue_FrArticle();
+            this.vue_Selection_frArticleTableAdapter = new page_d_accueil.DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter();
             this.btnFiltrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionfrArticleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReRef
             // 
             this.lblReRef.AutoSize = true;
-            this.lblReRef.BackColor = System.Drawing.Color.Red;
+            this.lblReRef.BackColor = System.Drawing.Color.Transparent;
             this.lblReRef.Location = new System.Drawing.Point(12, 21);
             this.lblReRef.Name = "lblReRef";
             this.lblReRef.Size = new System.Drawing.Size(132, 13);
@@ -80,7 +80,7 @@
             // lblReLibelle
             // 
             this.lblReLibelle.AutoSize = true;
-            this.lblReLibelle.BackColor = System.Drawing.Color.Red;
+            this.lblReLibelle.BackColor = System.Drawing.Color.Transparent;
             this.lblReLibelle.Location = new System.Drawing.Point(12, 47);
             this.lblReLibelle.Name = "lblReLibelle";
             this.lblReLibelle.Size = new System.Drawing.Size(113, 13);
@@ -230,20 +230,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(231, 205);
             this.dataGridView1.TabIndex = 19;
             // 
-            // dS_Selection_Vue_FrArticle
-            // 
-            this.dS_Selection_Vue_FrArticle.DataSetName = "DS_Selection_Vue_FrArticle";
-            this.dS_Selection_Vue_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueSelectionfrArticleBindingSource
-            // 
-            this.vueSelectionfrArticleBindingSource.DataMember = "Vue_Selection_frArticle";
-            this.vueSelectionfrArticleBindingSource.DataSource = this.dS_Selection_Vue_FrArticle;
-            // 
-            // vue_Selection_frArticleTableAdapter
-            // 
-            this.vue_Selection_frArticleTableAdapter.ClearBeforeFill = true;
-            // 
             // dépotDataGridViewTextBoxColumn
             // 
             this.dépotDataGridViewTextBoxColumn.DataPropertyName = "Dépot";
@@ -255,6 +241,20 @@
             this.stockDataGridViewTextBoxColumn.DataPropertyName = "Stock";
             this.stockDataGridViewTextBoxColumn.HeaderText = "Stock";
             this.stockDataGridViewTextBoxColumn.Name = "stockDataGridViewTextBoxColumn";
+            // 
+            // vueSelectionfrArticleBindingSource
+            // 
+            this.vueSelectionfrArticleBindingSource.DataMember = "Vue_Selection_frArticle";
+            this.vueSelectionfrArticleBindingSource.DataSource = this.dS_Selection_Vue_FrArticle;
+            // 
+            // dS_Selection_Vue_FrArticle
+            // 
+            this.dS_Selection_Vue_FrArticle.DataSetName = "DS_Selection_Vue_FrArticle";
+            this.dS_Selection_Vue_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vue_Selection_frArticleTableAdapter
+            // 
+            this.vue_Selection_frArticleTableAdapter.ClearBeforeFill = true;
             // 
             // btnFiltrer
             // 
@@ -294,8 +294,8 @@
             this.Text = "Article";
             this.Load += new System.EventHandler(this.FrArticle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionfrArticleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
