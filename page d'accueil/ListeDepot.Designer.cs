@@ -106,6 +106,7 @@
             this.btnRechercher.TabIndex = 5;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // lblNom
             // 

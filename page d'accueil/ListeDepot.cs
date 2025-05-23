@@ -22,6 +22,12 @@ namespace page_d_accueil
             // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Liste_depot.Depot'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.depotTableAdapter.Fill(this.dS_Selection_Liste_depot.Depot);
 
+
+        }
+
+        private void btnRechercher_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
