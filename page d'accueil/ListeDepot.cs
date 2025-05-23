@@ -49,6 +49,22 @@ namespace page_d_accueil
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
+            Depot unDepot = new Depot(txtNom.Text, txtVille.Text, txtPays.Text, txtLongitude.Text, txtLatitude.Text);
+            int res = DepotDAO.supprimer(unDepot);
+            if (res == 1)
+            {
+                MessageBox.Show("Suppression effectuée");
+            }
+            else
+            {
+                MessageBox.Show("Problème sur  la suppression");
+            }
+
+
+        }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
 
         }
     }
