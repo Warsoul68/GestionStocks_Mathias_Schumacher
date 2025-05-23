@@ -45,23 +45,23 @@
             this.lblLongitude = new System.Windows.Forms.Label();
             this.txtLongitude = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAnnuler = new System.Windows.Forms.Button();
-            this.btnAjouter = new System.Windows.Forms.Button();
-            this.btnEnregistrer = new System.Windows.Forms.Button();
-            this.btnSupprimer = new System.Windows.Forms.Button();
-            this.dS_Selection_Liste_depot = new page_d_accueil.DS_Selection_Liste_depot();
-            this.dSSelectionListedepotBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.depotTableAdapter = new page_d_accueil.DS_Selection_Liste_depotTableAdapters.DepotTableAdapter();
             this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.longitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.latitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSSelectionListedepotBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_Liste_depot = new page_d_accueil.DS_Selection_Liste_depot();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnEnregistrer = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            this.depotTableAdapter = new page_d_accueil.DS_Selection_Liste_depotTableAdapters.DepotTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionListedepotBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionListedepotBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumDepotRe
@@ -204,61 +204,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(455, 138);
             this.dataGridView1.TabIndex = 16;
             // 
-            // btnAnnuler
-            // 
-            this.btnAnnuler.Location = new System.Drawing.Point(15, 284);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
-            this.btnAnnuler.TabIndex = 17;
-            this.btnAnnuler.Text = "Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            // 
-            // btnAjouter
-            // 
-            this.btnAjouter.Location = new System.Drawing.Point(118, 284);
-            this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(104, 23);
-            this.btnAjouter.TabIndex = 18;
-            this.btnAjouter.Text = "Ajouter un dépot";
-            this.btnAjouter.UseVisualStyleBackColor = true;
-            // 
-            // btnEnregistrer
-            // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(257, 284);
-            this.btnEnregistrer.Name = "btnEnregistrer";
-            this.btnEnregistrer.Size = new System.Drawing.Size(75, 23);
-            this.btnEnregistrer.TabIndex = 19;
-            this.btnEnregistrer.Text = "Enregistrer";
-            this.btnEnregistrer.UseVisualStyleBackColor = true;
-            // 
-            // btnSupprimer
-            // 
-            this.btnSupprimer.Location = new System.Drawing.Point(370, 284);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
-            this.btnSupprimer.TabIndex = 20;
-            this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // dS_Selection_Liste_depot
-            // 
-            this.dS_Selection_Liste_depot.DataSetName = "DS_Selection_Liste_depot";
-            this.dS_Selection_Liste_depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dSSelectionListedepotBindingSource
-            // 
-            this.dSSelectionListedepotBindingSource.DataSource = this.dS_Selection_Liste_depot;
-            this.dSSelectionListedepotBindingSource.Position = 0;
-            // 
-            // depotBindingSource
-            // 
-            this.depotBindingSource.DataMember = "Depot";
-            this.depotBindingSource.DataSource = this.dSSelectionListedepotBindingSource;
-            // 
-            // depotTableAdapter
-            // 
-            this.depotTableAdapter.ClearBeforeFill = true;
-            // 
             // nomDataGridViewTextBoxColumn
             // 
             this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
@@ -289,6 +234,63 @@
             this.latitudeDataGridViewTextBoxColumn.HeaderText = "latitude";
             this.latitudeDataGridViewTextBoxColumn.Name = "latitudeDataGridViewTextBoxColumn";
             // 
+            // depotBindingSource
+            // 
+            this.depotBindingSource.DataMember = "Depot";
+            this.depotBindingSource.DataSource = this.dSSelectionListedepotBindingSource;
+            // 
+            // dSSelectionListedepotBindingSource
+            // 
+            this.dSSelectionListedepotBindingSource.DataSource = this.dS_Selection_Liste_depot;
+            this.dSSelectionListedepotBindingSource.Position = 0;
+            // 
+            // dS_Selection_Liste_depot
+            // 
+            this.dS_Selection_Liste_depot.DataSetName = "DS_Selection_Liste_depot";
+            this.dS_Selection_Liste_depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(15, 284);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 17;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Location = new System.Drawing.Point(118, 284);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(104, 23);
+            this.btnAjouter.TabIndex = 18;
+            this.btnAjouter.Text = "Ajouter un dépot";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // btnEnregistrer
+            // 
+            this.btnEnregistrer.Location = new System.Drawing.Point(257, 284);
+            this.btnEnregistrer.Name = "btnEnregistrer";
+            this.btnEnregistrer.Size = new System.Drawing.Size(75, 23);
+            this.btnEnregistrer.TabIndex = 19;
+            this.btnEnregistrer.Text = "Enregistrer";
+            this.btnEnregistrer.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(370, 284);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 20;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            // 
+            // depotTableAdapter
+            // 
+            this.depotTableAdapter.ClearBeforeFill = true;
+            // 
             // ListeDepot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +320,9 @@
             this.Text = "Liste des dépots";
             this.Load += new System.EventHandler(this.ListeDepot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionListedepotBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSSelectionListedepotBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
