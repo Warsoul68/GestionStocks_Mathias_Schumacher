@@ -175,5 +175,17 @@ namespace page_d_accueil
             dgvArticle.Columns["UniteVAAffiche"].HeaderText = "Unité";
             dgvArticle.Columns["DepotVAAffiche"].HeaderText = "Dépot";
         }
+
+        private void btnEnleverFiltre_Click(object sender, EventArgs e)
+        {
+            dgvArticle.AutoGenerateColumns = true;
+            dgvArticle.DataSource = VueArticleDAO.getTouteLaVueArticle();
+            dgvArticle.Columns["ReferenceVAAffiche"].HeaderText = "Référence";
+            dgvArticle.Columns["LibelleVAAffiche"].HeaderText = "Libellé";
+            dgvArticle.Columns["CategorieVAAffiche"].HeaderText = "Catégorie";
+            dgvArticle.Columns["FabricantVAAffiche"].HeaderText = "Fabricant";
+            dgvArticle.Columns["UniteVAAffiche"].HeaderText = "Unité";
+            dgvArticle.Columns["DepotVAAffiche"].HeaderText = "Dépot";
+        }
     }
 }

@@ -69,6 +69,7 @@
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
             this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
             this.btnFiltrer = new System.Windows.Forms.Button();
+            this.btnEnleverFiltre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).BeginInit();
@@ -155,7 +156,7 @@
             // 
             // btnNewArticle
             // 
-            this.btnNewArticle.Location = new System.Drawing.Point(576, 159);
+            this.btnNewArticle.Location = new System.Drawing.Point(583, 130);
             this.btnNewArticle.Name = "btnNewArticle";
             this.btnNewArticle.Size = new System.Drawing.Size(84, 23);
             this.btnNewArticle.TabIndex = 10;
@@ -400,7 +401,7 @@
             // 
             // btnFiltrer
             // 
-            this.btnFiltrer.Location = new System.Drawing.Point(482, 159);
+            this.btnFiltrer.Location = new System.Drawing.Point(483, 130);
             this.btnFiltrer.Name = "btnFiltrer";
             this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
             this.btnFiltrer.TabIndex = 12;
@@ -408,11 +409,22 @@
             this.btnFiltrer.UseVisualStyleBackColor = true;
             this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
             // 
+            // btnEnleverFiltre
+            // 
+            this.btnEnleverFiltre.Location = new System.Drawing.Point(530, 177);
+            this.btnEnleverFiltre.Name = "btnEnleverFiltre";
+            this.btnEnleverFiltre.Size = new System.Drawing.Size(97, 23);
+            this.btnEnleverFiltre.TabIndex = 13;
+            this.btnEnleverFiltre.Text = "Enlever les filtre";
+            this.btnEnleverFiltre.UseVisualStyleBackColor = true;
+            this.btnEnleverFiltre.Click += new System.EventHandler(this.btnEnleverFiltre_Click);
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 428);
+            this.Controls.Add(this.btnEnleverFiltre);
             this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dgvArticle);
             this.Controls.Add(this.btnNewArticle);
@@ -480,6 +492,7 @@
         private System.Windows.Forms.BindingSource vueSelectionArticleBindingSource;
         private DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
         private System.Windows.Forms.Button btnFiltrer;
+        private System.Windows.Forms.Button btnEnleverFiltre;
     }
 }
 
