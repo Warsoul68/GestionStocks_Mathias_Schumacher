@@ -175,12 +175,6 @@
     <Compile Include="Inventaire.Designer.cs">
       <DependentUpon>Inventaire.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListeDepot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListeDepot.Designer.cs">
-      <DependentUpon>ListeDepot.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListeFabricant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,9 +233,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventaire.resx">
       <DependentUpon>Inventaire.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListeDepot.resx">
-      <DependentUpon>ListeDepot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeFabricant.resx">
       <DependentUpon>ListeFabricant.cs</DependentUpon>
