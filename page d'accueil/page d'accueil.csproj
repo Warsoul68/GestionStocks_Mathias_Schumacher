@@ -193,6 +193,12 @@
     <Compile Include="MouvStock.Designer.cs">
       <DependentUpon>MouvStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="MouvStockFr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MouvStockFr.Designer.cs">
+      <DependentUpon>MouvStockFr.cs</DependentUpon>
+    </Compile>
     <Compile Include="NiveauStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MouvStock.resx">
       <DependentUpon>MouvStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MouvStockFr.resx">
+      <DependentUpon>MouvStockFr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NiveauStock.resx">
       <DependentUpon>NiveauStock.cs</DependentUpon>

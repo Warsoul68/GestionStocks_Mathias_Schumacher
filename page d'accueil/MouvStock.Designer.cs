@@ -44,22 +44,23 @@
             this.lblFiFabricant = new System.Windows.Forms.Label();
             this.cbFiFabricant = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnFiltrer = new System.Windows.Forms.Button();
-            this.btnCreer = new System.Windows.Forms.Button();
-            this.btnSupprimer = new System.Windows.Forms.Button();
-            this.btnAnnuler = new System.Windows.Forms.Button();
-            this.dS_Selection_MouvStock = new page_d_accueil.DS_Selection_MouvStock();
-            this.vueSelectionMouvStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vue_Selection_MouvStockTableAdapter = new page_d_accueil.DS_Selection_MouvStockTableAdapters.Vue_Selection_MouvStockTableAdapter();
             this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateetheureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vueSelectionMouvStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_Selection_MouvStock = new page_d_accueil.DS_Selection_MouvStock();
+            this.btnFiltrer = new System.Windows.Forms.Button();
+            this.btnCreer = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.vue_Selection_MouvStockTableAdapter = new page_d_accueil.DS_Selection_MouvStockTableAdapters.Vue_Selection_MouvStockTableAdapter();
+            this.btnFrMouvStock = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_MouvStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionMouvStockBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_MouvStock)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDate
@@ -197,57 +198,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(610, 214);
             this.dataGridView1.TabIndex = 14;
             // 
-            // btnFiltrer
-            // 
-            this.btnFiltrer.Location = new System.Drawing.Point(454, 387);
-            this.btnFiltrer.Name = "btnFiltrer";
-            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
-            this.btnFiltrer.TabIndex = 15;
-            this.btnFiltrer.Text = "Filtrer";
-            this.btnFiltrer.UseVisualStyleBackColor = true;
-            // 
-            // btnCreer
-            // 
-            this.btnCreer.Location = new System.Drawing.Point(313, 387);
-            this.btnCreer.Name = "btnCreer";
-            this.btnCreer.Size = new System.Drawing.Size(75, 23);
-            this.btnCreer.TabIndex = 16;
-            this.btnCreer.Text = "Créer";
-            this.btnCreer.UseVisualStyleBackColor = true;
-            // 
-            // btnSupprimer
-            // 
-            this.btnSupprimer.Location = new System.Drawing.Point(176, 387);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
-            this.btnSupprimer.TabIndex = 17;
-            this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // btnAnnuler
-            // 
-            this.btnAnnuler.Location = new System.Drawing.Point(34, 391);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(56, 19);
-            this.btnAnnuler.TabIndex = 18;
-            this.btnAnnuler.Text = "Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            // 
-            // dS_Selection_MouvStock
-            // 
-            this.dS_Selection_MouvStock.DataSetName = "DS_Selection_MouvStock";
-            this.dS_Selection_MouvStock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vueSelectionMouvStockBindingSource
-            // 
-            this.vueSelectionMouvStockBindingSource.DataMember = "Vue_Selection_MouvStock";
-            this.vueSelectionMouvStockBindingSource.DataSource = this.dS_Selection_MouvStock;
-            // 
-            // vue_Selection_MouvStockTableAdapter
-            // 
-            this.vue_Selection_MouvStockTableAdapter.ClearBeforeFill = true;
-            // 
             // articleDataGridViewTextBoxColumn
             // 
             this.articleDataGridViewTextBoxColumn.DataPropertyName = "Article";
@@ -284,11 +234,73 @@
             this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
             this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
             // 
+            // vueSelectionMouvStockBindingSource
+            // 
+            this.vueSelectionMouvStockBindingSource.DataMember = "Vue_Selection_MouvStock";
+            this.vueSelectionMouvStockBindingSource.DataSource = this.dS_Selection_MouvStock;
+            // 
+            // dS_Selection_MouvStock
+            // 
+            this.dS_Selection_MouvStock.DataSetName = "DS_Selection_MouvStock";
+            this.dS_Selection_MouvStock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnFiltrer
+            // 
+            this.btnFiltrer.Location = new System.Drawing.Point(454, 387);
+            this.btnFiltrer.Name = "btnFiltrer";
+            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrer.TabIndex = 15;
+            this.btnFiltrer.Text = "Filtrer";
+            this.btnFiltrer.UseVisualStyleBackColor = true;
+            // 
+            // btnCreer
+            // 
+            this.btnCreer.Location = new System.Drawing.Point(313, 387);
+            this.btnCreer.Name = "btnCreer";
+            this.btnCreer.Size = new System.Drawing.Size(75, 23);
+            this.btnCreer.TabIndex = 16;
+            this.btnCreer.Text = "Créer";
+            this.btnCreer.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(176, 387);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 17;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(34, 391);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(56, 19);
+            this.btnAnnuler.TabIndex = 18;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // vue_Selection_MouvStockTableAdapter
+            // 
+            this.vue_Selection_MouvStockTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnFrMouvStock
+            // 
+            this.btnFrMouvStock.Location = new System.Drawing.Point(482, 138);
+            this.btnFrMouvStock.Name = "btnFrMouvStock";
+            this.btnFrMouvStock.Size = new System.Drawing.Size(150, 23);
+            this.btnFrMouvStock.TabIndex = 19;
+            this.btnFrMouvStock.Text = "Gestion des mouvement";
+            this.btnFrMouvStock.UseVisualStyleBackColor = true;
+            this.btnFrMouvStock.Click += new System.EventHandler(this.btnFrMouvStock_Click);
+            // 
             // MouvStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 450);
+            this.Controls.Add(this.btnFrMouvStock);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnCreer);
@@ -312,8 +324,8 @@
             this.Text = "Mouvement de Stock";
             this.Load += new System.EventHandler(this.MouvStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_MouvStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionMouvStockBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_MouvStock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +361,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn catégorieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fabricantDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnFrMouvStock;
     }
 }
