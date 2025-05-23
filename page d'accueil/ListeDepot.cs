@@ -71,3 +71,4 @@ namespace page_d_accueil
         }
     }
 }
+
