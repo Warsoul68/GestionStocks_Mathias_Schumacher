@@ -21,8 +21,8 @@ namespace page_d_accueil
 
         private void FrArticle_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_FrArticle.Vue_Selection_FrArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.vue_Selection_FrArticleTableAdapter.Fill(this.dS_Selection_FrArticle.Vue_Selection_FrArticle);
+            // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Vue_FrArticle.Vue_Selection_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.vue_Selection_frArticleTableAdapter.Fill(this.dS_Selection_Vue_FrArticle.Vue_Selection_frArticle);
 
             foreach (Article a in ArticleDAO.getTouteLesArticle())
             {

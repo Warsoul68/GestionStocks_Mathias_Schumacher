@@ -48,6 +48,9 @@
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dS_Selection_Vue_FrArticle = new page_d_accueil.DS_Selection_Vue_FrArticle();
+            this.vueSelectionfrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vue_Selection_frArticleTableAdapter = new page_d_accueil.DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter();
             this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vueSelectionFrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -55,8 +58,8 @@
             this.vue_Selection_FrArticleTableAdapter = new page_d_accueil.DS_Selection_FrArticleTableAdapters.Vue_Selection_FrArticleTableAdapter();
             this.btnFiltrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionFrArticleBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_FrArticle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionfrArticleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReRef
@@ -94,6 +97,14 @@
             this.cbLibelleArticle.Name = "cbLibelleArticle";
             this.cbLibelleArticle.Size = new System.Drawing.Size(315, 21);
             this.cbLibelleArticle.TabIndex = 3;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Red;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 1);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(712, 90);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // lblRef
             // 
@@ -223,28 +234,38 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dépotDataGridViewTextBoxColumn,
             this.stockDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.vueSelectionFrArticleBindingSource;
+            this.dataGridView1.DataSource = this.vueSelectionfrArticleBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(471, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(231, 205);
             this.dataGridView1.TabIndex = 19;
             // 
+            // dS_Selection_Vue_FrArticle
+            // 
+            this.dS_Selection_Vue_FrArticle.DataSetName = "DS_Selection_Vue_FrArticle";
+            this.dS_Selection_Vue_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vueSelectionfrArticleBindingSource
+            // 
+            this.vueSelectionfrArticleBindingSource.DataMember = "Vue_Selection_frArticle";
+            this.vueSelectionfrArticleBindingSource.DataSource = this.dS_Selection_Vue_FrArticle;
+            // 
+            // vue_Selection_frArticleTableAdapter
+            // 
+            this.vue_Selection_frArticleTableAdapter.ClearBeforeFill = true;
+            // 
             // dépotDataGridViewTextBoxColumn
             // 
             this.dépotDataGridViewTextBoxColumn.DataPropertyName = "Dépot";
             this.dépotDataGridViewTextBoxColumn.HeaderText = "Dépot";
-            this.dépotDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dépotDataGridViewTextBoxColumn.Name = "dépotDataGridViewTextBoxColumn";
-            this.dépotDataGridViewTextBoxColumn.Width = 125;
             // 
             // stockDataGridViewTextBoxColumn
             // 
             this.stockDataGridViewTextBoxColumn.DataPropertyName = "Stock";
             this.stockDataGridViewTextBoxColumn.HeaderText = "Stock";
-            this.stockDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.stockDataGridViewTextBoxColumn.Name = "stockDataGridViewTextBoxColumn";
-            this.stockDataGridViewTextBoxColumn.Width = 125;
             // 
             // vueSelectionFrArticleBindingSource
             // 
@@ -275,7 +296,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 341);
-            this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnEnregistrer);
@@ -295,12 +315,13 @@
             this.Controls.Add(this.lblReLibelle);
             this.Controls.Add(this.cbReRef);
             this.Controls.Add(this.lblReRef);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FrArticle";
             this.Text = "Article";
             this.Load += new System.EventHandler(this.FrArticle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionFrArticleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_FrArticle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionfrArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,9 +348,9 @@
         private System.Windows.Forms.Button btnEnregistrer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DS_Selection_FrArticle dS_Selection_FrArticle;
-        private System.Windows.Forms.BindingSource vueSelectionFrArticleBindingSource;
-        private DS_Selection_FrArticleTableAdapters.Vue_Selection_FrArticleTableAdapter vue_Selection_FrArticleTableAdapter;
+        private DS_Selection_Vue_FrArticle dS_Selection_Vue_FrArticle;
+        private System.Windows.Forms.BindingSource vueSelectionfrArticleBindingSource;
+        private DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter vue_Selection_frArticleTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dépotDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnFiltrer;

@@ -61,56 +61,52 @@
             // 
             this.lblReRef.AutoSize = true;
             this.lblReRef.BackColor = System.Drawing.Color.Lime;
-            this.lblReRef.Location = new System.Drawing.Point(15, 27);
+            this.lblReRef.Location = new System.Drawing.Point(11, 22);
+            this.lblReRef.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReRef.Name = "lblReRef";
-            this.lblReRef.Size = new System.Drawing.Size(162, 16);
+            this.lblReRef.Size = new System.Drawing.Size(132, 13);
             this.lblReRef.TabIndex = 0;
             this.lblReRef.Text = "Recherche par référence :";
             // 
             // cbReRef
             // 
             this.cbReRef.FormattingEnabled = true;
-            this.cbReRef.Location = new System.Drawing.Point(241, 23);
-            this.cbReRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbReRef.Location = new System.Drawing.Point(181, 19);
             this.cbReRef.Name = "cbReRef";
-            this.cbReRef.Size = new System.Drawing.Size(160, 24);
+            this.cbReRef.Size = new System.Drawing.Size(121, 21);
             this.cbReRef.TabIndex = 1;
             // 
             // lblReNomEntreprise
             // 
             this.lblReNomEntreprise.AutoSize = true;
             this.lblReNomEntreprise.BackColor = System.Drawing.Color.Lime;
-            this.lblReNomEntreprise.Location = new System.Drawing.Point(15, 65);
-            this.lblReNomEntreprise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReNomEntreprise.Location = new System.Drawing.Point(11, 53);
             this.lblReNomEntreprise.Name = "lblReNomEntreprise";
-            this.lblReNomEntreprise.Size = new System.Drawing.Size(205, 16);
+            this.lblReNomEntreprise.Size = new System.Drawing.Size(164, 13);
             this.lblReNomEntreprise.TabIndex = 2;
             this.lblReNomEntreprise.Text = "Recherche par nom d\'entreprise :";
             // 
             // lblRef
             // 
             this.lblRef.AutoSize = true;
-            this.lblRef.Location = new System.Drawing.Point(15, 130);
-            this.lblRef.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRef.Location = new System.Drawing.Point(11, 106);
             this.lblRef.Name = "lblRef";
-            this.lblRef.Size = new System.Drawing.Size(76, 16);
+            this.lblRef.Size = new System.Drawing.Size(63, 13);
             this.lblRef.TabIndex = 5;
             this.lblRef.Text = "Référence :";
             // 
             // txtRef
             // 
-            this.txtRef.Location = new System.Drawing.Point(145, 127);
-            this.txtRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRef.Location = new System.Drawing.Point(109, 103);
             this.txtRef.Name = "txtRef";
-            this.txtRef.Size = new System.Drawing.Size(132, 22);
+            this.txtRef.Size = new System.Drawing.Size(100, 20);
             this.txtRef.TabIndex = 6;
             // 
             // btnPoint
             // 
-            this.btnPoint.Location = new System.Drawing.Point(287, 127);
-            this.btnPoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPoint.Location = new System.Drawing.Point(215, 103);
             this.btnPoint.Name = "btnPoint";
-            this.btnPoint.Size = new System.Drawing.Size(47, 28);
+            this.btnPoint.Size = new System.Drawing.Size(35, 23);
             this.btnPoint.TabIndex = 7;
             this.btnPoint.Text = "...";
             this.btnPoint.UseVisualStyleBackColor = true;
@@ -118,56 +114,50 @@
             // lblNomEntreprise
             // 
             this.lblNomEntreprise.AutoSize = true;
-            this.lblNomEntreprise.Location = new System.Drawing.Point(15, 162);
-            this.lblNomEntreprise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomEntreprise.Location = new System.Drawing.Point(11, 132);
             this.lblNomEntreprise.Name = "lblNomEntreprise";
-            this.lblNomEntreprise.Size = new System.Drawing.Size(116, 16);
+            this.lblNomEntreprise.Size = new System.Drawing.Size(92, 13);
             this.lblNomEntreprise.TabIndex = 8;
             this.lblNomEntreprise.Text = "Nom d\'entreprise :";
             // 
             // cbReNomEntreprise
             // 
             this.cbReNomEntreprise.FormattingEnabled = true;
-            this.cbReNomEntreprise.Location = new System.Drawing.Point(241, 62);
-            this.cbReNomEntreprise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbReNomEntreprise.Location = new System.Drawing.Point(181, 50);
             this.cbReNomEntreprise.Name = "cbReNomEntreprise";
-            this.cbReNomEntreprise.Size = new System.Drawing.Size(363, 24);
+            this.cbReNomEntreprise.Size = new System.Drawing.Size(273, 21);
             this.cbReNomEntreprise.TabIndex = 3;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Lime;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 103);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(525, 84);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // txtNomEntreprise
             // 
-            this.txtNomEntreprise.Location = new System.Drawing.Point(145, 159);
-            this.txtNomEntreprise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomEntreprise.Location = new System.Drawing.Point(109, 129);
             this.txtNomEntreprise.Name = "txtNomEntreprise";
-            this.txtNomEntreprise.Size = new System.Drawing.Size(309, 22);
+            this.txtNomEntreprise.Size = new System.Drawing.Size(233, 20);
             this.txtNomEntreprise.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 198);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Marque :";
             // 
             // cbMarque
             // 
             this.cbMarque.FormattingEnabled = true;
-            this.cbMarque.Location = new System.Drawing.Point(145, 194);
-            this.cbMarque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMarque.Location = new System.Drawing.Point(109, 158);
             this.cbMarque.Name = "cbMarque";
-            this.cbMarque.Size = new System.Drawing.Size(160, 24);
+            this.cbMarque.Size = new System.Drawing.Size(121, 21);
             this.cbMarque.TabIndex = 12;
             // 
             // dataGridView1
@@ -179,49 +169,44 @@
             this.nomEntrepriseDataGridViewTextBoxColumn,
             this.marqueDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fabricantBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 372);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 302);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 222);
+            this.dataGridView1.Size = new System.Drawing.Size(438, 180);
             this.dataGridView1.TabIndex = 13;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(16, 324);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnnuler.Location = new System.Drawing.Point(12, 263);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(100, 28);
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 14;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
             // btnEnregistrer
             // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(299, 324);
-            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnregistrer.Location = new System.Drawing.Point(224, 263);
             this.btnEnregistrer.Name = "btnEnregistrer";
-            this.btnEnregistrer.Size = new System.Drawing.Size(100, 28);
+            this.btnEnregistrer.Size = new System.Drawing.Size(75, 23);
             this.btnEnregistrer.TabIndex = 15;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
             // 
             // btnAjouterFabricant
             // 
-            this.btnAjouterFabricant.Location = new System.Drawing.Point(129, 324);
-            this.btnAjouterFabricant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouterFabricant.Location = new System.Drawing.Point(97, 263);
             this.btnAjouterFabricant.Name = "btnAjouterFabricant";
-            this.btnAjouterFabricant.Size = new System.Drawing.Size(149, 28);
+            this.btnAjouterFabricant.Size = new System.Drawing.Size(112, 23);
             this.btnAjouterFabricant.TabIndex = 16;
             this.btnAjouterFabricant.Text = "Ajouter un fabricant";
             this.btnAjouterFabricant.UseVisualStyleBackColor = true;
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(423, 324);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimer.Location = new System.Drawing.Point(317, 263);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(100, 28);
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 17;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
@@ -244,31 +229,25 @@
             // 
             this.referenceDataGridViewTextBoxColumn.DataPropertyName = "reference";
             this.referenceDataGridViewTextBoxColumn.HeaderText = "reference";
-            this.referenceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.referenceDataGridViewTextBoxColumn.Name = "referenceDataGridViewTextBoxColumn";
-            this.referenceDataGridViewTextBoxColumn.Width = 125;
             // 
             // nomEntrepriseDataGridViewTextBoxColumn
             // 
             this.nomEntrepriseDataGridViewTextBoxColumn.DataPropertyName = "nomEntreprise";
             this.nomEntrepriseDataGridViewTextBoxColumn.HeaderText = "nomEntreprise";
-            this.nomEntrepriseDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nomEntrepriseDataGridViewTextBoxColumn.Name = "nomEntrepriseDataGridViewTextBoxColumn";
-            this.nomEntrepriseDataGridViewTextBoxColumn.Width = 125;
             // 
             // marqueDataGridViewTextBoxColumn
             // 
             this.marqueDataGridViewTextBoxColumn.DataPropertyName = "marque";
             this.marqueDataGridViewTextBoxColumn.HeaderText = "marque";
-            this.marqueDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.marqueDataGridViewTextBoxColumn.Name = "marqueDataGridViewTextBoxColumn";
-            this.marqueDataGridViewTextBoxColumn.Width = 125;
             // 
             // ListeFabricant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 607);
+            this.ClientSize = new System.Drawing.Size(530, 493);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouterFabricant);
             this.Controls.Add(this.btnEnregistrer);
@@ -286,7 +265,7 @@
             this.Controls.Add(this.cbReRef);
             this.Controls.Add(this.lblReRef);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListeFabricant";
             this.Text = "Liste des fabricants";
             this.Load += new System.EventHandler(this.ListeFabricant_Load);

@@ -67,9 +67,17 @@
             this.listeMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeMulticritèresDesMouvementsDeStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuApplication = new System.Windows.Forms.ToolStrip();
-            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.BD_STOCK_SCHUMACHERDataSetTableAdapters.Vue_Selection_ArticleTableAdapter();
-            this.btnFiltrer = new System.Windows.Forms.Button();
+            this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catégorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelléDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.référenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dS_Vue_Selection_Article = new page_d_accueil.DS_Vue_Selection_Article();
+            this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vue_Selection_ArticleTableAdapter = new page_d_accueil.DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).BeginInit();
+            this.tsMenuApplication.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).BeginInit();
             this.tsMenuApplication.SuspendLayout();
@@ -394,9 +402,37 @@
             this.tsMenuApplication.TabIndex = 0;
             this.tsMenuApplication.Text = "toolStrip1";
             // 
-            // vue_Selection_ArticleTableAdapter
+            // unitéDataGridViewTextBoxColumn
             // 
-            this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
+            this.unitéDataGridViewTextBoxColumn.DataPropertyName = "Unité";
+            this.unitéDataGridViewTextBoxColumn.HeaderText = "Unité";
+            this.unitéDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitéDataGridViewTextBoxColumn.Name = "unitéDataGridViewTextBoxColumn";
+            this.unitéDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fabricantDataGridViewTextBoxColumn
+            // 
+            this.fabricantDataGridViewTextBoxColumn.DataPropertyName = "Fabricant";
+            this.fabricantDataGridViewTextBoxColumn.HeaderText = "Fabricant";
+            this.fabricantDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fabricantDataGridViewTextBoxColumn.Name = "fabricantDataGridViewTextBoxColumn";
+            this.fabricantDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // catégorieDataGridViewTextBoxColumn
+            // 
+            this.catégorieDataGridViewTextBoxColumn.DataPropertyName = "Catégorie";
+            this.catégorieDataGridViewTextBoxColumn.HeaderText = "Catégorie";
+            this.catégorieDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.catégorieDataGridViewTextBoxColumn.Name = "catégorieDataGridViewTextBoxColumn";
+            this.catégorieDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // libelléDataGridViewTextBoxColumn
+            // 
+            this.libelléDataGridViewTextBoxColumn.DataPropertyName = "Libellé";
+            this.libelléDataGridViewTextBoxColumn.HeaderText = "Libellé";
+            this.libelléDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.libelléDataGridViewTextBoxColumn.Name = "libelléDataGridViewTextBoxColumn";
+            this.libelléDataGridViewTextBoxColumn.Width = 125;
             // 
             // btnFiltrer
             // 
@@ -408,12 +444,25 @@
             this.btnFiltrer.UseVisualStyleBackColor = true;
             this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
             // 
+            // dS_Vue_Selection_Article
+            // 
+            this.dS_Vue_Selection_Article.DataSetName = "DS_Vue_Selection_Article";
+            this.dS_Vue_Selection_Article.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vueSelectionArticleBindingSource
+            // 
+            this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
+            this.vueSelectionArticleBindingSource.DataSource = this.dS_Vue_Selection_Article;
+            // 
+            // vue_Selection_ArticleTableAdapter
+            // 
+            this.vue_Selection_ArticleTableAdapter.ClearBeforeFill = true;
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 428);
-            this.Controls.Add(this.btnFiltrer);
             this.Controls.Add(this.dgvArticle);
             this.Controls.Add(this.btnNewArticle);
             this.Controls.Add(this.chkClassementDecroissant);
@@ -434,6 +483,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).EndInit();
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,15 +522,14 @@
         private System.Windows.Forms.ToolStripMenuItem listeMultiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeMulticritèresDesMouvementsDeStockToolStripMenuItem;
         private System.Windows.Forms.ToolStrip tsMenuApplication;
-        private BD_STOCK_SCHUMACHERDataSet bD_STOCK_SCHUMACHERDataSet;
-        private System.Windows.Forms.BindingSource vueSelectionArticleBindingSource;
-        private BD_STOCK_SCHUMACHERDataSetTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn référenceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn libelléDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn catégorieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fabricantDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitéDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnFiltrer;
+        private DS_Vue_Selection_Article dS_Vue_Selection_Article;
+        private System.Windows.Forms.BindingSource vueSelectionArticleBindingSource;
+        private DS_Vue_Selection_ArticleTableAdapters.Vue_Selection_ArticleTableAdapter vue_Selection_ArticleTableAdapter;
     }
 }
 
