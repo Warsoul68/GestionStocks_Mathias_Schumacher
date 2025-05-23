@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LIB_BLL;
+using LIB_DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +29,7 @@ namespace page_d_accueil
 
         private void btnRechercher_Click(object sender, EventArgs e)
         {
+    
 
         }
     }
