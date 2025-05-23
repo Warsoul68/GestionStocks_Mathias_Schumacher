@@ -45,7 +45,6 @@
             this.longitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.latitudeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.depotBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dS_Selection_Liste_Depot = new page_d_accueil.DS_Selection_Liste_Depot();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouterDepot = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).BeginInit();
             this.SuspendLayout();
             // 
             // lblReVille
@@ -211,15 +209,6 @@
             this.latitudeDataGridViewTextBoxColumn.Name = "latitudeDataGridViewTextBoxColumn";
             this.latitudeDataGridViewTextBoxColumn.Width = 125;
             // 
-            // depotBindingSource
-            // 
-            this.depotBindingSource.DataMember = "Depot";
-            this.depotBindingSource.DataSource = this.dS_Selection_Liste_Depot;
-            // 
-            // dS_Selection_Liste_Depot
-            // 
-            this.dS_Selection_Liste_Depot.DataSetName = "DS_Selection_Liste_Depot";
-            this.dS_Selection_Liste_Depot.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnAnnuler
             //
@@ -398,7 +387,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_depot)).EndInit();
 
             ((System.ComponentModel.ISupportInitialize)(this.depotBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Liste_Depot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

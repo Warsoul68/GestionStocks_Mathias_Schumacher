@@ -53,9 +53,6 @@
             this.vue_Selection_frArticleTableAdapter = new page_d_accueil.DS_Selection_Vue_FrArticleTableAdapters.Vue_Selection_frArticleTableAdapter();
             this.dépotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vueSelectionFrArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dS_Selection_FrArticle = new page_d_accueil.DS_Selection_FrArticle();
-            this.vue_Selection_FrArticleTableAdapter = new page_d_accueil.DS_Selection_FrArticleTableAdapters.Vue_Selection_FrArticleTableAdapter();
             this.btnFiltrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Selection_Vue_FrArticle)).BeginInit();
@@ -97,14 +94,6 @@
             this.cbLibelleArticle.Name = "cbLibelleArticle";
             this.cbLibelleArticle.Size = new System.Drawing.Size(315, 21);
             this.cbLibelleArticle.TabIndex = 3;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Red;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(712, 90);
-            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // lblRef
             // 
@@ -267,20 +256,6 @@
             this.stockDataGridViewTextBoxColumn.HeaderText = "Stock";
             this.stockDataGridViewTextBoxColumn.Name = "stockDataGridViewTextBoxColumn";
             // 
-            // vueSelectionFrArticleBindingSource
-            // 
-            this.vueSelectionFrArticleBindingSource.DataMember = "Vue_Selection_FrArticle";
-            this.vueSelectionFrArticleBindingSource.DataSource = this.dS_Selection_FrArticle;
-            // 
-            // dS_Selection_FrArticle
-            // 
-            this.dS_Selection_FrArticle.DataSetName = "DS_Selection_FrArticle";
-            this.dS_Selection_FrArticle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vue_Selection_FrArticleTableAdapter
-            // 
-            this.vue_Selection_FrArticleTableAdapter.ClearBeforeFill = true;
-            // 
             // btnFiltrer
             // 
             this.btnFiltrer.Location = new System.Drawing.Point(495, 44);
@@ -315,7 +290,6 @@
             this.Controls.Add(this.lblReLibelle);
             this.Controls.Add(this.cbReRef);
             this.Controls.Add(this.lblReRef);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FrArticle";
             this.Text = "Article";
             this.Load += new System.EventHandler(this.FrArticle_Load);

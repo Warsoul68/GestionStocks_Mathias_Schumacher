@@ -46,7 +46,6 @@
             this.fabricantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vueSelectionArticleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_STOCK_SCHUMACHERDataSet = new page_d_accueil.BD_STOCK_SCHUMACHERDataSet();
             this.tsParametres = new System.Windows.Forms.ToolStripDropDownButton();
             this.listeDesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +78,6 @@
             this.tsMenuApplication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).BeginInit();
             this.tsMenuApplication.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,13 +229,8 @@
             // vueSelectionArticleBindingSource
             // 
             this.vueSelectionArticleBindingSource.DataMember = "Vue_Selection_Article";
-            this.vueSelectionArticleBindingSource.DataSource = this.bD_STOCK_SCHUMACHERDataSet;
             // 
-            // bD_STOCK_SCHUMACHERDataSet
-            // 
-            this.bD_STOCK_SCHUMACHERDataSet.DataSetName = "BD_STOCK_SCHUMACHERDataSet";
-            this.bD_STOCK_SCHUMACHERDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+      
             // tsParametres
             // 
             this.tsParametres.BackColor = System.Drawing.Color.Transparent;
@@ -434,16 +427,6 @@
             this.libelléDataGridViewTextBoxColumn.Name = "libelléDataGridViewTextBoxColumn";
             this.libelléDataGridViewTextBoxColumn.Width = 125;
             // 
-            // btnFiltrer
-            // 
-            this.btnFiltrer.Location = new System.Drawing.Point(486, 159);
-            this.btnFiltrer.Name = "btnFiltrer";
-            this.btnFiltrer.Size = new System.Drawing.Size(75, 23);
-            this.btnFiltrer.TabIndex = 12;
-            this.btnFiltrer.Text = "Filtrer";
-            this.btnFiltrer.UseVisualStyleBackColor = true;
-            this.btnFiltrer.Click += new System.EventHandler(this.btnFiltrer_Click);
-            // 
             // dS_Vue_Selection_Article
             // 
             this.dS_Vue_Selection_Article.DataSetName = "DS_Vue_Selection_Article";
@@ -480,7 +463,6 @@
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueSelectionArticleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_STOCK_SCHUMACHERDataSet)).EndInit();
             this.tsMenuApplication.ResumeLayout(false);
             this.tsMenuApplication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Vue_Selection_Article)).EndInit();
