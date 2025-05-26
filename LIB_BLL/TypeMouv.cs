@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Type
+    public class TypeMouv
     {
         private int codeType;
         private string libelleCT;
 
-        public Type(int codeType, string libelleCT)
+        public TypeMouv(int codeType, string libelleCT)
         {
             this.codeType = codeType;
             this.libelleCT = libelleCT;

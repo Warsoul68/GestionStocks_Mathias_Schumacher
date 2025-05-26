@@ -8,17 +8,29 @@ namespace LIB_BLL
 {
     public class MouvementStock
     {
+        private int idMouvStock;
         private int numDepot;
         private int codeTypeMS;
         private DateTime dateHeureMS;
         private float qte;
 
-        public MouvementStock(int codeTypeMS, DateTime dateHeureMS, float qte, int numDepot)
+        public MouvementStock(int idMouvStock, int codeTypeMS, DateTime dateHeureMS, float qte, int numDepot)
         {
+            this.idMouvStock = idMouvStock;
             this.numDepot = numDepot;
             this.codeTypeMS = codeTypeMS;
             this.dateHeureMS = dateHeureMS;
             this.qte = qte;
+        }
+
+        public int getIdMouvStock()
+        {
+            return idMouvStock;
+        }
+
+        public void setIdMouvStock(int idMouvStock)
+        {
+            this.idMouvStock = idMouvStock;
         }
 
         public int getCodeTypeMS()
