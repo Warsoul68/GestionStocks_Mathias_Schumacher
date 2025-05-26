@@ -24,7 +24,7 @@ namespace page_d_accueil
             // TODO: cette ligne de code charge les données dans la table 'dS_Selection_Vue_FrArticle.Vue_Selection_frArticle'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.vue_Selection_frArticleTableAdapter.Fill(this.dS_Selection_Vue_FrArticle.Vue_Selection_frArticle);
 
-            foreach (Article a in ArticleDAO.getTouteLesArticle())
+            foreach (Article a in ArticleDAO.getTousLesArticle())
             {
                 cbReRef.Items.Add(a.getReferenceA());
                 cbLibelleArticle.Items.Add(a.getLibelleA());

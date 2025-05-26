@@ -23,5 +23,12 @@ namespace page_d_accueil
             this.vue_Selection_MouvStockTableAdapter.Fill(this.dS_Selection_MouvStock.Vue_Selection_MouvStock);
 
         }
+
+        private void btnFrMouvStock_Click(object sender, EventArgs e)
+        {
+            MouvStockFr MSF = new MouvStockFr();
+            MSF.Show();
+
+        }
     }
 }

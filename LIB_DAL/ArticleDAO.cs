@@ -7,7 +7,7 @@ namespace LIB_DAL
 {
     public class ArticleDAO
     {
-        public static List<Article> getTouteLesArticle()
+        public static List<Article> getTousLesArticle()
         {
             List<Article> res = new List<Article>();
             SqlCommand cmd = new SqlCommand();
