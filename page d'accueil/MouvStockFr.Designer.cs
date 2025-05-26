@@ -40,6 +40,8 @@
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.lblType = new System.Windows.Forms.Label();
+            this.cboType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantite)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,14 +50,14 @@
             this.lblNomArticle.AutoSize = true;
             this.lblNomArticle.Location = new System.Drawing.Point(12, 18);
             this.lblNomArticle.Name = "lblNomArticle";
-            this.lblNomArticle.Size = new System.Drawing.Size(67, 13);
+            this.lblNomArticle.Size = new System.Drawing.Size(86, 13);
             this.lblNomArticle.TabIndex = 0;
-            this.lblNomArticle.Text = "Nom Article :";
+            this.lblNomArticle.Text = "Nom de l\'Article :";
             // 
             // cboArticle
             // 
             this.cboArticle.FormattingEnabled = true;
-            this.cboArticle.Location = new System.Drawing.Point(85, 15);
+            this.cboArticle.Location = new System.Drawing.Point(104, 16);
             this.cboArticle.Name = "cboArticle";
             this.cboArticle.Size = new System.Drawing.Size(147, 21);
             this.cboArticle.TabIndex = 1;
@@ -65,21 +67,21 @@
             this.lblNomDepot.AutoSize = true;
             this.lblNomDepot.Location = new System.Drawing.Point(12, 46);
             this.lblNomDepot.Name = "lblNomDepot";
-            this.lblNomDepot.Size = new System.Drawing.Size(67, 13);
+            this.lblNomDepot.Size = new System.Drawing.Size(82, 13);
             this.lblNomDepot.TabIndex = 2;
-            this.lblNomDepot.Text = "Nom Dépot :";
+            this.lblNomDepot.Text = "Nom du Dépot :";
             // 
             // cboDepot
             // 
             this.cboDepot.FormattingEnabled = true;
-            this.cboDepot.Location = new System.Drawing.Point(85, 43);
+            this.cboDepot.Location = new System.Drawing.Point(104, 43);
             this.cboDepot.Name = "cboDepot";
             this.cboDepot.Size = new System.Drawing.Size(147, 21);
             this.cboDepot.TabIndex = 3;
             // 
             // dtpDateHeureMouv
             // 
-            this.dtpDateHeureMouv.Location = new System.Drawing.Point(169, 75);
+            this.dtpDateHeureMouv.Location = new System.Drawing.Point(166, 102);
             this.dtpDateHeureMouv.Name = "dtpDateHeureMouv";
             this.dtpDateHeureMouv.Size = new System.Drawing.Size(181, 20);
             this.dtpDateHeureMouv.TabIndex = 4;
@@ -87,7 +89,7 @@
             // lblMouvStockDateHeure
             // 
             this.lblMouvStockDateHeure.AutoSize = true;
-            this.lblMouvStockDateHeure.Location = new System.Drawing.Point(12, 75);
+            this.lblMouvStockDateHeure.Location = new System.Drawing.Point(9, 102);
             this.lblMouvStockDateHeure.Name = "lblMouvStockDateHeure";
             this.lblMouvStockDateHeure.Size = new System.Drawing.Size(151, 13);
             this.lblMouvStockDateHeure.TabIndex = 5;
@@ -96,7 +98,7 @@
             // lblQuantite
             // 
             this.lblQuantite.AutoSize = true;
-            this.lblQuantite.Location = new System.Drawing.Point(12, 105);
+            this.lblQuantite.Location = new System.Drawing.Point(12, 132);
             this.lblQuantite.Name = "lblQuantite";
             this.lblQuantite.Size = new System.Drawing.Size(53, 13);
             this.lblQuantite.TabIndex = 6;
@@ -104,14 +106,14 @@
             // 
             // numQuantite
             // 
-            this.numQuantite.Location = new System.Drawing.Point(71, 103);
+            this.numQuantite.Location = new System.Drawing.Point(71, 132);
             this.numQuantite.Name = "numQuantite";
             this.numQuantite.Size = new System.Drawing.Size(92, 20);
             this.numQuantite.TabIndex = 7;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(12, 150);
+            this.btnAnnuler.Location = new System.Drawing.Point(12, 172);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 8;
@@ -120,7 +122,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(118, 150);
+            this.btnSupprimer.Location = new System.Drawing.Point(116, 172);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 9;
@@ -129,7 +131,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(217, 150);
+            this.btnUpdate.Location = new System.Drawing.Point(222, 172);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 10;
@@ -138,7 +140,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(303, 150);
+            this.btnAjouter.Location = new System.Drawing.Point(303, 172);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 11;
@@ -146,11 +148,30 @@
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(12, 68);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(37, 13);
+            this.lblType.TabIndex = 12;
+            this.lblType.Text = "Type :";
+            // 
+            // cboType
+            // 
+            this.cboType.FormattingEnabled = true;
+            this.cboType.Location = new System.Drawing.Point(104, 68);
+            this.cboType.Name = "cboType";
+            this.cboType.Size = new System.Drawing.Size(56, 21);
+            this.cboType.TabIndex = 13;
+            // 
             // MouvStockFr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 187);
+            this.ClientSize = new System.Drawing.Size(390, 207);
+            this.Controls.Add(this.cboType);
+            this.Controls.Add(this.lblType);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSupprimer);
@@ -186,5 +207,7 @@
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Label lblType;
+        private System.Windows.Forms.ComboBox cboType;
     }
 }

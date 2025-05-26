@@ -30,6 +30,11 @@ namespace page_d_accueil
             {
                 cboDepot.Items.Add(d.getNomD());
             }
+
+            foreach (TypeMouv tm in TypeMouvDAO.getTousLesType())
+            {
+                cboType.Items.Add(tm.getLibelleCT());
+            }
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
